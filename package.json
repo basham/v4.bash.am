@@ -1,0 +1,18 @@
+{
+  "name": "v4.bash.am",
+  "version": "1.0.0",
+  "description": "Professional portfolio of Chris Basham.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basham/v4.bash.am.git"
+  },
+  "author": "Chris Basham <chris@bash.am> (http://bash.am)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basham/v4.bash.am/issues"
+  },
+  "homepage": "https://github.com/basham/v4.bash.am"
+}
