@@ -1,15 +1,34 @@
 .Header {
   border-bottom: 0.1em solid @color-Base;
+  margin: 0 auto;
+  max-width: 60em;
   padding: 2em 1em;
+
+  @media @xs {
+    border-bottom-width: 0.25em;
+    font-size: @ratio-Scale--05;
+    padding: 3em 2em;
+    text-align: center;
+  }
+
+  @media @md {
+    font-size: @ratio-Scale--10;
+    padding: 4em 2em;
+  }
 
   &-name {
     font-size: @ratio-Scale--20;
+    font-weight: bold;
     text-decoration: none;
+
+    &, &:visited {
+      color: @color-Text;
+    }
   }
 
   &-title {
-    font-size: 1.3em;
-    line-height: 1.4;
+    font-size: @ratio-Scale--10;
+    line-height: @ratio-Scale--15;
     margin: 0;
   }
 
