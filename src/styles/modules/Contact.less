@@ -2,11 +2,22 @@
   border-top: 0.1em solid @color-Base;
   display: flex;
   flex-wrap: wrap;
-  padding: 1em 0;
+
+  @media @xs {
+    border-top-width: 0.25em;
+    font-size: @ratio-Scale--05;
+    justify-content: center;
+    padding: 1.5em 2em;
+  }
+
+  @media @md {
+    font-size: @ratio-Scale--10;
+    padding: 2em 2em;
+  }
 
   &-method {
-    font-size: 1.3em;
-    padding: 0.5em;
+    font-size: @ratio-Scale--10;
+    padding: 1em;
     text-align: center;
     text-decoration: none;
   }
