@@ -53,7 +53,7 @@ to assist users researching with Lexis search products.
 
 ### Multimedia Developer Intern, [Pervasive Technology Labs](http://vis.iu.edu), [IUPUI](http://www.iupui.edu 'Indiana University-Purdue University Indianapolis')
 
-<time datetime="2008-09">September &ndash; <time datetime="2009-05">May 2009</time>,
+<time datetime="2008-09">September 2008 &ndash; <time datetime="2009-05">May 2009</time>,
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
 Researched and developed motion, color and symbol tracking algorithms to explore
