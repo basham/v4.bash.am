@@ -59,14 +59,6 @@ to assist users researching with Lexis search products.
 Researched and developed motion, color and symbol tracking algorithms to explore
 the limits of video processing and analysis in ActionScript 3.
 
-### Web Developer Intern, A Beautiful Question
-
-<time datetime="2008-01">January &ndash; <time datetime="2008-05">May 2008</time>,
-[Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
-
-Collaborated with out-of-state clients to develop WordPress themes and Adobe AIR
-applications.
-
 ### Web Developer Volunteer, [Lakeview Church](http://www.lakeviewchurch.org)
 
 <time datetime="2007-01">January 2007 &ndash; <time datetime="2009-05">May 2009</time>,
@@ -75,6 +67,14 @@ applications.
 Converted content management system to WordPress.
 Developed WordPress themes and Flash podcast player.
 Assisted with various network administration activities.
+
+### Web Developer Intern, A Beautiful Question
+
+<time datetime="2008-01">January &ndash; <time datetime="2008-05">May 2008</time>,
+[Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
+
+Collaborated with out-of-state clients to develop WordPress themes and Adobe AIR
+applications.
 
 ## Education
 
