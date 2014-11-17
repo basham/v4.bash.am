@@ -13,7 +13,7 @@ template: default.html
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Organized twice-monthly topical and networking events for the local chapter of
-[IxDA](http://ixda.org 'Interaction Design Association'), as a way to facilitate
+[IxDA](http://ixda.org 'Interaction Design Association') to facilitate
 and grow the Bloomington design community.
 
 ### Lead Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
@@ -22,17 +22,16 @@ and grow the Bloomington design community.
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Researched and established design and front-end development standards.
-Facilitated the design community within Kuali Student.
-Acted as a liaison between Kuali Student designers and the wider Kuali design community.
+Designed and developed proof-of-concept applications to explore experimental technologies and techniques.
+Facilitated collaboration among designers throughout the Kuali community.
 
 ### Lead Interaction Designer, [Process Experience Architecture](http://pxa.iu.edu), [Indiana University](http://iu.edu)
 
 <time datatime="2012-07">July 2012</time> &ndash; <time datatime="2014-10">Oct. 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
-Designed, wireframed, and prototyped web software to enhance the student
+Designed, wireframed, and prototyped web user interfaces to enhance the student
 experience with university informations systems.
-Developed production- level front-end code.
 Refined front-end standards and practices.
 
 ### Co-founder, [BitHouse Design](http://bithousedesign.com)
@@ -41,8 +40,8 @@ Refined front-end standards and practices.
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Collaborated with clients to design web and mobile products.
-Produced an online service ([Rundwn](http://rundwn.com)) for empowering coordinators,
-runners and spectators of long-distance races with real-time event results.
+Produced an online service (Rundwn) for empowering coordinators,
+runners, and spectators of long-distance races with real-time event results.
 
 ### UX Design Intern, [LexisNexis](http://www.lexisnexis.com)
 
