@@ -1,0 +1,21 @@
+.Nav {
+  border-bottom: 0.1em solid @color-Base;
+  display: flex;
+  padding: 0.5em 0 0;
+
+  @media @xs {
+    border-bottom-width: 0.25em;
+    font-size: @ratio-Scale--05;
+    justify-content: center;
+    padding: 1em 2em 0;
+  }
+
+  @media @md {
+    font-size: @ratio-Scale--10;
+  }
+
+  &-item {
+    font-size: @ratio-Scale--10;
+    padding: 1em;
+  }
+}
