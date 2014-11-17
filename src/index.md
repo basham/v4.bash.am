@@ -18,16 +18,16 @@ and grow the Bloomington design community.
 
 ### Lead Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
 
-<time datatime="2013-09">September 2013</time> &ndash; <time datatime="2014-10">October 2014</time>,
+<time datatime="2013-08">August 2013</time> &ndash; <time datatime="2014-10">October 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Researched and established design and front-end development standards.
 Designed and developed proof-of-concept applications to explore experimental technologies and techniques.
 Facilitated collaboration among designers throughout the Kuali community.
 
-### Lead Interaction Designer, [Process Experience Architecture](http://pxa.iu.edu), [Indiana University](http://iu.edu)
+### Interaction Designer, [Process Experience Architecture](http://pxa.iu.edu), [Indiana University](http://iu.edu)
 
-<time datatime="2012-07">July 2012</time> &ndash; <time datatime="2014-10">October 2014</time>,
+<time datatime="2012-07">July 2012</time> &ndash; <time datatime="2013-07">July 2013</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Designed, wireframed, and prototyped web user interfaces to enhance the student
