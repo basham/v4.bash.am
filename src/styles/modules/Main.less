@@ -22,13 +22,16 @@
     line-height: @ratio-Scale--15;
   }
 
-  p {
+  p,
+  ul {
     font-size: @ratio-Scale--10;
     line-height: @ratio-Scale--15;
     margin-top: 0;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     margin: 1.5em 0 0;
 
     @media @xs {
@@ -42,17 +45,20 @@
     > a {
       text-decoration: underline;
 
-      &, &:visited {
+      &,
+      &:visited {
         color: @color-Text;
       }
     }
 
-    + p {
+    + p,
+    + ul {
       margin-top: 1em;
     }
   }
 
-  h1 + h2, h2 + h3 {
+  h1 + h2,
+  h2 + h3 {
     margin-top: 1em;
 
     @media @xs {
