@@ -18,7 +18,7 @@ and grow the Bloomington design community.
 
 ### Lead Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
 
-<time datatime="2013-09">Sept. 2013</time> &ndash; <time datatime="2014-10">Oct. 2014</time>,
+<time datatime="2013-09">September 2013</time> &ndash; <time datatime="2014-10">October 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Researched and established design and front-end development standards.
@@ -27,7 +27,7 @@ Facilitated collaboration among designers throughout the Kuali community.
 
 ### Lead Interaction Designer, [Process Experience Architecture](http://pxa.iu.edu), [Indiana University](http://iu.edu)
 
-<time datatime="2012-07">July 2012</time> &ndash; <time datatime="2014-10">Oct. 2014</time>,
+<time datatime="2012-07">July 2012</time> &ndash; <time datatime="2014-10">October 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Designed, wireframed, and prototyped web user interfaces to enhance the student
@@ -36,7 +36,7 @@ Refined front-end standards and practices.
 
 ### Co-founder, [BitHouse Design](http://bithousedesign.com)
 
-<time datetime="2011-09">Sept. 2011 &ndash; <time datetime="2012-09">Sept. 2012</time>,
+<time datetime="2011-09">September 2011 &ndash; <time datetime="2012-09">September 2012</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Collaborated with clients to design web and mobile products.
@@ -45,7 +45,7 @@ runners, and spectators of long-distance races with real-time event results.
 
 ### UX Design Intern, [LexisNexis](http://www.lexisnexis.com)
 
-<time datetime="2010-05">May &ndash; <time datetime="2010-08">Aug. 2010</time>,
+<time datetime="2010-05">May &ndash; <time datetime="2010-08">August 2010</time>,
 [Dayton, Ohio](http://en.wikipedia.org/wiki/Dayton,_Ohio)
 
 Designed and iterated low- and high-fidelity interactive visualization prototypes
@@ -53,7 +53,7 @@ to assist users researching with Lexis search products.
 
 ### Multimedia Developer Intern, [Pervasive Technology Labs](http://vis.iu.edu), [IUPUI](http://www.iupui.edu 'Indiana University-Purdue University Indianapolis')
 
-<time datetime="2008-09">Sept. &ndash; <time datetime="2009-05">May 2009</time>,
+<time datetime="2008-09">September &ndash; <time datetime="2009-05">May 2009</time>,
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
 Researched and developed motion, color and symbol tracking algorithms to explore
@@ -61,7 +61,7 @@ the limits of video processing and analysis in ActionScript 3.
 
 ### Web Developer Intern, A Beautiful Question
 
-<time datetime="2008-01">Jan. &ndash; <time datetime="2008-05">May 2008</time>,
+<time datetime="2008-01">January &ndash; <time datetime="2008-05">May 2008</time>,
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
 Collaborated with out-of-state clients to develop WordPress themes and Adobe AIR
@@ -69,7 +69,7 @@ applications.
 
 ### Web Developer Volunteer, [Lakeview Church](http://www.lakeviewchurch.org)
 
-<time datetime="2007-01">Jan. &ndash; <time datetime="2009-05">May 2009</time>,
+<time datetime="2007-01">January 2007 &ndash; <time datetime="2009-05">May 2009</time>,
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
 Converted content management system to WordPress.
