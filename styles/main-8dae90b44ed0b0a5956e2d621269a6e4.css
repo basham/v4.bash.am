@@ -116,6 +116,9 @@ a:visited {
   line-height: 153.96007178%;
   margin-top: 0;
 }
+.Main ul {
+  padding-left: 1em;
+}
 .Main h1,
 .Main h2,
 .Main h3 {
