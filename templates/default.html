@@ -4,32 +4,28 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="{{site.description}}">
   <meta name="author" content="{{site.author}}">
-  <title>{{#if title}}{{ title }} &middot; {{/if}}Chris Basham</title>
+  <title>{{#if title}}{{ title }} &middot; {{/if}}{{site.author}}</title>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css' />
   <link href="/{{ fingerprint.[styles/main.css] }}" rel="stylesheet" type="text/css" />
 </head>
 <body class="Body">
   <header class="Body-part Header">
-    <a class="Header-name" href="/">Chris Basham</a>
-    <p class="Header-title">
-      <span class="Header-specialty">Interaction designer</span>
-      &amp;
-      <span class="Header-specialty">Front-end developer</span>
-    </p>
+    <a class="Header-name" href="/">{{site.author}}</a>
+    <p class="Header-specialty">{{site.specialty}}</p>
   </header>
   <nav class="Body-part Nav">
     <a class="Nav-item" href="/">Resume</a>
     <a class="Nav-item" href="/portfolio">Portfolio</a>
   </nav>
   <main class="Body-part Main">
-    {{{ contents }}}
+{{{ contents }}}
   </main>
   <footer class="Body-part Contact">
-    <a class="Contact-method Contact-method--primary" href="https://twitter.com/chrisbasham" title="Follow me on Twitter">@chrisbasham</a>
-    <a class="Contact-method" href="mailto:chris@bash.am">chris@bash.am</a>
-    <a class="Contact-method" href="tel:+18124599891">(812) 459-9891</a>
+    <a class="Contact-method Contact-method--primary" href="https://twitter.com/{{site.twitter}}" title="Follow me on Twitter">@{{site.twitter}}</a>
+    <a class="Contact-method" href="mailto:{{site.email}}">{{site.email}}</a>
+    <a class="Contact-method" href="tel:{{site.phone_tel}}">{{site.phone}}</a>
   </footer>
 </body>
 </html>

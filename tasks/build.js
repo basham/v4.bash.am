@@ -5,6 +5,7 @@ var ignore = require('metalsmith-ignore');
 var permalinks = require('metalsmith-permalinks');
 
 // Content
+var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
 var templates = require('metalsmith-templates');
 
@@ -29,6 +30,9 @@ gulp.task('build', function(callback) {
       '**/.DS_Store'
     ]))
     // Content
+    .use(metadata({
+      site: 'site.yaml'
+    }))
     .use(markdown())
     .use(templates('handlebars'))
     .use(permalinks({
