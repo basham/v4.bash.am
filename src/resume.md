@@ -16,7 +16,7 @@ Organized twice-monthly topical and networking events for the local chapter of
 [IxDA](http://ixda.org 'Interaction Design Association') to facilitate
 and grow the Bloomington design community.
 
-### Lead Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
+### Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
 
 <time datetime="2013-08">August 2013</time> &ndash; <time datetime="2014-10">October 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
