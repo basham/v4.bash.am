@@ -59,21 +59,20 @@ a:visited {
   box-shadow: inset 0 0 0 0.1em #ffffff, inset 0 0 0 0.25em #e6f1fb;
 }
 .Header {
-  border-bottom: 0.1em solid #dddddd;
-  padding: 2em 1em;
+  padding: 2em 0 0 1em;
 }
 @media (min-width: 30em) {
   .Header {
     border-bottom-width: 0.25em;
     font-size: 115.47005384%;
-    padding: 3em 2em;
+    padding: 3em 0 0;
     text-align: center;
   }
 }
 @media (min-width: 62em) {
   .Header {
     font-size: 133.33333333%;
-    padding: 4em 2em;
+    padding: 4em 0 0;
   }
 }
 .Header-name {
@@ -85,13 +84,10 @@ a:visited {
 .Header-name:visited {
   color: #333333;
 }
-.Header-title {
+.Header-specialty {
   font-size: 133.33333333%;
   line-height: 153.96007178%;
   margin: 0;
-}
-.Header-specialty {
-  white-space: nowrap;
 }
 @media (min-width: 30em) {
   .Main {
@@ -114,7 +110,8 @@ a:visited {
   font-size: 133.33333333%;
   line-height: 153.96007178%;
 }
-.Main p {
+.Main p,
+.Main ul {
   font-size: 133.33333333%;
   line-height: 153.96007178%;
   margin-top: 0;
@@ -153,7 +150,10 @@ a:visited {
 }
 .Main h1 + p,
 .Main h2 + p,
-.Main h3 + p {
+.Main h3 + p,
+.Main h1 + ul,
+.Main h2 + ul,
+.Main h3 + ul {
   margin-top: 1em;
 }
 .Main h1 + h2,
@@ -168,4 +168,30 @@ a:visited {
 }
 .Main time {
   white-space: nowrap;
+}
+.Nav {
+  border-bottom: 0.1em solid #dddddd;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em 0 0;
+}
+@media (min-width: 30em) {
+  .Nav {
+    border-bottom-width: 0.25em;
+    font-size: 115.47005384%;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1em 2em 0;
+  }
+}
+@media (min-width: 62em) {
+  .Nav {
+    font-size: 133.33333333%;
+  }
+}
+.Nav-item {
+  font-size: 133.33333333%;
+  padding: 1em;
 }
