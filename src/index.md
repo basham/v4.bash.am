@@ -16,5 +16,6 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 - [GitHub](https://github.com/basham)
 - [Kickstarter](https://www.kickstarter.com/profile/1468456177)
 - [LinkedIn](http://www.linkedin.com/in/cbasham)
+- [Speaker Deck](https://speakerdeck.com/basham)
 - [Twitter](https://twitter.com/chrisbasham)
 - [Vimeo](http://vimeo.com/basham)
