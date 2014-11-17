@@ -10,7 +10,7 @@ permalink: false
 
 ### Co-organizer, [IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/)
 
-<time datatime="2013-05">May 2013</time> &ndash; Present,
+<time datetime="2013-05">May 2013</time> &ndash; Present,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Organized twice-monthly topical and networking events for the local chapter of
@@ -19,7 +19,7 @@ and grow the Bloomington design community.
 
 ### Lead Interaction Designer, [Kuali Student](http://www.kuali.org/ks)
 
-<time datatime="2013-08">August 2013</time> &ndash; <time datatime="2014-10">October 2014</time>,
+<time datetime="2013-08">August 2013</time> &ndash; <time datetime="2014-10">October 2014</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Researched and established design and front-end development standards.
@@ -28,7 +28,7 @@ Facilitated collaboration among designers throughout the Kuali community.
 
 ### Interaction Designer, [Process Experience Architecture](http://pxa.iu.edu), [Indiana University](http://iu.edu)
 
-<time datatime="2012-07">July 2012</time> &ndash; <time datatime="2013-07">July 2013</time>,
+<time datetime="2012-07">July 2012</time> &ndash; <time datetime="2013-07">July 2013</time>,
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 Designed, wireframed, and prototyped web user interfaces to enhance the student
@@ -81,13 +81,13 @@ applications.
 
 ### M.S. [Human-Computer Interaction Design](http://hcid.informatics.indiana.edu)
 
-<time datatime="2011-06">June 2011</time>,
+<time datetime="2011-06">June 2011</time>,
 [Indiana University](http://iu.edu),
 [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
 
 ### B.S. [Media Arts & Sciences](http://soic.iupui.edu/undergraduate/degrees/media-arts/)
 
-<time datatime="2009-05">May 2009</time>,
+<time datetime="2009-05">May 2009</time>,
 [Indiana University (IUPUI)](http://iupui.edu),
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
@@ -96,6 +96,6 @@ General Honors
 
 ### Minor [Computer & Information Science](http://cs.iupui.edu)
 
-<time datatime="2009-05">May 2009</time>,
+<time datetime="2009-05">May 2009</time>,
 [Purdue University (IUPUI)](http://iupui.edu),
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
