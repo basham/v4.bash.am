@@ -1,6 +1,7 @@
 ---
 title: Resume
 template: default.html
+permalink: false
 ---
 
 # Resume

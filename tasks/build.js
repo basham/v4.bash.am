@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var Metalsmith = require('metalsmith');
 
 var ignore = require('metalsmith-ignore');
+var permalinks = require('metalsmith-permalinks');
 
 // Content
 var markdown = require('metalsmith-markdown');
@@ -30,6 +31,10 @@ gulp.task('build', function(callback) {
     // Content
     .use(markdown())
     .use(templates('handlebars'))
+    .use(permalinks({
+      pattern: ':title',
+      relative: false
+    }))
     .build(function(err, files) {
       if (err) {
         return callback(err);
