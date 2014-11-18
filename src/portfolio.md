@@ -16,7 +16,7 @@ template: default.html
 
 ## Course Registration proof of concept
 
-<time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time> &middot; [GitHub repository](https://github.com/ksux/kscr-poc)
+<time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time> &middot; [Video demo](https://vimeo.com/112133422) &middot; [GitHub repository](https://github.com/ksux/kscr-poc)
 
 ### Credits
 
