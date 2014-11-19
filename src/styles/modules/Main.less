@@ -1,8 +1,9 @@
 .Main {
+  font-size: @ratio-Scale--05;
+  padding: 0 1em 1em;
 
   @media @xs {
     padding: 0 2em 2em;
-    font-size: @ratio-Scale--05;
   }
 
   @media @md {
@@ -11,22 +12,46 @@
 
   h1 {
     font-size: @ratio-Scale--30;
+    line-height: @ratio-Scale--10;
+    margin: 1em 0 0;
+
+    @media @xs {
+      margin-top: 2em;
+    }
+
+    @media @md {
+      margin-top: 3em;
+    }
   }
 
   h2 {
     font-size: @ratio-Scale--20;
+    line-height: @ratio-Scale--10;
   }
 
+  h2,
   h3 {
+    margin: 2em 0 0;
+  }
+
+  h3,
+  p,
+  ul {
     font-size: @ratio-Scale--10;
     line-height: @ratio-Scale--15;
   }
 
   p,
   ul {
-    font-size: @ratio-Scale--10;
-    line-height: @ratio-Scale--15;
-    margin-top: 0;
+    margin: 1em 0 0;
+  }
+
+  h3 {
+
+    + p,
+    + ul {
+      margin: 0;
+    }
   }
 
   ul {
@@ -36,15 +61,6 @@
   h1,
   h2,
   h3 {
-    margin: 1.5em 0 0;
-
-    @media @xs {
-      margin-top: 2em;
-    }
-
-    @media @md {
-      margin-top: 3em;
-    }
 
     > a {
       text-decoration: underline;
@@ -53,11 +69,6 @@
       &:visited {
         color: @color-Text;
       }
-    }
-
-    + p,
-    + ul {
-      margin-top: 1em;
     }
   }
 
