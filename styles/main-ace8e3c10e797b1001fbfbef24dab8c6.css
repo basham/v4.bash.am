@@ -1,3 +1,7 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 a {
   color: #0074d9;
   text-decoration: none;
@@ -24,7 +28,7 @@ a:visited {
   margin: 0 auto;
   max-width: 40em;
 }
-@media (min-width: 62em) {
+@media (min-width: 62em) and (min-height: 48em) {
   .Body-part {
     font-size: 115.47005384%;
     line-height: 153.96007178%;
@@ -32,7 +36,7 @@ a:visited {
 }
 .Contact {
   border-top: 0.1em solid #dddddd;
-  padding: 1em;
+  padding: 1em 0;
 }
 @media (min-width: 22.5em) {
   .Contact {
@@ -50,6 +54,10 @@ a:visited {
 @media (min-width: 30em) {
   .Contact {
     border-top-width: 0.25em;
+  }
+}
+@media (min-width: 30em) and (min-height: 48em) {
+  .Contact {
     padding: 1em 2em;
   }
 }
@@ -85,15 +93,15 @@ a:visited {
   text-align: center;
 }
 .Header {
-  padding: 1em 0 0 1em;
+  padding: 1em 1em 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (min-height: 48em) {
   .Header {
     padding: 3em 0 0;
     text-align: center;
   }
 }
-@media (min-width: 62em) {
+@media (min-width: 62em) and (min-height: 48em) {
   .Header {
     padding: 4em 0 0;
   }
@@ -116,7 +124,7 @@ a:visited {
 .Main {
   padding: 0 1em 1em;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (min-height: 48em) {
   .Main {
     padding: 0 2em 2em;
   }
@@ -126,12 +134,12 @@ a:visited {
   line-height: 133.33333333%;
   margin: 1em 0 0;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (min-height: 48em) {
   .Main h1 {
     margin-top: 2em;
   }
 }
-@media (min-width: 62em) {
+@media (min-width: 62em) and (min-height: 48em) {
   .Main h1 {
     margin-top: 3em;
   }
@@ -177,7 +185,7 @@ a:visited {
 .Main h2 + h3 {
   margin-top: 1em;
 }
-@media (min-width: 30em) {
+@media (min-width: 30em) and (min-height: 48em) {
   .Main h1 + h2,
   .Main h2 + h3 {
     margin-top: 2em;
@@ -196,6 +204,10 @@ a:visited {
 @media (min-width: 30em) {
   .Nav {
     border-bottom-width: 0.25em;
+  }
+}
+@media (min-width: 30em) and (min-height: 48em) {
+  .Nav {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
