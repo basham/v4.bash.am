@@ -1,29 +1,22 @@
 .Contact {
   border-top: 0.1em solid @color-Base;
-  font-size: @ratio-Scale--05;
   padding: 1em;
 
   @media @xxs {
-    border-top-width: 0.25em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   @media @xs {
-    padding: 2em;
-  }
-
-  @media @md {
-    font-size: @ratio-Scale--10;
+    border-top-width: 0.25em;
+    padding: 1em 2em;
   }
 
   &-method {
     border-radius: 0.25em;
     box-shadow: inset 0 0 0 0.1em #fff;
     display: block;
-    font-size: @ratio-Scale--10;
-    line-height: @ratio-Scale--15;
     padding: 0.5em 1em;
     text-align: center;
 
