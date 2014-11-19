@@ -16,6 +16,8 @@ a:visited {
   line-height: 153.96007178%;
   margin: 0;
   padding: 0;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 .Body-part {
   padding: 0 1em;
