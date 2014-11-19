@@ -1,7 +1,7 @@
 .Main {
   padding: 0 1em 1em;
 
-  @media @xs {
+  @media @xs and @sm-height {
     padding: 0 2em 2em;
   }
 
@@ -10,11 +10,11 @@
     line-height: @ratio-Scale--10;
     margin: 1em 0 0;
 
-    @media @xs {
+    @media @xs and @sm-height {
       margin-top: 2em;
     }
 
-    @media @md {
+    @media @md and @sm-height {
       margin-top: 3em;
     }
   }
@@ -71,7 +71,7 @@
   h2 + h3 {
     margin-top: 1em;
 
-    @media @xs {
+    @media @xs and @sm-height {
       margin-top: 2em;
     }
   }
