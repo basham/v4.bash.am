@@ -13,7 +13,11 @@
 <body class="Body">
   <header class="Body-part Header">
     <a class="Header-name" href="/">{{site.author}}</a>
-    <p class="Header-specialty">{{site.specialty}}</p>
+    <p class="Header-specialties">
+      {{#each site.specialties}}
+      <span class="Header-specialty">{{this}}</span>
+      {{/each}}
+    </p>
   </header>
   <nav class="Body-part Nav">
     <a class="Nav-item" href="/">Home</a>
