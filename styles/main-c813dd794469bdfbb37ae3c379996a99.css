@@ -12,71 +12,92 @@ a:visited {
 .Body {
   color: #333333;
   font-family: 'Merriweather', serif;
-  font-size: 62.5%;
-  line-height: 1;
+  font-size: 100%;
+  line-height: 153.96007178%;
   margin: 0;
   padding: 0;
 }
 .Body-part {
   padding: 0 1em;
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 40em;
+}
+@media (min-width: 62em) {
+  .Body-part {
+    font-size: 115.47005384%;
+    line-height: 153.96007178%;
+  }
 }
 .Contact {
   border-top: 0.1em solid #dddddd;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 1em;
+}
+@media (min-width: 22.5em) {
+  .Contact {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 @media (min-width: 30em) {
   .Contact {
     border-top-width: 0.25em;
-    font-size: 115.47005384%;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 1.5em 2em;
-  }
-}
-@media (min-width: 62em) {
-  .Contact {
-    font-size: 133.33333333%;
-    padding: 2em 2em;
+    padding: 1em 2em;
   }
 }
 .Contact-method {
   border-radius: 0.25em;
   box-shadow: inset 0 0 0 0.1em #fff;
-  font-size: 133.33333333%;
-  padding: 1em;
+  display: block;
+  padding: 0.5em 1em;
   text-align: center;
 }
 .Contact-method--primary {
   box-shadow: inset 0 0 0 0.1em #ffffff, inset 0 0 0 0.25em #e6f1fb;
 }
+@media (min-width: 22.5em) {
+  .Elsewhere {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 10%;
+  }
+}
+.Elsewhere-method {
+  border-radius: 0.25em;
+  box-shadow: inset 0 0 0 0.1em #ffffff, inset 0 0 0 0.25em #e6f1fb;
+  display: block;
+  padding: 0.5em 1em;
+  text-align: center;
+}
 .Header {
-  padding: 2em 0 0 1em;
+  padding: 1em 0 0 1em;
 }
 @media (min-width: 30em) {
   .Header {
-    border-bottom-width: 0.25em;
-    font-size: 115.47005384%;
     padding: 3em 0 0;
     text-align: center;
   }
 }
 @media (min-width: 62em) {
   .Header {
-    font-size: 133.33333333%;
     padding: 4em 0 0;
   }
 }
 .Header-name {
-  font-size: 177.77777778%;
+  font-size: 133.33333333%;
   font-weight: bold;
   text-decoration: none;
 }
@@ -84,59 +105,58 @@ a:visited {
 .Header-name:visited {
   color: #333333;
 }
-.Header-specialty {
-  font-size: 133.33333333%;
-  line-height: 153.96007178%;
+.Header-specialties {
   margin: 0;
+}
+.Header-specialty {
+  white-space: nowrap;
+}
+.Main {
+  padding: 0 1em 1em;
 }
 @media (min-width: 30em) {
   .Main {
     padding: 0 2em 2em;
-    font-size: 115.47005384%;
-  }
-}
-@media (min-width: 62em) {
-  .Main {
-    font-size: 133.33333333%;
   }
 }
 .Main h1 {
-  font-size: 237.03703704%;
-}
-.Main h2 {
   font-size: 177.77777778%;
-}
-.Main h3 {
-  font-size: 133.33333333%;
-  line-height: 153.96007178%;
-}
-.Main p,
-.Main ul {
-  font-size: 133.33333333%;
-  line-height: 153.96007178%;
-  margin-top: 0;
-}
-.Main ul {
-  padding-left: 1em;
-}
-.Main h1,
-.Main h2,
-.Main h3 {
-  margin: 1.5em 0 0;
+  line-height: 133.33333333%;
+  margin: 1em 0 0;
 }
 @media (min-width: 30em) {
-  .Main h1,
-  .Main h2,
-  .Main h3 {
+  .Main h1 {
     margin-top: 2em;
   }
 }
 @media (min-width: 62em) {
-  .Main h1,
-  .Main h2,
-  .Main h3 {
+  .Main h1 {
     margin-top: 3em;
   }
+}
+.Main h2 {
+  font-size: 133.33333333%;
+  line-height: 133.33333333%;
+}
+.Main h2,
+.Main h3 {
+  margin: 2em 0 0;
+}
+.Main h3,
+.Main p,
+.Main ul {
+  font-size: 1em;
+}
+.Main p,
+.Main ul {
+  margin: 1em 0 0;
+}
+.Main h3 + p,
+.Main h3 + ul {
+  margin: 0;
+}
+.Main ul {
+  padding-left: 1em;
 }
 .Main h1 > a,
 .Main h2 > a,
@@ -150,14 +170,6 @@ a:visited {
 .Main h2 > a:visited,
 .Main h3 > a:visited {
   color: #333333;
-}
-.Main h1 + p,
-.Main h2 + p,
-.Main h3 + p,
-.Main h1 + ul,
-.Main h2 + ul,
-.Main h3 + ul {
-  margin-top: 1em;
 }
 .Main h1 + h2,
 .Main h2 + h3 {
@@ -182,19 +194,13 @@ a:visited {
 @media (min-width: 30em) {
   .Nav {
     border-bottom-width: 0.25em;
-    font-size: 115.47005384%;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 1em 2em 0;
   }
 }
-@media (min-width: 62em) {
-  .Nav {
-    font-size: 133.33333333%;
-  }
-}
 .Nav-item {
-  font-size: 133.33333333%;
+  line-height: 1;
   padding: 1em;
 }
