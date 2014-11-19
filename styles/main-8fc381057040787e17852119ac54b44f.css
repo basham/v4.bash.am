@@ -36,7 +36,7 @@ a:visited {
 }
 .Contact {
   border-top: 0.1em solid #dddddd;
-  padding: 1em 0;
+  padding: 1em;
 }
 @media (min-width: 22.5em) {
   .Contact {
