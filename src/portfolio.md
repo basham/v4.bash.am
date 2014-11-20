@@ -5,61 +5,80 @@ template: default.html
 
 # Portfolio
 
-## [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/)
+## Kuali Student Design Guide
 
-<time datetime="2014-03">March</time> &ndash; <time datetime="2014-08">August 2014</time> &middot; [Design Guide](http://ksux.github.io/ks-design-guide/) &middot; [GitHub repository](https://github.com/ksux/ks-design-guide)
+<time datetime="2014-03">March</time> &ndash; <time datetime="2014-08">August 2014</time>
 
-### Credits
+The [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/) is a design pattern library created to centralize and articulate user interface design decisions occurring within the [Kuali Student](http://www.kuali.org/ks) products. The guide is meant to be maintained by Kuali designers and front-end developers, regularly updated as problems are encountered and resolved throughout development. Patterns are abstracted as nested components, following the [Atomic design methodology](http://bradfrost.com/blog/post/atomic-web-design/). It serves as a daily reference for designers and developers, yet also invites the larger non-design community to see and engage in the process. Research and recommendations are initially documented as [repository issues](https://github.com/ksux/ks-design-guide/issues) before being adopted into the guide.
 
-- Designed by Chris Basham and Tara Bazler.
-- Developed by Chris Basham.
+Due to the [original Kuali Student teams halting product development in October 2014](https://blog.kuali.org/kuali-2-0-information-document/), contributions to the guide is consequently also suspended.
+
+<figure class="Figure">
+  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png">
+![Screenshot of the mobile and widescreen view of the Pagination pattern.](https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png)
+  </a>
+  <figcaption class="Figure-caption">The Design Guide features a responsive design and statically generated content, making it both accessible and performant.</figcaption>
+</figure>
+
+<a class="Button" href="http://ksux.github.io/ks-design-guide/">View the Design Guide</a>
+<a class="Button" href="https://github.com/ksux/ks-design-guide">GitHub repository</a>
 
 ## Course Registration proof of concept
 
-<time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time> &middot; [Video demo](https://vimeo.com/112133422) &middot; [GitHub repository](https://github.com/ksux/kscr-poc)
+<time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time>
 
-### Credits
+Using the recommendations as outlined in the [Mobile Strategies for Kuali Student](/mobile-strategies-for-kuali-student) document, a proof-of-concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in [AngularJS](https://angularjs.org/).
 
-- Designed by Chris Basham and Tara Bazler.
-- Front-end developed by Chris Basham.
-- Back-end API developed by [Dan Epstein](http://www.linkedin.com/pub/dan-epstein/5/1b8/850), [Garey Taylor](http://www.linkedin.com/in/gareytaylor), and the Kuali Student Enrollment team.
+The proof-of-concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of RESTful API data services. Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
 
-## [Mobile Strategies for Kuali Student](https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT)
+<figure class="Figure">
+  <div class="Embed">
+    <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <figcaption class="Figure-caption">The proof-of-concept was demonstrated to all Kuali Student development teams at the end of the allotted six weeks.</figcaption>
+</figure>
 
-<time datetime="2013-12">December 2013</time> &middot; [Article](https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT)
+<a class="Button" href="https://vimeo.com/112133422">Watch demo video</a>
+<a class="Button" href="https://github.com/ksux/kscr-poc">GitHub repository</a>
 
-### Credits
+## Mobile Strategies for Kuali Student
 
-- Authored by Chris Basham.
-- Co-authored by Tara Bazler.
-- Contributions by Erik Rath & George Wendal.
+<time datetime="2013-12">December 2013</time>
+
+As part of the initiation phase for a new product within [Kuali Student](http://www.kuali.org/ks), a document was produced recommending how best to approach this new product, which would be one of the first Kuali applications in which students, not administrators, would be the primary users. The document recommends:
+
+* designing baseline experiences which can be enhanced according to device capabilities or context;
+* building a single responsive application, rather than multiple applications intended for different categories of devices;
+* ensuring the application is accessible according to [WAI-ARIA](http://en.wikipedia.org/wiki/WAI-ARIA) specifications;
+* serving data via [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) in order to decouple user interfaces from back-end concerns;
+* and generally encouraging more freedom when choosing tools.
+
+Six weeks were allocated to develop a [proof-of-concept application that embodied these recommendations](#course-registration-proof-of-concept).
+
+<a class="Button" href="/mobile-strategies-for-kuali-student">Read document</a>
 
 ## Course Search proof of concept
 
-<time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time> &middot; [Video demo](https://vimeo.com/111944142) &middot; [GitHub repository](https://github.com/pxa/course-search)
+<time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time>
 
-### Concept
+Tasked with building a proof-of-concept web application for [Indiana University](http://www.iu.edu/) students to search and bookmark classes, this six-week project was the first attempt within the [University Information Technology Services department](http://uits.iu.edu/) to pair a client-side framework ([AngularJS](https://angularjs.org/)) with [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) for a student-facing application.
 
-Build a proof of concept web application for students to search and bookmark classes.
+<figure class="Figure">
+  <div class="Embed">
+    <iframe src="//player.vimeo.com/video/111944142?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <figcaption class="Figure-caption">Demonstration of the proof-of-concept course search and bookmarking application.</figcaption>
+</figure>
 
-### Process
+<a class="Button" href="https://vimeo.com/111944142">Watch demo video</a>
+<a class="Button" href="https://github.com/pxa/course-search">GitHub repository</a>
 
-This 6-week project was a collaboration between the [Process Experience Architecture team](http://pxa.iu.edu/) and the Student Information Services team within [Indiana University](http://www.iu.edu/)&rsquo;s [University Information Technology Services department](http://uits.iu.edu/). It was the first attempt within UITS to pair a client-side framework ([AngularJS](https://angularjs.org/)) with RESTful data services for a student-facing application.
+## Student Billing functional prototype
 
-### Credits
+<time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time>
 
-- Designed by Chris Basham and Tara Bazler.
-- Front-end developed by Chris Basham.
-- Back-end API developed by Mark Fyffe.
-
-## [Student Billing functional prototype](http://pxa.github.io/billing/)
-
-<time datetime="2012-10">October 2012</time> &ndash; <time datetime="2013-02">February 2013</time> &middot; [Prototype](http://pxa.github.io/billing/) &middot; [GitHub repository](https://github.com/pxa/billing)
-
-### Credits
-
-- Designed by Chris Basham and Tara Bazler.
-- Developed by Chris Basham.
+<a class="Button" href="http://pxa.github.io/billing">View prototype</a>
+<a class="Button" href="https://github.com/pxa/billing">GitHub repository</a>
 
 ## Past portfolios
 
