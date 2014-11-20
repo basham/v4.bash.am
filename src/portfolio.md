@@ -82,6 +82,6 @@ Tasked with building a proof-of-concept web application for [Indiana University]
 
 ## Past portfolios
 
-- [Version 3: Ruby](http://v3.bash.am), 2010&ndash;2014
-- [Version 2: Wordy](http://v2.bash.am), 2008&ndash;2009
-- [Version 1: Flashy](http://v1.bash.am), 2007&ndash;2008
+- [Version 3, 2010&ndash;2014](http://v3.bash.am)
+- [Version 2, 2008&ndash;2009](http://v2.bash.am)
+- [Version 1, 2007&ndash;2008](http://v1.bash.am)
