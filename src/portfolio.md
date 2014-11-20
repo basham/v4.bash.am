@@ -29,7 +29,7 @@ Due to the [original Kuali Student teams halting product development in October 
 
 Using the recommendations as outlined in the [Mobile Strategies for Kuali Student](/mobile-strategies-for-kuali-student) document, a proof-of-concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in [AngularJS](https://angularjs.org/).
 
-The proof-of-concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of RESTful API data services. Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
+The proof-of-concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer). Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
 
 <figure class="Figure">
   <div class="Embed">
