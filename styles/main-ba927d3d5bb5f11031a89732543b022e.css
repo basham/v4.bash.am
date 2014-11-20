@@ -13,6 +13,11 @@ a:focus {
 a:visited {
   color: #004b8d;
 }
+.Article-footer {
+  border-top: 0.1em solid #dddddd;
+  margin-top: 2em;
+  padding-top: 2em;
+}
 .Body {
   color: #333333;
   font-family: 'Merriweather', serif;
@@ -32,6 +37,18 @@ a:visited {
   .Body-part {
     font-size: 115.47005384%;
     line-height: 153.96007178%;
+  }
+}
+.Button {
+  border-radius: 0.25em;
+  box-shadow: inset 0 0 0 0.1em #ffffff, inset 0 0 0 0.25em #e6f1fb;
+  display: block;
+  padding: 0.75em 1em;
+  text-align: center;
+}
+@media (min-width: 30em) {
+  .Button {
+    display: inline-block;
   }
 }
 .Contact {
@@ -91,6 +108,41 @@ a:visited {
   display: block;
   padding: 0.5em 1em;
   text-align: center;
+}
+.Embed {
+  height: auto;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.Embed embed,
+.Embed iframe,
+.Embed object {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.Figure {
+  border-bottom: 0.1em solid #dddddd;
+  border-top: 0.1em solid #dddddd;
+  margin: 1em 0 0;
+  max-width: 100%;
+  padding: 1em 0;
+}
+.Figure-imgLink:hover {
+  background-color: transparent;
+}
+.Figure-caption {
+  color: #666666;
+  padding: 1em 1em 0;
+}
+.Figure img {
+  height: 100%;
+  width: 100%;
 }
 .Header {
   padding: 1em 1em 0;
@@ -153,18 +205,22 @@ a:visited {
   margin: 2em 0 0;
 }
 .Main h3,
+.Main ol,
 .Main p,
 .Main ul {
   font-size: 1em;
 }
+.Main ol,
 .Main p,
 .Main ul {
   margin: 1em 0 0;
 }
+.Main h3 + ol,
 .Main h3 + p,
 .Main h3 + ul {
   margin: 0;
 }
+.Main ol,
 .Main ul {
   padding-left: 1em;
 }

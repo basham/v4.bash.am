@@ -7,7 +7,7 @@
   <meta name="description" content="Chris Basham is an interaction designer and front-end developer living in Bloomington, Indiana.">
   <meta name="author" content="Chris Basham">
   <title>Portfolio &middot; Chris Basham</title>
-  <link href="/styles/main-8fc381057040787e17852119ac54b44f.css" rel="stylesheet" type="text/css" />
+  <link href="/styles/main-ba927d3d5bb5f11031a89732543b022e.css" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css' />
 </head>
 <body class="Body">
@@ -25,53 +25,73 @@
   </nav>
   <main class="Body-part Main">
 <h1 id="portfolio">Portfolio</h1>
-<h2 id="-kuali-student-design-guide-http-ksux-github-io-ks-design-guide-"><a href="http://ksux.github.io/ks-design-guide/">Kuali Student Design Guide</a></h2>
-<p><time datetime="2014-03">March</time> &ndash; <time datetime="2014-08">August 2014</time> &middot; <a href="http://ksux.github.io/ks-design-guide/">Design Guide</a> &middot; <a href="https://github.com/ksux/ks-design-guide">GitHub repository</a></p>
-<h3 id="credits">Credits</h3>
-<ul>
-<li>Designed by Chris Basham and Tara Bazler.</li>
-<li>Developed by Chris Basham.</li>
-</ul>
+<h2 id="kuali-student-design-guide">Kuali Student Design Guide</h2>
+<p><time datetime="2014-03">March</time> &ndash; <time datetime="2014-08">August 2014</time></p>
+<p>The <a href="http://ksux.github.io/ks-design-guide/">Kuali Student Design Guide</a> is a design pattern library created to centralize and articulate user interface design decisions occurring within the <a href="http://www.kuali.org/ks">Kuali Student</a> products. The guide is meant to be maintained by Kuali designers and front-end developers, regularly updated as problems are encountered and resolved throughout development. Patterns are abstracted as nested components, following the <a href="http://bradfrost.com/blog/post/atomic-web-design/">Atomic design methodology</a>. It serves as a daily reference for designers and developers, yet also invites the larger non-design community to see and engage in the process. Research and recommendations are initially documented as <a href="https://github.com/ksux/ks-design-guide/issues">repository issues</a> before being adopted into the guide.</p>
+<p>Due to the <a href="https://blog.kuali.org/kuali-2-0-information-document/">original Kuali Student teams halting product development in October 2014</a>, contributions to the guide is consequently also suspended.</p>
+<figure class="Figure">
+  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png">
+<img src="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png" alt="Screenshot of the mobile and widescreen view of the Pagination pattern.">
+  </a>
+  <figcaption class="Figure-caption">The Design Guide features a responsive design and statically generated content, making it both accessible and performant.</figcaption>
+</figure>
+
+<p><a class="Button" href="http://ksux.github.io/ks-design-guide/">View the Design Guide</a>
+<a class="Button" href="https://github.com/ksux/ks-design-guide">GitHub repository</a></p>
 <h2 id="course-registration-proof-of-concept">Course Registration proof of concept</h2>
-<p><time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time> &middot; <a href="https://vimeo.com/112133422">Video demo</a> &middot; <a href="https://github.com/ksux/kscr-poc">GitHub repository</a></p>
-<h3 id="credits">Credits</h3>
+<p><time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time></p>
+<p>Using the recommendations as outlined in the <a href="/mobile-strategies-for-kuali-student">Mobile Strategies for Kuali Student</a> document, a proof-of-concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in <a href="https://angularjs.org/">AngularJS</a>.</p>
+<p>The proof-of-concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST web services</a>. Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.</p>
+<figure class="Figure">
+  <div class="Embed">
+    <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <figcaption class="Figure-caption">The proof-of-concept was demonstrated to all Kuali Student development teams at the end of the allotted six weeks.</figcaption>
+</figure>
+
+<p><a class="Button" href="https://vimeo.com/112133422">Watch demo video</a>
+<a class="Button" href="https://github.com/ksux/kscr-poc">GitHub repository</a></p>
+<h2 id="mobile-strategies-for-kuali-student">Mobile Strategies for Kuali Student</h2>
+<p><time datetime="2013-12">December 2013</time></p>
+<p>As part of the initiation phase for a new product within <a href="http://www.kuali.org/ks">Kuali Student</a>, a document was produced recommending how best to approach this new product, which would be one of the first Kuali applications in which students, not administrators, would be the primary users. The document recommends:</p>
 <ul>
-<li>Designed by Chris Basham and Tara Bazler.</li>
-<li>Front-end developed by Chris Basham.</li>
-<li>Back-end API developed by <a href="http://www.linkedin.com/pub/dan-epstein/5/1b8/850">Dan Epstein</a>, <a href="http://www.linkedin.com/in/gareytaylor">Garey Taylor</a>, and the Kuali Student Enrollment team.</li>
+<li>designing baseline experiences which can be enhanced according to device capabilities or context;</li>
+<li>building a single responsive application, rather than multiple applications intended for different categories of devices;</li>
+<li>ensuring the application is accessible according to <a href="http://en.wikipedia.org/wiki/WAI-ARIA">WAI-ARIA</a> specifications;</li>
+<li>serving data via <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST web services</a> in order to decouple user interfaces from back-end concerns;</li>
+<li>and generally encouraging more freedom when choosing tools.</li>
 </ul>
-<h2 id="-mobile-strategies-for-kuali-student-https-wiki-kuali-org-pages-viewpage-action-title-mobile-strategies-for-ks-spacekey-student-"><a href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&amp;spaceKey=STUDENT">Mobile Strategies for Kuali Student</a></h2>
-<p><time datetime="2013-12">December 2013</time> &middot; <a href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&amp;spaceKey=STUDENT">Article</a></p>
-<h3 id="credits">Credits</h3>
-<ul>
-<li>Authored by Chris Basham.</li>
-<li>Co-authored by Tara Bazler.</li>
-<li>Contributions by Erik Rath &amp; George Wendal.</li>
-</ul>
+<p>Six weeks were allocated to develop a <a href="#course-registration-proof-of-concept">proof-of-concept application that embodied these recommendations</a>.</p>
+<p><a class="Button" href="/mobile-strategies-for-kuali-student">Read document</a></p>
 <h2 id="course-search-proof-of-concept">Course Search proof of concept</h2>
-<p><time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time> &middot; <a href="https://vimeo.com/111944142">Video demo</a> &middot; <a href="https://github.com/pxa/course-search">GitHub repository</a></p>
-<h3 id="concept">Concept</h3>
-<p>Build a proof of concept web application for students to search and bookmark classes.</p>
-<h3 id="process">Process</h3>
-<p>This 6-week project was a collaboration between the <a href="http://pxa.iu.edu/">Process Experience Architecture team</a> and the Student Information Services team within <a href="http://www.iu.edu/">Indiana University</a>&rsquo;s <a href="http://uits.iu.edu/">University Information Technology Services department</a>. It was the first attempt within UITS to pair a client-side framework (<a href="https://angularjs.org/">AngularJS</a>) with RESTful data services for a student-facing application.</p>
-<h3 id="credits">Credits</h3>
-<ul>
-<li>Designed by Chris Basham and Tara Bazler.</li>
-<li>Front-end developed by Chris Basham.</li>
-<li>Back-end API developed by Mark Fyffe.</li>
-</ul>
-<h2 id="-student-billing-functional-prototype-http-pxa-github-io-billing-"><a href="http://pxa.github.io/billing/">Student Billing functional prototype</a></h2>
-<p><time datetime="2012-10">October 2012</time> &ndash; <time datetime="2013-02">February 2013</time> &middot; <a href="http://pxa.github.io/billing/">Prototype</a> &middot; <a href="https://github.com/pxa/billing">GitHub repository</a></p>
-<h3 id="credits">Credits</h3>
-<ul>
-<li>Designed by Chris Basham and Tara Bazler.</li>
-<li>Developed by Chris Basham.</li>
-</ul>
+<p><time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time></p>
+<p>Tasked with building a proof-of-concept web application for <a href="http://www.iu.edu/">Indiana University</a> students to search and bookmark classes, this six-week project was the first attempt within the <a href="http://uits.iu.edu/">University Information Technology Services department</a> to pair a client-side framework (<a href="https://angularjs.org/">AngularJS</a>) with <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">REST web services</a> for a student-facing application.</p>
+<figure class="Figure">
+  <div class="Embed">
+    <iframe src="//player.vimeo.com/video/111944142?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <figcaption class="Figure-caption">Demonstration of the proof-of-concept course search and bookmarking application.</figcaption>
+</figure>
+
+<p><a class="Button" href="https://vimeo.com/111944142">Watch demo video</a>
+<a class="Button" href="https://github.com/pxa/course-search">GitHub repository</a></p>
+<h2 id="student-billing-functional-prototype">Student Billing functional prototype</h2>
+<p><time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time></p>
+<p>In late 2012, the <a href="http://www.iu.edu/">Indiana University</a> student billing user interface was redesigned in order to make it easier for students to understand their monthly statements and pay the balance on their accounts. After numerous low-fidelity design iterations and subsequent user tests, a functional prototype was crafted in <a href="https://angularjs.org/">AngularJS</a> as a model for the production version.</p>
+<figure class="Figure">
+  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png">
+<img src="https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png" alt="Screenshot of the Amount Due and Account Status summaries in the student billing prototype.">
+  </a>
+  <figcaption class="Figure-caption">The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.</figcaption>
+</figure>
+
+<p><a class="Button" href="http://pxa.github.io/billing">View prototype</a>
+<a class="Button" href="https://github.com/pxa/billing">GitHub repository</a></p>
 <h2 id="past-portfolios">Past portfolios</h2>
 <ul>
-<li><a href="http://v3.bash.am">Version 3: Ruby</a>, 2010&ndash;2014</li>
-<li><a href="http://v2.bash.am">Version 2: Wordy</a>, 2008&ndash;2009</li>
-<li><a href="http://v1.bash.am">Version 1: Flashy</a>, 2007&ndash;2008</li>
+<li><a href="http://v3.bash.am">Version 3, 2010&ndash;2014</a></li>
+<li><a href="http://v2.bash.am">Version 2, 2008&ndash;2009</a></li>
+<li><a href="http://v1.bash.am">Version 1, 2007&ndash;2008</a></li>
 </ul>
 
   </main>
