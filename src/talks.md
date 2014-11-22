@@ -40,7 +40,7 @@ Presented at [Midwest UX 2014](http://2014.midwestuxconference.com/speakers/chri
   <script async class="speakerdeck-embed" data-id="2afa8030088b0132420a3a536de4d520" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 </figure>
 
-I discuss CSS best practices and workflows. Learn how class naming conventions and rigorous file organization can help teams understand and be quickly familiar with unfamiliar styles. Discover how to integrate pre-processors into your build process to increase productivity and prepare styles for production.
+Learn CSS best practices and workflows, including how class naming conventions and rigorous file organization can help teams understand and be quickly familiar with unfamiliar styles. Discover how to integrate pre-processors into your build process to increase productivity and prepare styles for production.
 
 [Presented at IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/events/198163982/).
 
