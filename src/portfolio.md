@@ -3,8 +3,6 @@ title: Portfolio
 template: default.html
 ---
 
-# Portfolio
-
 ## Kuali Student Design Guide
 
 <time datetime="2014-03">March</time> &ndash; <time datetime="2014-08">August 2014</time>

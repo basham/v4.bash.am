@@ -1,9 +1,7 @@
 ---
-title: Resume
+title: Résumé
 template: default.html
 ---
-
-# R&eacute;sum&eacute;
 
 ## Experience
 

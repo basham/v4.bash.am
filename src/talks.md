@@ -3,8 +3,6 @@ title: Talks
 template: default.html
 ---
 
-# Talks
-
 ## The Role of the UI Developer
 
 <time datetime="2014-11-11">November 11, 2014</time>

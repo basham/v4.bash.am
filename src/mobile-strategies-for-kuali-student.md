@@ -3,8 +3,6 @@ title: Mobile Strategies for Kuali Student
 template: default.html
 ---
 
-# Mobile Strategies for Kuali Student
-
 <time datetime="2013-12-16" pubdate>December 16, 2013</time>
 
 ## Executive summary

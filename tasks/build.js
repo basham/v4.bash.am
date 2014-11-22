@@ -36,7 +36,6 @@ gulp.task('build', function(callback) {
     .use(markdown())
     .use(templates('handlebars'))
     .use(permalinks({
-      pattern: ':title',
       relative: false
     }))
     .build(function(err, files) {
