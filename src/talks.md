@@ -62,4 +62,6 @@ Presented at [IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/events/13
 
 <a class="Button" href="https://speakerdeck.com/basham/ixda-typography">View slide deck</a>
 
-<a class="Button" href="https://speakerdeck.com/basham">View more slide decks on Speaker Deck</a>
+<footer class="Article-footer">
+  <a class="Button" href="https://speakerdeck.com/basham">View more slide decks on Speaker Deck</a>
+</footer>
