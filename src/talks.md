@@ -27,7 +27,7 @@ Presented at [Kuali Days 2014](http://www.kuali.org/kd/2014).
 
 Inspired by adventuring in the great outdoors, we explore principles, practices, and patterns that can guide those designing a web navigation experience. How do we design for users wanting to browse content or just wanting to efficiently accomplish a given task? How does context, such as resource constraints, prior knowledge, knowledge acquisition, and personal experience affect how a user traverses an interface? How can navigational experiences adapt for context?
 
-Presented at [Midwest UX 2014](http://2014.midwestuxconference.com/speakers/chris-basham.html).
+[Presented at Midwest UX 2014](http://2014.midwestuxconference.com/speakers/chris-basham.html).
 
 <a class="Button" href="https://speakerdeck.com/basham/wayfinding-on-the-web">View slide deck</a>
 <a class="Button" href="https://vimeo.com/110190912">View recording</a>
@@ -56,7 +56,7 @@ Learn CSS best practices and workflows, including how class naming conventions a
 
 We discuss how to choose a typeface and how typography is transforming the Web through iconography and font services.
 
-Presented at [IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/events/138690672/).
+[Presented at IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/events/138690672/).
 
 <a class="Button" href="https://speakerdeck.com/basham/ixda-typography">View slide deck</a>
 
