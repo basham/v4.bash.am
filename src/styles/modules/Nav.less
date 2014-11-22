@@ -1,7 +1,7 @@
 .Nav {
   border-bottom: 0.1em solid @color-Base;
   display: flex;
-  padding: 0.5em 0 0;
+  padding: 0.5em 0.5em 0;
 
   @media @xs {
     justify-content: center;
@@ -14,6 +14,10 @@
 
   &-item {
     line-height: 1;
-    padding: 1em;
+    padding: 1em 0.5em;
+
+    @media @xs {
+      padding: 1em;
+    }
   }
 }
