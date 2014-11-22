@@ -14,6 +14,11 @@ var less = require('metalsmith-less');
 var fingerprint = require('metalsmith-fingerprint');
 var autoprefixer = require('metalsmith-autoprefixer');
 
+var Handlebars = require('handlebars');
+var moment = require('handlebars-helper-moment')();
+
+Handlebars.registerHelper('moment', moment.moment);
+
 gulp.task('build', function(callback) {
   Metalsmith('./')
     // CSS

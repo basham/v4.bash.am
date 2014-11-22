@@ -1,9 +1,8 @@
 ---
 title: Mobile Strategies for Kuali Student
+date: '2013-12-16'
 template: default.html
 ---
-
-<time datetime="2013-12-16" pubdate>December 16, 2013</time>
 
 ## Executive summary
 

@@ -30,6 +30,9 @@
 {{#if title}}
       <h1>{{title}}</h1>
 {{/if}}
+{{#if date}}
+      <p><time datetime="{{date}}" pubdate>{{moment date format="MMMM D, YYYY"}}</time></p>
+{{/if}}
 {{{ contents }}}
     </article>
   </main>
