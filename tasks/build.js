@@ -64,7 +64,9 @@ gulp.task('build', function(callback) {
         reverse: true
       }
     }))
-    .use(markdown())
+    .use(markdown({
+      smartypants: true
+    }))
     .use(permalinks({
       relative: false
     }))
