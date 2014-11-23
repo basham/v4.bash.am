@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{site.description}}">
   <meta name="author" content="{{site.author}}">
-  <title>{{#if title}}{{ title }} &middot; {{/if}}{{site.author}}</title>
+  <title>{{#unless hide_title}}{{ title }} &middot; {{/unless}}{{site.author}}</title>
   <link href="/{{ fingerprint.[styles/main.css] }}" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css' />
 </head>
@@ -20,16 +20,15 @@
     </p>
   </header>
   <nav class="Body-part Nav">
-    <a class="Nav-item" href="/">Home</a>
-    <a class="Nav-item" href="/portfolio">Portfolio</a>
-    <a class="Nav-item" href="/talks">Talks</a>
-    <a class="Nav-item" href="/resume">R&eacute;sum&eacute;</a>
+{{#each collections.pages}}
+    <a class="Nav-item" href="/{{this.path}}">{{this.title}}</a>
+{{/each}}
   </nav>
   <main class="Body-part">
     <article class="Article">
-{{#if title}}
+{{#unless hide_title}}
       <h1>{{title}}</h1>
-{{/if}}
+{{/unless}}
 {{#if date}}
       <p><time datetime="{{date}}" pubdate>{{moment date format="MMMM D, YYYY"}}</time></p>
 {{/if}}

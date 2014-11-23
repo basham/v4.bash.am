@@ -55,10 +55,10 @@ gulp.task('build', function(callback) {
       }
     }))
     .use(markdown())
-    .use(templates('handlebars'))
     .use(permalinks({
       relative: false
     }))
+    .use(templates('handlebars'))
     .build(function(err, files) {
       if (err) {
         return callback(err);

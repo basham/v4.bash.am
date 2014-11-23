@@ -1,5 +1,6 @@
 ---
 title: Talks
+order: 3
 template: default.html
 ---
 

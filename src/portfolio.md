@@ -1,5 +1,6 @@
 ---
 title: Portfolio
+order: 2
 template: default.html
 ---
 
@@ -51,7 +52,7 @@ As part of the initiation phase for a new product within [Kuali Student](http://
 
 Six weeks were allocated to develop a [proof of concept application that embodied these recommendations](#course-registration-proof-of-concept).
 
-<a class="Button" href="/mobile-strategies-for-kuali-student">Read document</a>
+<a class="Button" href="/articles/mobile-strategies-for-kuali-student">Read document</a>
 
 ## Course Search proof of concept
 

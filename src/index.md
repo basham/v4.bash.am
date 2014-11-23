@@ -1,4 +1,7 @@
 ---
+title: Home
+order: 1
+hide_title: true
 template: default.html
 permalink: false
 ---

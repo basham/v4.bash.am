@@ -1,5 +1,6 @@
 ---
 title: Résumé
+order: 4
 template: default.html
 ---
 
