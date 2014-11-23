@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var Metalsmith = require('metalsmith');
 
+var collections = require('metalsmith-collections');
 var ignore = require('metalsmith-ignore');
 var permalinks = require('metalsmith-permalinks');
 
@@ -37,6 +38,17 @@ gulp.task('build', function(callback) {
     // Content
     .use(metadata({
       site: 'site.yaml'
+    }))
+    .use(collections({
+      pages: {
+        pattern: '*.md',
+        sortBy: 'order'
+      },
+      articles: {
+        pattern: 'articles/*.md',
+        sortBy: 'date',
+        reverse: true
+      }
     }))
     .use(markdown())
     .use(templates('handlebars'))
