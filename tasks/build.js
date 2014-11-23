@@ -20,6 +20,10 @@ var moment = require('handlebars-helper-moment')();
 
 Handlebars.registerHelper('moment', moment.moment);
 
+Handlebars.registerHelper('log', function(content) {
+  console.log(content);
+});
+
 gulp.task('build', function(callback) {
   Metalsmith('./')
     // CSS
