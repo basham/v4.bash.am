@@ -1,7 +1,6 @@
 ---
 title: Mobile Strategies for Kuali Student
 date: '2013-12-16'
-template: default.html
 ---
 
 ## Executive summary

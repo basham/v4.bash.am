@@ -6,6 +6,7 @@ var ignore = require('metalsmith-ignore');
 var permalinks = require('metalsmith-permalinks');
 
 // Content
+var fileMetadata = require('metalsmith-filemetadata');
 var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
 var templates = require('metalsmith-templates');
@@ -43,6 +44,15 @@ gulp.task('build', function(callback) {
     .use(metadata({
       site: 'site.yaml'
     }))
+    .use(fileMetadata([
+      {
+        pattern: '**/*.md',
+        metadata: {
+          template: 'default.html'
+        },
+        preserve: true
+      }
+    ]))
     .use(collections({
       pages: {
         pattern: '*.md',

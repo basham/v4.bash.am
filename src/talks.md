@@ -1,7 +1,6 @@
 ---
 title: Talks
 order: 3
-template: default.html
 ---
 
 ## The Role of the UI Developer

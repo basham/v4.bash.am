@@ -1,7 +1,6 @@
 ---
 title: Portfolio
 order: 2
-template: default.html
 ---
 
 ## Kuali Student Design Guide
