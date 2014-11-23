@@ -14,12 +14,7 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 ## Find me elsewhere
 
 <p class="Elsewhere">
-  <a class="Elsewhere-method" href="http://codepen.io/basham">CodePen</a>
-  <a class="Elsewhere-method" href="https://www.flickr.com/photos/chrisbasham">Flickr</a>
-  <a class="Elsewhere-method" href="https://github.com/basham">GitHub</a>
-  <a class="Elsewhere-method" href="https://www.kickstarter.com/profile/1468456177">Kickstarter</a>
-  <a class="Elsewhere-method" href="http://www.linkedin.com/in/cbasham">LinkedIn</a>
-  <a class="Elsewhere-method" href="https://speakerdeck.com/basham">Speaker Deck</a>
-  <a class="Elsewhere-method" href="https://twitter.com/chrisbasham">Twitter</a>
-  <a class="Elsewhere-method" href="http://vimeo.com/basham">Vimeo</a>
+{{#each site.elsewhere}}
+  <a class="Elsewhere-method" href="{{this}}">{{@key}}</a>
+{{/each}}
 </p>
