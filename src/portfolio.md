@@ -23,15 +23,15 @@ The [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/) is an i
 
 <time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time>
 
-Using the recommendations as outlined in the [Mobile Strategies for Kuali Student](/mobile-strategies-for-kuali-student) document, a proof-of-concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in [AngularJS](https://angularjs.org/).
+Using the recommendations as outlined in the [Mobile Strategies for Kuali Student](/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in [AngularJS](https://angularjs.org/).
 
-The proof-of-concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer). Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
+The proof of concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer). Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
 
 <figure class="Figure">
   <div class="Embed">
     <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <figcaption class="Figure-caption">The proof-of-concept was demonstrated to all Kuali Student development teams at the end of the allotted six weeks.</figcaption>
+  <figcaption class="Figure-caption">The proof of concept was demonstrated to all Kuali Student development teams at the end of the allotted six weeks.</figcaption>
 </figure>
 
 <a class="Button" href="https://vimeo.com/112133422">Watch demo video</a>
@@ -49,7 +49,7 @@ As part of the initiation phase for a new product within [Kuali Student](http://
 * serving data via [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) in order to decouple user interfaces from back-end concerns;
 * and generally encouraging more freedom when choosing tools.
 
-Six weeks were allocated to develop a [proof-of-concept application that embodied these recommendations](#course-registration-proof-of-concept).
+Six weeks were allocated to develop a [proof of concept application that embodied these recommendations](#course-registration-proof-of-concept).
 
 <a class="Button" href="/mobile-strategies-for-kuali-student">Read document</a>
 
@@ -57,13 +57,13 @@ Six weeks were allocated to develop a [proof-of-concept application that embodie
 
 <time datetime="2013-03">March</time> &ndash; <time datetime="2013-05">May 2013</time>
 
-Tasked with building a proof-of-concept web application for [Indiana University](http://www.iu.edu/) students to search and bookmark classes, this six-week project was the first attempt within the [University Information Technology Services department](http://uits.iu.edu/) to pair a client-side framework ([AngularJS](https://angularjs.org/)) with [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) for a student-facing application.
+Tasked with building a proof of concept web application for [Indiana University](http://www.iu.edu/) students to search and bookmark classes, this six-week project was the first attempt within the [University Information Technology Services department](http://uits.iu.edu/) to pair a client-side framework ([AngularJS](https://angularjs.org/)) with [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) for a student-facing application.
 
 <figure class="Figure">
   <div class="Embed">
     <iframe src="//player.vimeo.com/video/111944142?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <figcaption class="Figure-caption">Demonstration of the proof-of-concept course search and bookmarking application.</figcaption>
+  <figcaption class="Figure-caption">Demonstration of the proof of concept course search and bookmarking application.</figcaption>
 </figure>
 
 <a class="Button" href="https://vimeo.com/111944142">Watch demo video</a>
