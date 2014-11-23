@@ -70,7 +70,16 @@ gulp.task('build', function(callback) {
     .use(permalinks({
       relative: false
     }))
-    .use(templates('handlebars'))
+    .use(templates({
+      engine: 'handlebars',
+      inPlace: false
+    }))
+    // Have to run templates a second time,
+    // in order to render Handlbars within markdown.
+    .use(templates({
+      engine: 'handlebars',
+      inPlace: true
+    }))
     .build(function(err, files) {
       if (err) {
         return callback(err);
