@@ -15,6 +15,6 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 
 <p class="Elsewhere">
 {{#each site.elsewhere}}
-  <a class="Elsewhere-method" href="{{this}}">{{@key}}</a>
+  <a class="Button" href="{{this}}">{{@key}}</a>
 {{/each}}
 </p>
