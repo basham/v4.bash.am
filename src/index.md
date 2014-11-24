@@ -2,6 +2,7 @@
 title: Home
 order: 1
 hide_title: true
+hide_heading: true
 permalink: false
 ---
 

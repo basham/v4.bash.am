@@ -21,12 +21,14 @@
   </header>
   <nav class="Body-part Nav">
 {{#each collections.pages}}
+  {{#if this.order}}
     <a class="Nav-item" href="/{{this.path}}">{{this.title}}</a>
+  {{/if}}
 {{/each}}
   </nav>
   <main class="Body-part">
     <article class="Article">
-{{#unless hide_title}}
+{{#unless hide_heading}}
       <h1>{{title}}</h1>
 {{/unless}}
 {{#if date}}
