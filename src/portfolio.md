@@ -23,7 +23,7 @@ The [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/) is an i
 
 <time datetime="2013-12">December 2013</time> &ndash; <time datetime="2014-01">January 2014</time>
 
-Using the recommendations as outlined in the [Mobile Strategies for Kuali Student](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first layout, developed in [AngularJS](https://angularjs.org/).
+Using the recommendations as outlined in the [<cite>Mobile Strategies for Kuali Student</cite>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).
 
 ### Backstory
 
@@ -42,14 +42,21 @@ In understanding that there were numerous unknowns regarding the best approach f
 * serving data via [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) in order to decouple user interfaces from back-end concerns;
 * and generally encouraging more freedom when choosing tools.
 
-<a class="Button" href="/articles/mobile-strategies-for-kuali-student">Read *Mobile Strategies for Kuali Student*</a>
+<a class="Button" href="/articles/mobile-strategies-for-kuali-student">Read <cite>Mobile Strategies for Kuali Student</cite></a>
 
 Backing these recommendations, leadership allocated six weeks to develop a proof of concept application that embodied these recommendations.
 
 ### Process
 
+While a separate team prepared the backend for web services, I spent ...
+
 * past explorations at IU have shown this is possible
 * but those explorations weren't mobile-first
+* this is a technical poc, so no user feedback really needed; did get feedback from one undergrad intern
+* sketch (Jan 9), wireframe (Dec 18), code in Angular
+* build view, abstract JSON objects
+* review JSON with red team as exemplar to make endpoint
+* integrate endpoint (Jan 7)
 
 <figure class="Figure">
   <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5187105/bd27c6a2-7498-11e4-8da6-97ed00a63837.jpg">
