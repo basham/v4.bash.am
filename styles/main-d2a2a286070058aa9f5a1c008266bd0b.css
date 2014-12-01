@@ -170,10 +170,24 @@ a:visited {
   max-width: 100%;
   padding: 1em 0;
 }
+.Figure + .Figure {
+  border-top-width: 0;
+  margin-top: 0;
+}
 .Figure--deck > div {
   margin-bottom: -0.5em;
 }
 .Figure--deck .Figure-caption {
+  padding: 1em 0 0;
+}
+.Figure--code > div {
+  margin-bottom: -0.5em;
+}
+.Figure--code pre {
+  font-size: 86.60254038%;
+  line-height: 133.33333333%;
+}
+.Figure--code .Figure-caption {
   padding: 1em 0 0;
 }
 .Figure-imgLink:hover {
@@ -187,6 +201,9 @@ a:visited {
   .Figure-caption {
     padding: 1em 1em 0;
   }
+}
+.Figure-caption > p:first-child {
+  margin-top: 0;
 }
 .Figure img {
   height: 100%;
