@@ -107,3 +107,40 @@ General Honors
 &middot;
 [Purdue University (IUPUI)](http://iupui.edu),
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
+
+## Skills
+
+### Practices
+
+- [Accessibility](http://en.wikipedia.org/wiki/Web_accessibility)
+- [Contextual design](http://en.wikipedia.org/wiki/Contextual_design)
+- [Ethnography](http://en.wikipedia.org/wiki/Ethnography)
+- [Graphic design](http://en.wikipedia.org/wiki/Graphic_design)
+- [Information architecture](http://en.wikipedia.org/wiki/Information_architecture)
+- [Mobile-first design](http://www.lukew.com/ff/entry.asp?933)
+- [Performance optimization](http://en.wikipedia.org/wiki/Web_performance_optimization)
+- [Progressive enhancement](http://en.wikipedia.org/wiki/Progressive_enhancement)
+- [Responsive design](http://en.wikipedia.org/wiki/Responsive_web_design)
+- [Usability](http://en.wikipedia.org/wiki/Usability)
+
+### Methods
+
+- [Affinity diagramming](http://en.wikipedia.org/wiki/Affinity_diagram)
+- [Card sorting](http://en.wikipedia.org/wiki/Card_sorting)
+- [Contextual inquiry](http://en.wikipedia.org/wiki/Contextual_inquiry)
+- [Heuristic evaluation](http://en.wikipedia.org/wiki/Heuristic_evaluation)
+- [Interviewing](http://en.wikipedia.org/wiki/Interview)
+- [Paper prototyping](http://en.wikipedia.org/wiki/Paper_prototyping)
+- [Usability testing](http://en.wikipedia.org/wiki/Usability_testing)
+- [Wireframing](http://en.wikipedia.org/wiki/Website_wireframe)
+
+### Tools
+
+- [HTML](http://en.wikipedia.org/wiki/HTML), [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
+- Client-side frameworks ([AngularJS](https://angularjs.org/))
+- Server-side runtimes ([Node.js](http://nodejs.org/))
+- Task runners ([gulp](http://gulpjs.com/))
+- Pre- and post-processors ([Less.js](http://lesscss.org/))
+- NoSQL databases ([Firebase](http://firebase.com/))
+- Version control systems ([Git](http://git-scm.com/))
+- Visual design tools ([OmniGraffle](http://www.omnigroup.com/omniGraffle/), [Illustrator](http://www.adobe.com/products/illustrator.html), [InDesign](http://www.adobe.com/products/indesign.html), [Photoshop](http://www.adobe.com/products/photoshop.html))
