@@ -13,11 +13,14 @@ The [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/) is an i
   <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png">
 ![Screenshot of the mobile and widescreen view of the Pagination pattern.](https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png)
   </a>
-  <figcaption class="Figure-caption">The Design Guide features a responsive design and statically generated content, making it both accessible and performant.</figcaption>
+  <figcaption class="Figure-caption">
+    <p>The Design Guide features a responsive design and statically generated content, making it both accessible and performant.</p>
+    <p>
+      <a class="Button" href="http://ksux.github.io/ks-design-guide/">View the Design Guide</a>
+      <a class="Button" href="https://github.com/ksux/ks-design-guide">GitHub repository</a>
+    </p>
+    </figcaption>
 </figure>
-
-<a class="Button" href="http://ksux.github.io/ks-design-guide/">View the Design Guide</a>
-<a class="Button" href="https://github.com/ksux/ks-design-guide">GitHub repository</a>
 
 ## Course Registration proof of concept
 
@@ -116,11 +119,14 @@ Tasked with building a proof of concept web application for [Indiana University]
   <div class="Embed">
     <iframe src="//player.vimeo.com/video/111944142?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <figcaption class="Figure-caption">Demonstration of the proof of concept course search and bookmarking application.</figcaption>
+  <figcaption class="Figure-caption">
+    <p>Demonstration of the proof of concept course search and bookmarking application.</p>
+    <p>
+      <a class="Button" href="https://vimeo.com/111944142">Watch demo video</a>
+      <a class="Button" href="https://github.com/pxa/course-search">GitHub repository</a>
+    </p>
+  </figcaption>
 </figure>
-
-<a class="Button" href="https://vimeo.com/111944142">Watch demo video</a>
-<a class="Button" href="https://github.com/pxa/course-search">GitHub repository</a>
 
 ## Student Billing functional prototype
 
@@ -132,11 +138,14 @@ In late 2012, the [Indiana University](http://www.iu.edu/) student billing user 
   <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png">
 ![Screenshot of the Amount Due and Account Status summaries in the student billing prototype.](https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png)
   </a>
-  <figcaption class="Figure-caption">The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.</figcaption>
+  <figcaption class="Figure-caption">
+    <p>The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.</p>
+    <p>
+      <a class="Button" href="http://pxa.github.io/billing">View prototype</a>
+      <a class="Button" href="https://github.com/pxa/billing">GitHub repository</a>
+    </p>
+  </figcaption>
 </figure>
-
-<a class="Button" href="http://pxa.github.io/billing">View prototype</a>
-<a class="Button" href="https://github.com/pxa/billing">GitHub repository</a>
 
 ## Past portfolios
 
