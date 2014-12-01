@@ -22,6 +22,22 @@
     }
   }
 
+  &--code {
+
+    > div {
+      margin-bottom: -0.5em;
+    }
+
+    pre {
+      font-size: @ratio-Scale--05i;
+      line-height: @ratio-Scale--10;
+    }
+
+    .Figure-caption {
+      padding: 1em 0 0;
+    }
+  }
+
   &-imgLink {
 
     &:hover {
@@ -35,6 +51,10 @@
 
     @media @xs {
       padding: 1em 1em 0;
+    }
+
+    > p:first-child {
+      margin-top: 0;
     }
   }
 

@@ -48,24 +48,16 @@ Backing these recommendations, leadership allocated six weeks to develop a proof
 
 ### Process
 
-While a separate team prepared the backend for web services, I spent ...
-
-* past explorations at IU have shown this is possible
-* but those explorations weren't mobile-first
-* this is a technical poc, so no user feedback really needed; did get feedback from one undergrad intern
-* sketch (Jan 9), wireframe (Dec 18), code in Angular
-* build view, abstract JSON objects
-* review JSON with red team as exemplar to make endpoint
-* integrate endpoint (Jan 7)
+While a separate team prepared the back-end to offer a web services layer, I spent most of the first couple weeks sketching and producing wireframes of the interface, keeping in mind small and larger viewports.
 
 <figure class="Figure">
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5187105/bd27c6a2-7498-11e4-8da6-97ed00a63837.jpg">
-    <img src="https://cloud.githubusercontent.com/assets/347558/5187105/bd27c6a2-7498-11e4-8da6-97ed00a63837.jpg" alt="Sketch of a list of selectable university terms."/>
+  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5240378/a5a834ee-78d0-11e4-82ad-346272517202.png">
+    <img src="https://cloud.githubusercontent.com/assets/347558/5240378/a5a834ee-78d0-11e4-82ad-346272517202.png" alt="Sketch of a list of selectable university terms."/>
   </a>
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5187153/12ab7d12-7499-11e4-81dd-de3e01e2727d.jpg">
-    <img src="https://cloud.githubusercontent.com/assets/347558/5187153/12ab7d12-7499-11e4-81dd-de3e01e2727d.jpg" alt="Sketch of a course search form"/>
+  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png">
+    <img src="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png" alt="Sketch of a course search form"/>
   </a>
-  <figcaption class="Figure-caption">A <a href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0">series of sketches</a> explored what could be accomplished, within the limited scope of the project.</figcaption>
+  <figcaption class="Figure-caption">A <a href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0">series of sketches</a> explored how to navigate among academic terms.</figcaption>
 </figure>
 
 <figure class="Figure">
@@ -75,23 +67,44 @@ While a separate team prepared the backend for web services, I spent ...
 <figcaption class="Figure-caption">Wireframes helped to define relationships within the interface and explore rudimentary interactions.</figcaption>
 </figure>
 
+Leveraging my experience using the [AngularJS](https://angularjs.org/) framework the past year for Indiana University projects, I was able to quickly develop the general architecture of the front-end. Once the markup and styles fleshed out, data embedded into the markup was abstracted into static [JSON](http://en.wikipedia.org/wiki/JSON) fixtures, and the template was altered to be dynamically driven by these fixtures. With the fixtures as a guide, the services team was able to adapt the [web API](http://en.wikipedia.org/wiki/Web_API) to match the fixtures. By the third week, the fixtures were starting to be replaced by live web services.
+
+<figure class="Figure Figure--code">
+  <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js?footer=no"></script>
+  <figcaption class="Figure-caption">Templates were originally driven by static JSON fixtures, such as in the [*ScheduleService* provider](https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js).</figcaption>
+</figure>
+
+<figure class="Figure Figure--code">
+  <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/8cb8ce312cb3a8fa828b7dcdf703a742bd7eaf89/app/modules/app/schedule.js?footer=no"></script>
+  <figcaption class="Figure-caption">Once built, JSON fixtures were replaced by live web services, such as in the [*scheduleService* provider](https://github.com/ksux/kscr-poc/blob/8cb8ce312cb3a8fa828b7dcdf703a742bd7eaf89/app/modules/app/schedule.js).</figcaption>
+</figure>
+
+Even though the proof of concept was primarily concerned with the technical feasibility of this approach, I was still able to receive rudimentary student feedback to guide refinement of the user interface throughout the entire project, by means of an Indiana University undergraduate intern.
+
+In order to ensure basic accessibility, the proof of concept was frequently tested with a keyboard as the sole input device.
+
 ### Outcomes
 
 The proof of concept successfully demonstrated the rapid speed of development capable by decoupling the front-end from the back-end, the engaging user experience possible through modern client-side JavaScript frameworks, and the incredible performance of [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer). Based on these results, the development team has continued this general architecture, producing higher quality user experiences in less time than sibling teams.
+
+For the first few months following the proof of concept, I guided the Registration development team as they learned AngularJS, and I frequently provided feedback regarding both design and development directions.
 
 <figure class="Figure">
   <div class="Embed">
     <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <figcaption class="Figure-caption">The proof of concept was demonstrated to all Kuali Student development teams at the end of the allotted six weeks.</figcaption>
+  <figcaption class="Figure-caption">
+    <p>The proof of concept was demonstrated to Kuali Student development teams at the end of the allotted six weeks.</p>
+    <p>
+      <a class="Button" href="https://vimeo.com/112133422">Watch demo video</a>
+      <a class="Button" href="https://github.com/ksux/kscr-poc">GitHub repository</a>
+    </p>
+  </figcaption>
 </figure>
-
-<a class="Button" href="https://vimeo.com/112133422">Watch demo video</a>
-<a class="Button" href="https://github.com/ksux/kscr-poc">GitHub repository</a>
 
 ### Reflection
 
-...
+Since the purpose of the proof of concept was challenging technical concerns over design concerns, a number of design compromises were made. By devoting either more time or a second designer to the project, more effort would have been placed in refining lower fidelity ideas before rushing into code; a visual style would be explored, especially regarding typography and color; and further feedback would be gathered from students, including those proficient with assistive technologies.
 
 ## Course Search proof of concept
 
