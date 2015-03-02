@@ -193,7 +193,7 @@ For those desiring a visual editor rather than running a custom Node script, the
   </a>
 </figure>
 
-## Conclusions
+## Conclusion
 
 We demonstrated it is very possible to consistently devise color scales, linearly graduating from light to dark. By codifying the scale based on perceived brightness, we have a normalized way to compare colors across any scale, and it can simplify how we choose colors.
 
