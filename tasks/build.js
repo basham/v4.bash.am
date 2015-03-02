@@ -4,6 +4,7 @@ var Metalsmith = require('metalsmith');
 var collections = require('metalsmith-collections');
 var ignore = require('metalsmith-ignore');
 var permalinks = require('metalsmith-permalinks');
+var publish = require('metalsmith-publish');
 
 // Content
 var fileMetadata = require('metalsmith-filemetadata');
@@ -43,6 +44,7 @@ gulp.task('build', function(callback) {
       '**/.DS_Store'
     ]))
     // Content
+    .use(publish())
     .use(metadata({
       site: 'site.yaml'
     }))
