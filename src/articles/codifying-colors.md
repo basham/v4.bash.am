@@ -199,7 +199,7 @@ We demonstrated it is very possible to consistently devise color scales, linearl
 
 From here, there are several more tools and features that could be created to assist designers and developers interested in using codified color scales:
 
-- Create a [`npm`](https://www.npmjs.com/) package to codify color scales.
+- Publish a [`npm`](https://www.npmjs.com/) package to codify color scales.
 - Create a visual editor for codifying color scales, similar to the [Chroma.js Color Scale Helper](http://gka.github.io/palettes/).
 - Allow the source color to be retained and placed within the generated scale, instead of the scale merely being seeded by it.
 - The output from these tools should be highly tailorable, and the output should not be bias toward any tangental tool; for example, its usefulness would be severely limited if it only is compatible with Less variables.
