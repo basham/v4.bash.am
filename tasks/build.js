@@ -17,9 +17,11 @@ var fingerprint = require('metalsmith-fingerprint');
 var autoprefixer = require('metalsmith-autoprefixer');
 
 var Handlebars = require('handlebars');
-var moment = require('handlebars-helper-moment')();
+var moment = require('moment');
 
-Handlebars.registerHelper('moment', moment.moment);
+Handlebars.registerHelper('formatDate', function(date) {
+  return moment(date).format('MMMM D, YYYY');
+});
 
 Handlebars.registerHelper('log', function(content) {
   console.log(content);
