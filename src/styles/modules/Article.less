@@ -22,7 +22,6 @@
   p,
   ul {
     font-size: 1em;
-
   }
 
   ol,
@@ -62,6 +61,30 @@
 
   time {
     white-space: nowrap;
+  }
+
+  table {
+    margin: 1em auto;
+  }
+
+  th,
+  td {
+    padding: 0 0.5em;
+  }
+
+  code {
+    font-family: 'Inconsolata', monospace;
+    white-space: nowrap;
+  }
+
+  pre {
+    border: unit(1/16, rem) solid @color-Base;
+    padding: 1em;
+    overflow: scroll;
+
+    code {
+      white-space: inherit;
+    }
   }
 
   &-footer {
