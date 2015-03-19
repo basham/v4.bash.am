@@ -15,8 +15,8 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 <ol class="ArticleList">
 {{#each collections.articles}}
   <li class="ArticleList-item">
+    <a class="ArticleList-title" href="{{path}}">{{title}}</a>
     <time class="ArticleList-time" datetime="{{date}}">{{formatDate date}}</time>
-    <a href="{{path}}">{{title}}</a>
   </li>
 {{/each}}
 </ol>
