@@ -72,8 +72,9 @@ renderer.codespan = function(text) {
 renderer.heading = function(text, level, raw) {
   var type = 'h' + level;
   var id = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w]+/g, '-');
+  var idAttr = level === 2 ? ' id="' + id + '"' : '';
   var cn = 'Article-' + type;
-  return '<' + type + ' class="' + cn + '" id="' + id + '">'
+  return '<' + type + ' class="' + cn + '"' + idAttr + '>'
     + text
     + '</' + type + '>\n';
 };
