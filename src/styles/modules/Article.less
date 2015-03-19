@@ -1,42 +1,39 @@
 .Article {
   padding: 6vh 5% 3vh;
 
-  h1 {
+  &-h1 {
     font-size: @ratio-Scale--20;
     line-height: @ratio-Scale--10;
     margin: 0;
   }
 
-  h2 {
+  &-h2 {
     font-size: @ratio-Scale--10;
     line-height: @ratio-Scale--10;
   }
 
-  h2,
-  h3 {
+  &-h2,
+  &-h3 {
     margin: 2em 0 0;
   }
 
-  h3,
-  ol,
-  p,
-  ul {
+  &-h3,
+  &-list,
+  &-paragraph {
     font-size: 1em;
   }
 
-  ol,
-  p,
-  ul {
+  &-list,
+  &-paragraph {
     margin: 1em 0 0;
   }
 
-  h3 {
+  &-h3 + &-list,
+  &-h3 + &-paragraph {
+    margin: 0;
+  }
 
-    + ol,
-    + p,
-    + ul {
-      margin: 0;
-    }
+  &-h3 {
 
     > a {
       text-decoration: underline;
@@ -48,43 +45,46 @@
     }
   }
 
-  ol,
-  ul {
+  &-list {
     padding-left: 1em;
   }
 
-  h1 + h2,
-  h2 + h3 {
+  &-h1 + &-h2,
+  &-h2 + &-h3 {
     margin-top: 1em;
     padding-top: 1vh;
   }
 
+  &-time,
   time {
     white-space: nowrap;
   }
 
-  table {
-    margin: 1em auto;
+  &-tableFigure {
+    margin: 1em 0;
+    overflow: scroll;
   }
 
-  th,
-  td {
+  &-table {
+    margin: 0 auto;
+  }
+
+  &-tableCell {
     padding: 0 0.5em;
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
   }
 
-  code {
-    font-family: 'Inconsolata', monospace;
-    white-space: nowrap;
-  }
-
-  pre {
+  &-codeFigure {
     border: unit(1/16, rem) solid @color-Base;
     padding: 1em;
     overflow: scroll;
-
-    code {
-      white-space: inherit;
-    }
   }
 
   &-footer {

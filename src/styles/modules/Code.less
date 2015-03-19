@@ -1,0 +1,44 @@
+.Code {
+  font-family: 'Inconsolata', monospace;
+
+  &--inline {
+    white-space: nowrap;
+  }
+
+  &-part {
+
+    &--built_in,
+    &--function {
+      color: #0086b3;
+    }
+
+    &--class {
+      color: #458;
+      font-weight: bold;
+    }
+
+    &--comment {
+      color: #998;
+      font-style: italic;
+    }
+
+    &--keyword,
+    &--reserved {
+      font-weight: bold;
+    }
+
+    &--literal,
+    &--number,
+    &--variable {
+      color: #008080;
+    }
+
+    &--string {
+      color: #d14;
+    }
+
+    &--tag {
+      color: #000080;
+    }
+  }
+}
