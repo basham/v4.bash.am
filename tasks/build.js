@@ -134,6 +134,9 @@ gulp.task('build', function(callback) {
   Metalsmith('./')
     // CSS
     .use(less({
+      render: {
+        compress: true
+      },
       pattern: '**/main.less'
     }))
     .use(autoprefixer())
