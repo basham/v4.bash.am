@@ -52,7 +52,7 @@ runners, and spectators of long-distance races with real-time event results.
 [Dayton, Ohio](http://en.wikipedia.org/wiki/Dayton,_Ohio)
 
 Designed and iterated low- and high-fidelity interactive visualization prototypes
-to assist users researching with Lexis search products. [Co-invented a patent](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=88,74,569.PN.&OS=PN/88,74,569&RS=PN/88,74,569) for visualizing the presence of search terms across a set of documents.
+to assist users researching with Lexis search products. [Co-invented a patent](https://www.google.com/patents/US8874569) for visualizing the presence of search terms across a set of documents.
 
 ### Multimedia Developer Intern &middot; [Pervasive Technology Labs](http://vis.iu.edu), [IUPUI](http://www.iupui.edu 'Indiana University-Purdue University Indianapolis')
 
