@@ -29,6 +29,7 @@
     "metalsmith-collections": "^0.6.0",
     "metalsmith-filemetadata": "0.0.4",
     "metalsmith-fingerprint": "^1.0.0",
+    "metalsmith-html-minifier": "^1.1.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-less": "^1.0.2",
     "metalsmith-markdown": "^0.2.1",

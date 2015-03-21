@@ -11,6 +11,7 @@ var fileMetadata = require('metalsmith-filemetadata');
 var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
 var templates = require('metalsmith-templates');
+var htmlMinifier = require('metalsmith-html-minifier');
 
 // CSS
 var less = require('metalsmith-less');
@@ -193,6 +194,7 @@ gulp.task('build', function(callback) {
       engine: 'handlebars',
       inPlace: true
     }))
+    .use(htmlMinifier())
     .build(function(err, files) {
       if (err) {
         return callback(err);
