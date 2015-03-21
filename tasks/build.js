@@ -15,8 +15,8 @@ var htmlMinifier = require('metalsmith-html-minifier');
 
 // CSS
 var less = require('metalsmith-less');
-var fingerprint = require('metalsmith-fingerprint');
 var autoprefixer = require('metalsmith-autoprefixer');
+var inlineStyles = require('./plugins/inline-styles');
 
 //
 // Handlebars
@@ -141,9 +141,7 @@ gulp.task('build', function(callback) {
       pattern: '**/main.less'
     }))
     .use(autoprefixer())
-    .use(fingerprint({
-      pattern: '**/*.css'
-    }))
+    .use(inlineStyles())
     .use(ignore([
       '**/*.less',
       '**/main.css',
