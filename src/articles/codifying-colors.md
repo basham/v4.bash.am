@@ -120,7 +120,7 @@ Luckily, much of the difficulty of generating color scales is solved by the work
 
 Using Chroma.js, we can interpolate any color within our scale. For this example, the scale will be seeded with white, green, and black colors.
 
-<div class="Scale Scale-row">
+<div class="article-Scale article-Scale-row">
   <div style="background-color: white;"></div>
   <div style="background-color: green;"></div>
   <div style="background-color: black;"></div>
@@ -128,7 +128,7 @@ Using Chroma.js, we can interpolate any color within our scale. For this example
 
 [Bezier interpolation](https://github.com/gka/chroma.js/blob/master/doc/api.md#chromainterpolatebeziercolors) will ease the blending of the colors, while [lightness correction](https://github.com/gka/chroma.js/blob/master/doc/api.md#scalecorrectlightness) will ensure a linear lightness progression throughout the scale. Run the following [Node](http://nodejs.org/) script to generate the nine-point color scale.
 
-<div class="Scale Scale-row">
+<div class="article-Scale article-Scale-row">
   <div style="background-color: #d8e7d2;"></div>
   <div style="background-color: #b3ceaa;"></div>
   <div style="background-color: #91b585;"></div>
@@ -203,22 +203,3 @@ From here, there are several more tools and features that could be created to as
 - Create a visual editor for codifying color scales, similar to the [Chroma.js Color Scale Helper](http://gka.github.io/palettes/).
 - Allow the source color to be retained and placed within the generated scale, instead of the scale merely being seeded by it.
 - The output from these tools should be highly tailorable, and the output should not be bias toward any tangental tool; for example, its usefulness would be severely limited if it only is compatible with Less variables.
-
-<style>
-.Scale {
-  border: 0.0625em solid #ddd;
-  margin-top: 1em;
-}
-.Scale-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  height: 3em;
-}
-.Scale-row > div {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-</style>
