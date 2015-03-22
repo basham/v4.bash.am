@@ -20,6 +20,7 @@
     "cheerio": "^0.19.0",
     "classnames": "^1.2.0",
     "css-mqpacker": "^3.1.0",
+    "fg-loadcss": "^0.1.6",
     "fontfaceobserver": "^1.4.3",
     "gulp": "^3.8.10",
     "gulp-exit": "0.0.2",

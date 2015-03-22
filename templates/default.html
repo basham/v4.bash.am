@@ -7,7 +7,11 @@
   <meta name="description" content="{{site.description}}">
   <meta name="author" content="{{site.author}}">
   <title>{{#unless hide_title}}{{ title }} &middot; {{/unless}}{{site.author}}</title>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Inconsolata:400,700' rel='stylesheet' type='text/css' />
+  <script>
+    {{include './node_modules/fontfaceobserver/fontfaceobserver.standalone.js'}}
+    {{include './node_modules/fg-loadcss/loadCSS.js'}}
+    loadCSS('http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Inconsolata:400,700');
+  </script>
 </head>
 <body class="Body">
   <header class="Body-part Header">
@@ -48,7 +52,6 @@
     <a class="Button Button--clear" href="tel:{{site.phone_tel}}">{{site.phone}}</a>
   </footer>
   <script>
-    {{include './node_modules/fontfaceobserver/fontfaceobserver.standalone.js'}}
     // Font event technique sourced from:
     // https://github.com/filamentgroup/font-loading/blob/master/font-events.html
     (function(w){

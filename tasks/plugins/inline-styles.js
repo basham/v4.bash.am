@@ -37,8 +37,14 @@ function plugin(opts) {
               // `a:hover` => `a`
               // `.Component::before` => `.Component`
               selector = selector.replace(/(:+[\-\w]+)+/g, '');
-              // Retain certain selectors that aren't precompiled.
-              if(selector === '.Body--fontsLoaded') {
+              // Retain `.wf-*` classes, for the Web Font loading technique.
+              var matchesWebFont = selector.match(/(\.wf-[\w\-]+)+/g);
+              if(!!matchesWebFont) {
+                return true;
+              }
+              // Retain any classes with `fontsLoaded` in the name.
+              var matchesFontsLoaded = selector.match(/(\..+fontsLoaded)+/ig);
+              if(!!matchesFontsLoaded) {
                 return true;
               }
               // Has matches.
