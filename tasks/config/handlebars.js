@@ -1,6 +1,6 @@
 var Handlebars = require('handlebars');
 var moment = require('moment');
-var fs = require('fs');
+var uglify = require('uglify-js');
 
 Handlebars.registerHelper('formatDate', function(date) {
   return moment(date).format('MMMM D, YYYY');
@@ -22,6 +22,6 @@ Handlebars.registerHelper('log', function(content) {
 });
 
 Handlebars.registerHelper('include', function(path) {
-  var content = fs.readFileSync(path, 'utf8');
+  var content = uglify.minify(path).code;
   return new Handlebars.SafeString(content);
 });
