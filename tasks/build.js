@@ -141,10 +141,8 @@ gulp.task('build', function(callback) {
       pattern: '**/main.less'
     }))
     .use(autoprefixer())
-    .use(inlineStyles())
     .use(ignore([
       '**/*.less',
-      '**/main.css',
       '**/.DS_Store'
     ]))
     // Content
@@ -192,7 +190,11 @@ gulp.task('build', function(callback) {
       engine: 'handlebars',
       inPlace: true
     }))
-    .use(htmlMinifier())
+    .use(inlineStyles())
+    .use(ignore([
+      '**/main.css'
+    ]))
+    //.use(htmlMinifier())
     .build(function(err, files) {
       if (err) {
         return callback(err);
