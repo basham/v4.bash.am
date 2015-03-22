@@ -194,7 +194,7 @@ gulp.task('build', function(callback) {
     .use(ignore([
       '**/main.css'
     ]))
-    //.use(htmlMinifier())
+    .use(htmlMinifier())
     .build(function(err, files) {
       if (err) {
         return callback(err);
