@@ -37,6 +37,10 @@ function plugin(opts) {
               // `a:hover` => `a`
               // `.Component::before` => `.Component`
               selector = selector.replace(/(:+[\-\w]+)+/g, '');
+              // Retain certain selectors that aren't precompiled.
+              if(selector === '.Body--fontsLoaded') {
+                return true;
+              }
               // Has matches.
               return !!$(selector).length;
             });

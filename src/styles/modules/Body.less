@@ -1,11 +1,19 @@
 .Body {
   color: @color-Text;
-  font-family: 'Merriweather', serif;
+  font-family: serif;
   font-size: percentage(16/16);
   line-height: @ratio-Scale--15;
   margin: 0;
   padding: 0;
   text-size-adjust: 100%;
+
+  &--fontsLoaded {
+    font-family: 'Merriweather', serif;
+
+    .Code {
+      font-family: 'Inconsolata', monospace;
+    }
+  }
 
   &-part {
     margin: 0 auto;
