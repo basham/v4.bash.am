@@ -1,258 +1,104 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chris Basham is an interaction designer and front-end developer living in Bloomington, Indiana.">
-  <meta name="author" content="Chris Basham">
-  <title>Codifying Colors &middot; Chris Basham</title>
-  <link href="/styles/main-2c43d499aabd14d0dbb428c86ec3a781.css" rel="stylesheet" type="text/css" />
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Inconsolata:400' rel='stylesheet' type='text/css' />
-</head>
-<body class="Body">
-  <header class="Body-part Header">
-    <a class="Header-name" href="/">Chris Basham</a>
-    <p class="Header-specialties">
-      <span class="Header-specialty">Interaction designer &amp;</span>
-      <span class="Header-specialty">Front-end developer</span>
-    </p>
-  </header>
-  <nav class="Body-part Nav">
-    <a class="Nav-item" href="/">Home</a>
-    <a class="Nav-item" href="/portfolio">Portfolio</a>
-    <a class="Nav-item" href="/talks">Talks</a>
-    <a class="Nav-item" href="/resume">Résumé</a>
-  </nav>
-  <main class="Body-part">
-    <article class="Article">
-      <h1>Codifying Colors</h1>
-      <p><time datetime="2015-03-02" pubdate>March 2, 2015</time></p>
-<p>With little effort, you can find abundant examples of how colors have been named. <a href="http://www.w3schools.com/html/html_colornames.asp">HTML5 and CSS3 color specifications name 140 colors</a>. <a href="http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors">Crayola names 135 standard crayon colors</a>. <a href="http://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F">Wikipedia lists hundreds of colors</a>, with undeclared citations. <a href="http://www.colorhexa.com/color-names">ColorHexa lists 746 color names</a>. <a href="http://www.colourlovers.com/colors">Users have named close to 8 million colors on COLOURlovers</a>. There are even <a href="http://people.csail.mit.edu/jaffer/Color/Dictionaries.html">research projects which attempt to resolve the inconsistencies among various color dictionaries</a>.</p>
-<p>Naming colors is quite an art in itself, but I’m more interested in how to name variations of a single primary color. For at least Web application design, it’s probably best to be conservative when applying colors, keeping to a palette of a few colors with various tints and shades. Too many colors results in a confusing visual language, while a more considered set of colors should help to clarify the interface. In this way, I want to explore helpful ways to consistently codify a controlled set of colors to assist both designers and developers in their practice.</p>
-<h2 id="exemplars">Exemplars</h2>
-<p><a href="http://www.google.com/design/spec/style/color.html">Google Material Design color palette</a> uses a 10-point scale of 50 to 900, with 50 being the lightest tint, 900 being the darkest shade, and 500 representing the primary color. They also introduce an almost neon-like A-series for most colors (A100, A200, A400, and A700), although they don’t elaborate on how or why to use those variations.</p>
-<figure class="Figure">
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png">
-<img src="https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png" alt="Material Design Color Palette">
-  </a>
-</figure>
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Chris Basham is an interaction designer and front-end developer living in Bloomington, Indiana."><meta name=author content="Chris Basham"><title>Codifying Colors &#xB7; Chris Basham</title><link href="http://fonts.googleapis.com/css?family=Merriweather:400italic,400,700|Inconsolata:400,700" rel=stylesheet type=text/css><style>*{-moz-box-sizing:border-box;box-sizing:border-box}a{color:#0074d9;text-decoration:none}a:hover,a:focus{background-color:#e6f1fb}a:visited{color:#004b8d}.Article{padding:6vh 5% 3vh}.Article-h1{font-size:177.77777778%;line-height:133.33333333%;margin:0}.Article-h1--center,.Article-h1--center+.Article-paragraph{text-align:center}.Article-h2{font-size:133.33333333%;line-height:133.33333333%}.Article-h2,.Article-h3{margin:2em 0 0}.Article-h3,.Article-list,.Article-paragraph{font-size:1em}.Article-list,.Article-paragraph{margin:1em 0 0}.Article-list{padding-left:1em}.Article-time,.Article time{white-space:nowrap}.Article-tableFigure{margin:1em 0;overflow:scroll}.Article-table{margin:0 auto}.Article-tableCell{padding:0 0.5em;text-align:left}.Article-tableCell--right{text-align:right}.Article-codeFigure{border:.0625rem solid #ddd;padding:1em;overflow:scroll}.Body{color:#333;font-family:serif;font-size:100%;line-height:153.96007178%;margin:0;padding:0;-webkit-text-size-adjust:100%;text-size-adjust:100%}.Body--fontsLoaded{font-family:'Merriweather',serif}.Body-part{margin:0 auto;max-width:45em}.Button{border-radius:0.25em;box-shadow:inset 0 0 0 .0625em #fff,inset 0 0 0 .25em #e6f1fb;display:block;padding:0.75em 1em;text-align:center}.Button--clear{box-shadow:inset 0 0 0 .0625em #fff}.Code{font-family:monospace}.Code--inline{white-space:nowrap}.Code-part--built_in,.Code-part--function{color:#0086b3}.Code-part--class{color:#458;font-weight:bold}.Code-part--comment{color:#998;font-style:italic}.Code-part--keyword,.Code-part--reserved{font-weight:bold}.Code-part--literal,.Code-part--number,.Code-part--variable{color:#008080}.Code-part--string{color:#d14}.Code-part--tag{color:#000080}.Contact{border-top:.5vh solid #ddd;padding:5%}.Figure{border-bottom:.0625rem solid #ddd;border-top:.0625rem solid #ddd;margin:1em 0 0;max-width:100%;padding:1em 0}.Figure-imgLink:hover{background-color:transparent}.Figure img{height:100%;width:100%}.Header{padding:6vh 5% 0}.Header-name{font-size:133.33333333%;font-weight:bold;text-decoration:none}.Header-name,.Header-name:visited{color:#333}.Header-specialties{margin:0}.Header-specialty{white-space:nowrap}.Nav{border-bottom:.5vh solid #ddd;display:-webkit-flex;display:-ms-flexbox;display:flex;padding:1vh 2.5% 0}.Nav-item{line-height:1;padding:1em 2.5%}.article-Scale{border:.0625em solid #ddd;margin-top:1em}.article-Scale-row{display:-webkit-flex;display:-ms-flexbox;display:flex;height:3em}.article-Scale-row>div{-webkit-flex:1;-ms-flex:1;flex:1}@media (min-width: 62em) and (min-height: 48em){.Body-part{font-size:115.47005384%;line-height:153.96007178%}}@media (min-width: 30em){.Button{display:inline-block}.Contact{padding:3vh 0}.Header{text-align:center}.Nav{-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}@media (min-width: 22.5em){.Contact{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}</style></head><body class=Body><header class="Body-part Header"><a class=Header-name href="/">Chris Basham</a><p class=Header-specialties><span class=Header-specialty>Interaction designer &amp;</span> <span class=Header-specialty>Front-end developer</span></p></header><nav class="Body-part Nav"><a class=Nav-item href="/">Home</a> <a class=Nav-item href=/portfolio>Portfolio</a> <a class=Nav-item href=/talks>Talks</a> <a class=Nav-item href=/resume>R&#xE9;sum&#xE9;</a></nav><main class=Body-part><article class=Article><h1 class="Article-h1 Article-h1--center">Codifying Colors</h1><p class=Article-paragraph><time class=Article-time datetime=2015-03-02 pubdate="">March 2, 2015</time></p><p class=Article-paragraph>With little effort, you can find abundant examples of how colors have been named. <a href=http://www.w3schools.com/html/html_colornames.asp>HTML5 and CSS3 color specifications name 140 colors</a>. <a href=http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors>Crayola names 135 standard crayon colors</a>. <a href=http://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F>Wikipedia lists hundreds of colors</a>, with undeclared citations. <a href=http://www.colorhexa.com/color-names>ColorHexa lists 746 color names</a>. <a href=http://www.colourlovers.com/colors>Users have named close to 8 million colors on COLOURlovers</a>. There are even <a href=http://people.csail.mit.edu/jaffer/Color/Dictionaries.html>research projects which attempt to resolve the inconsistencies among various color dictionaries</a>.</p><p class=Article-paragraph>Naming colors is quite an art in itself, but I&#x2019;m more interested in how to name variations of a single primary color. For at least Web application design, it&#x2019;s probably best to be conservative when applying colors, keeping to a palette of a few colors with various tints and shades. Too many colors results in a confusing visual language, while a more considered set of colors should help to clarify the interface. In this way, I want to explore helpful ways to consistently codify a controlled set of colors to assist both designers and developers in their practice.</p><h2 class=Article-h2 id=exemplars>Exemplars</h2><p class=Article-paragraph><a href=http://www.google.com/design/spec/style/color.html>Google Material Design color palette</a> uses a 10-point scale of 50 to 900, with 50 being the lightest tint, 900 being the darkest shade, and 500 representing the primary color. They also introduce an almost neon-like A-series for most colors (A100, A200, A400, and A700), although they don&#x2019;t elaborate on how or why to use those variations.</p><figure class=Figure><a class=Figure-imgLink href=https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png><img src=https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png alt="Material Design Color Palette"></a></figure><p class=Article-paragraph><a href="http://www.pantone.com/pages/pantone/Pantone.aspx?pg=20051">PANTONE uses numbering systems</a> in a variety of ways to codify either the color family or where the color is located within their print materials. However, that shallow explanation fails to describe the methods of how they map color families to particular numbers. One can roughly interpret a <a href="http://www.pantone-colours.com/">pattern of shifting hues to their 3-digit numbers</a>, but the 4-digit numbers tend to become much less comprehensible.</p><figure class=Figure><a class=Figure-imgLink href=https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png><img src=https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png alt="PANTONE colors"></a></figure><p class=Article-paragraph>The CSS <a href=https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight><code class="Code Code--inline">font-weight</code> property</a> shares a similar scale to that of Material Design. A lighter and thinner font weight starts at <code class="Code Code--inline">100</code>, graduating in heaviness in 100-point increments until <code class="Code Code--inline">900</code>. <code class="Code Code--inline">400</code> maps to a <em>normal</em> weight, while <code class="Code Code--inline">700</code> maps to a traditionally <em>bold</em> weight.</p><div class=Article-tableFigure><table class=Article-table><thead><tr><th class="Article-tableCell Article-tableCell--header Article-tableCell--right">Font Weight</th><th class="Article-tableCell Article-tableCell--header">Meaning</th></tr></thead><tbody><tr><td class="Article-tableCell Article-tableCell--right">100</td><td class=Article-tableCell>Thin</td></tr><tr><td class="Article-tableCell Article-tableCell--right">200</td><td class=Article-tableCell>Extra Light</td></tr><tr><td class="Article-tableCell Article-tableCell--right">300</td><td class=Article-tableCell>Light</td></tr><tr><td class="Article-tableCell Article-tableCell--right">400</td><td class=Article-tableCell>Normal</td></tr><tr><td class="Article-tableCell Article-tableCell--right">500</td><td class=Article-tableCell>Medium</td></tr><tr><td class="Article-tableCell Article-tableCell--right">600</td><td class=Article-tableCell>Semi Bold</td></tr><tr><td class="Article-tableCell Article-tableCell--right">700</td><td class=Article-tableCell>Bold</td></tr><tr><td class="Article-tableCell Article-tableCell--right">800</td><td class=Article-tableCell>Extra Bold</td></tr><tr><td class="Article-tableCell Article-tableCell--right">900</td><td class=Article-tableCell>Black</td></tr></tbody></table></div><p class=Article-paragraph>CSS frameworks, such as <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://foundation.zurb.com/">Foundation</a>, tend to sidestep the problem by creating derivatives from primary colors using <a href=http://lesscss.org/functions/#color-operations>color functions</a>. Relying on these functions, however, supposes that if the source color should change, the percentages of, e.g., lightness and darkness may need to be adjusted in turn. While it&#x2019;s easy to keep colors as derivatives by using color variables, it can result in a problem in which there are too many derivatives, if they are managed locally instead of in a shared source file.</p><p class=Article-paragraph>For example, rather than defining colors during their use:</p><pre class=Article-codeFigure><code class="Code Code--less"><span class="Code-part Code-part--comment">// colors.less</span>
+<span class="Code-part Code-part--variable">@green:</span> green;
 
-<p><a href="http://www.pantone.com/pages/pantone/Pantone.aspx?pg=20051">PANTONE uses numbering systems</a> in a variety of ways to codify either the color family or where the color is located within their print materials. However, that shallow explanation fails to describe the methods of how they map color families to particular numbers. One can roughly interpret a <a href="http://www.pantone-colours.com/">pattern of shifting hues to their 3-digit numbers</a>, but the 4-digit numbers tend to become much less comprehensible.</p>
-<figure class="Figure">
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png">
-<img src="https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png" alt="PANTONE colors">
-  </a>
-</figure>
+<span class="Code-part Code-part--comment">// button.less</span>
+<span class="Code-part Code-part--class">.Button</span> {
+  <span class="Code-part Code-part--variable">@background-color:</span> <span class="Code-part Code-part--function">lighten</span>(<span class="Code-part Code-part--variable">@green</span>, <span class="Code-part Code-part--number">20%</span>);
+}</code></pre><p class=Article-paragraph>You should centralize all color declarations:</p><pre class=Article-codeFigure><code class="Code Code--less"><span class="Code-part Code-part--comment">// colors.less</span>
+<span class="Code-part Code-part--variable">@green:</span> green;
+<span class="Code-part Code-part--variable">@green-tint:</span> <span class="Code-part Code-part--function">lighten</span>(<span class="Code-part Code-part--variable">@green</span>, <span class="Code-part Code-part--number">20%</span>);
 
-<p>The CSS <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight"><code>font-weight</code> property</a> shares a similar scale to that of Material Design. A lighter and thinner font weight starts at <code>100</code>, graduating in heaviness in 100-point increments until <code>900</code>. <code>400</code> maps to a <em>normal</em> weight, while <code>700</code> maps to a traditionally <em>bold</em> weight.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Font Weight</th>
-<th style="text-align:left">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">100</td>
-<td style="text-align:left">Thin</td>
-</tr>
-<tr>
-<td style="text-align:right">200</td>
-<td style="text-align:left">Extra Light</td>
-</tr>
-<tr>
-<td style="text-align:right">300</td>
-<td style="text-align:left">Light</td>
-</tr>
-<tr>
-<td style="text-align:right">400</td>
-<td style="text-align:left">Normal</td>
-</tr>
-<tr>
-<td style="text-align:right">500</td>
-<td style="text-align:left">Medium</td>
-</tr>
-<tr>
-<td style="text-align:right">600</td>
-<td style="text-align:left">Semi Bold</td>
-</tr>
-<tr>
-<td style="text-align:right">700</td>
-<td style="text-align:left">Bold</td>
-</tr>
-<tr>
-<td style="text-align:right">800</td>
-<td style="text-align:left">Extra Bold</td>
-</tr>
-<tr>
-<td style="text-align:right">900</td>
-<td style="text-align:left">Black</td>
-</tr>
-</tbody>
-</table>
-<p>CSS frameworks, such as <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="http://foundation.zurb.com/">Foundation</a>, tend to sidestep the problem by creating derivatives from primary colors using <a href="http://lesscss.org/functions/#color-operations">color functions</a>. Relying on these functions, however, supposes that if the source color should change, the percentages of, e.g., lightness and darkness may need to be adjusted in turn. While it’s easy to keep colors as derivatives by using color variables, it can result in a problem in which there are too many derivatives, if they are managed locally instead of in a shared source file.</p>
-<p>For example, rather than defining colors during their use:</p>
-<pre><code class="lang-less">// colors.less
-@green: green;
+<span class="Code-part Code-part--comment">// button.less</span>
+<span class="Code-part Code-part--class">.Button</span> {
+  <span class="Code-part Code-part--variable">@background-color:</span> <span class="Code-part Code-part--variable">@green-tint</span>;
+}</code></pre><h2 class=Article-h2 id=goals-for-codification>Goals for codification</h2><p class=Article-paragraph>Taking these exemplars into consideration, a new scale for codifying colors should support the following goals:</p><ol class=Article-list><li class=Article-listItem>Scales should support granularity.</li><li class=Article-listItem>Scales should be able to be generated from any color.</li><li class=Article-listItem>Points along the scale should share a common meaning.</li></ol><p class=Article-paragraph>Supporting Goal #1 is accomplished with setting a number range. The range of <code class="Code Code--inline">0</code>&#x2013;<code class="Code Code--inline">1000</code> provides an abundant of initial possibilites, along with being consistent with Material Design and the <code class="Code Code--inline">font-weight</code> specification. This range could always be tightened later, as needed.</p><p class=Article-paragraph>Material Design anchors its scale in the middle with primary colors, designated with a <code class="Code Code--inline">500</code> marker. This approach supposes that color was perhaps chosen first, and then an evenly distributed series of tints and shades were subsequently derived. In order to support Goal #2, the primary source color should be able to reside anywhere along the range, not just the middle, and appropriate tints and shades could still be derived.</p><p class=Article-paragraph>Similar to Material Design, the point along the scale should correspond to the lightness or darkness of a color. If <code class="Code Code--inline">0</code> is always pure white (<code class="Code Code--inline">#fff</code>) and <code class="Code Code--inline">1000</code> is always pure black (<code class="Code Code--inline">#000</code>), then to support Goal #3, the steps along the scale should roughly correspond to their equivalent lightness value.</p><p class=Article-paragraph>Alas, <em>lightness</em> is a tricky subject that requires an understanding of <a href=http://en.wikipedia.org/wiki/Color_space>color spaces</a> to properly define it. Digital designers should be quite familiar with <a href=http://en.wikipedia.org/wiki/RGB_color_space>RGB</a>, at least for the sake of using hexadecimal color values in CSS. Designers may also be familiar with another family of <a href=http://en.wikipedia.org/wiki/HSL_and_HSV>hue-saturation-* color spaces</a>, which includes HSL (hue-saturation-lightness), HSV (hue-saturation-value), HSB (hue-saturation-brightness), and HSI (hue-saturation-intensity). These are attempts to represent the RGB model in a form that is easier to approach and reason about. While the <em>lightness</em>, <em>value</em>, <em>brightness</em>, and <em>intensity</em> values are easy to conceptualize, they ultimately are models describing how computers render color, and therefore, they&#x2019;re <a href=http://en.wikipedia.org/wiki/HSL_and_HSV#Disadvantages>insufficient to inform us how humans would perceive a given color</a>. <a href="https://vis4.net/blog/posts/avoid-equidistant-hsv-colors/">Colors may share identical <em>lightness</em> values, yet their perceived brightness is probably different</a>. The <a href=http://en.wikipedia.org/wiki/Lab_color_space>Lab color space</a> resolves this issue, given its <code class="Code Code--inline">L*</code> (lightness) value approximately corresponds to perceived brightness. A <code class="Code Code--inline">L*</code> value of <code class="Code Code--inline">0</code> is the darkest black, while a value of <code class="Code Code--inline">100</code> represents the brightest white.</p><h2 class=Article-h2 id=naming-color-variables>Naming color variables</h2><p class=Article-paragraph>The method for naming color variables will roughly follow the pattern <a href=http://nicolasgallagher.com>Nicholas Gallager</a> recommends for <a href=https://github.com/suitcss/suit/blob/master/doc/README.md>naming CSS classes</a>:</p><pre class=Article-codeFigure><code class=Code>.<span class="Code-part Code-part--tag">&lt;<span class="Code-part Code-part--title">namespace</span>&gt;</span>-<span class="Code-part Code-part--tag">&lt;<span class="Code-part Code-part--title">Component</span>&gt;</span>--<span class="Code-part Code-part--tag">&lt;<span class="Code-part Code-part--title">modifier</span>&gt;</span></code></pre><p class=Article-paragraph>Each color variable name consists of three parts:</p><ol class=Article-list><li class=Article-listItem><em>namespace</em> labeled as <code class="Code Code--inline">color</code> to indicate the variable is a color;</li><li class=Article-listItem><em>color scale</em> to group the color derivatives;</li><li class=Article-listItem><em>point</em> to indicate the location of the derivative along the scale.</li></ol><p class=Article-paragraph>Put together, the template for a <a href=http://lesscss.org/features/#variables-feature>Less color variable</a> name would follow this pattern:</p><pre class=Article-codeFigure><code class=Code>@color-<span class="Code-part Code-part--tag">&lt;<span class="Code-part Code-part--title">ColorScale</span>&gt;</span>--<span class="Code-part Code-part--tag">&lt;<span class="Code-part Code-part--title">point</span>&gt;</span></code></pre><p class=Article-paragraph>In practice, we could describe an abbreviated color scale in this way:</p><pre class=Article-codeFigure><code class=Code><span class="Code-part Code-part--comment">// Source color</span>
+<span class="Code-part Code-part--variable">@color-Green:</span> green;
 
-// button.less
-.Button {
-  @background-color: lighten(@green, 20%);
-}
-</code></pre>
-<p>You should centralize all color declarations:</p>
-<pre><code class="lang-less">// colors.less
-@green: green;
-@green-tint: lighten(@green, 20%);
-
-// button.less
-.Button {
-  @background-color: @green-tint;
-}
-</code></pre>
-<h2 id="goals-for-codification">Goals for codification</h2>
-<p>Taking these exemplars into consideration, a new scale for codifying colors should support the following goals:</p>
-<ol>
-<li>Scales should support granularity.</li>
-<li>Scales should be able to be generated from any color.</li>
-<li>Points along the scale should share a common meaning.</li>
-</ol>
-<p>Supporting Goal #1 is accomplished with setting a number range. The range of <code>0</code>–<code>1000</code> provides an abundant of initial possibilites, along with being consistent with Material Design and the <code>font-weight</code> specification. This range could always be tightened later, as needed.</p>
-<p>Material Design anchors its scale in the middle with primary colors, designated with a <code>500</code> marker. This approach supposes that color was perhaps chosen first, and then an evenly distributed series of tints and shades were subsequently derived. In order to support Goal #2, the primary source color should be able to reside anywhere along the range, not just the middle, and appropriate tints and shades could still be derived.</p>
-<p>Similar to Material Design, the point along the scale should correspond to the lightness or darkness of a color. If <code>0</code> is always pure white (<code>#fff</code>) and <code>1000</code> is always pure black (<code>#000</code>), then to support Goal #3, the steps along the scale should roughly correspond to their equivalent lightness value.</p>
-<p>Alas, <em>lightness</em> is a tricky subject that requires an understanding of <a href="http://en.wikipedia.org/wiki/Color_space">color spaces</a> to properly define it. Digital designers should be quite familiar with <a href="http://en.wikipedia.org/wiki/RGB_color_space">RGB</a>, at least for the sake of using hexadecimal color values in CSS. Designers may also be familiar with another family of <a href="http://en.wikipedia.org/wiki/HSL_and_HSV">hue-saturation-* color spaces</a>, which includes HSL (hue-saturation-lightness), HSV (hue-saturation-value), HSB (hue-saturation-brightness), and HSI (hue-saturation-intensity). These are attempts to represent the RGB model in a form that is easier to approach and reason about. While the <em>lightness</em>, <em>value</em>, <em>brightness</em>, and <em>intensity</em> values are easy to conceptualize, they ultimately are models describing how computers render color, and therefore, they’re <a href="http://en.wikipedia.org/wiki/HSL_and_HSV#Disadvantages">insufficient to inform us how humans would perceive a given color</a>. <a href="https://vis4.net/blog/posts/avoid-equidistant-hsv-colors/">Colors may share identical <em>lightness</em> values, yet their perceived brightness is probably different</a>. The <a href="http://en.wikipedia.org/wiki/Lab_color_space">Lab color space</a> resolves this issue, given its <code>L*</code> (lightness) value approximately corresponds to perceived brightness. A <code>L*</code> value of <code>0</code> is the darkest black, while a value of <code>100</code> represents the brightest white.</p>
-<h2 id="naming-color-variables">Naming color variables</h2>
-<p>The method for naming color variables will roughly follow the pattern <a href="http://nicolasgallagher.com">Nicholas Gallager</a> recommends for <a href="https://github.com/suitcss/suit/blob/master/doc/README.md">naming CSS classes</a>:</p>
-<pre><code>.&lt;namespace&gt;-&lt;Component&gt;--&lt;modifier&gt;
-</code></pre><p>Each color variable name consists of three parts:</p>
-<ol>
-<li><em>namespace</em> labeled as <code>color</code> to indicate the variable is a color;</li>
-<li><em>color scale</em> to group the color derivatives;</li>
-<li><em>point</em> to indicate the location of the derivative along the scale.</li>
-</ol>
-<p>Put together, the template for a <a href="http://lesscss.org/features/#variables-feature">Less color variable</a> name would follow this pattern:</p>
-<pre><code>@color-&lt;ColorScale&gt;--&lt;point&gt;
-</code></pre><p>In practice, we could describe an abbreviated color scale in this way:</p>
-<pre><code>// Source color
-@color-Green: green;
-
-// Derivatives
-@color-Green--100;
-@color-Green--500;
-@color-Green--900;
-</code></pre><h2 id="generating-color-scales">Generating color scales</h2>
-<p>Luckily, much of the difficulty of generating color scales is solved by the work of <a href="http://driven-by-data.net/">Gregor Aisch</a>, as described in his article <a href="https://vis4.net/blog/posts/mastering-multi-hued-color-scales/"><em>Mastering Multi-hued Color Scales with Chroma.js</em></a>. He details how his <a href="https://github.com/gka/chroma.js">Chroma.js</a> JavaScript library can adjust complex multi-hue gradients to be both true to lightness values and pleasing to the eye.</p>
-<p>Using Chroma.js, we can interpolate any color within our scale. For this example, the scale will be seeded with white, green, and black colors.</p>
-<div class="Scale Scale-row">
-  <div style="background-color: white;"></div>
-  <div style="background-color: green;"></div>
-  <div style="background-color: black;"></div>
-</div>
-
-<p><a href="https://github.com/gka/chroma.js/blob/master/doc/api.md#chromainterpolatebeziercolors">Bezier interpolation</a> will ease the blending of the colors, while <a href="https://github.com/gka/chroma.js/blob/master/doc/api.md#scalecorrectlightness">lightness correction</a> will ensure a linear lightness progression throughout the scale. Run the following <a href="http://nodejs.org/">Node</a> script to generate the nine-point color scale.</p>
-<div class="Scale Scale-row">
-  <div style="background-color: #d8e7d2;"></div>
-  <div style="background-color: #b3ceaa;"></div>
-  <div style="background-color: #91b585;"></div>
-  <div style="background-color: #739c66;"></div>
-  <div style="background-color: #57824b;"></div>
-  <div style="background-color: #406835;"></div>
-  <div style="background-color: #2c4f23;"></div>
-  <div style="background-color: #1d3617;"></div>
-  <div style="background-color: #121e0c;"></div>
-</div>
-
-<pre><code class="lang-js">// Import npm dependencies.
-var chroma = require(&#39;chroma-js&#39;); // Version 0.6.x
-// Settings.
-var scaleSourceHex = &#39;green&#39;; // equivalent to #008000
-var scaleVarName = &#39;@color-Green&#39;;
-var scaleVarNameDelimiter = &#39;--&#39;;
-var useBezierInterpolation = true;
-var useLightnessCorrection = true;
-// Prepare color scale.
-var colors = [&#39;#fff&#39;, scaleSourceHex, &#39;#000&#39;];
-if(useBezierInterpolation) {
+<span class="Code-part Code-part--comment">// Derivatives</span>
+<span class="Code-part Code-part--variable">@color-Green--100</span>;
+<span class="Code-part Code-part--variable">@color-Green--500</span>;
+<span class="Code-part Code-part--variable">@color-Green--900</span>;</code></pre><h2 class=Article-h2 id=generating-color-scales>Generating color scales</h2><p class=Article-paragraph>Luckily, much of the difficulty of generating color scales is solved by the work of <a href="http://driven-by-data.net/">Gregor Aisch</a>, as described in his article <a href="https://vis4.net/blog/posts/mastering-multi-hued-color-scales/"><em>Mastering Multi-hued Color Scales with Chroma.js</em></a>. He details how his <a href=https://github.com/gka/chroma.js>Chroma.js</a> JavaScript library can adjust complex multi-hue gradients to be both true to lightness values and pleasing to the eye.</p><p class=Article-paragraph>Using Chroma.js, we can interpolate any color within our scale. For this example, the scale will be seeded with white, green, and black colors.</p><div class="article-Scale article-Scale-row"><div style="background-color: white"></div><div style="background-color: green"></div><div style="background-color: black"></div></div><p class=Article-paragraph><a href=https://github.com/gka/chroma.js/blob/master/doc/api.md#chromainterpolatebeziercolors>Bezier interpolation</a> will ease the blending of the colors, while <a href=https://github.com/gka/chroma.js/blob/master/doc/api.md#scalecorrectlightness>lightness correction</a> will ensure a linear lightness progression throughout the scale. Run the following <a href="http://nodejs.org/">Node</a> script to generate the nine-point color scale.</p><div class="article-Scale article-Scale-row"><div style="background-color: #d8e7d2"></div><div style="background-color: #b3ceaa"></div><div style="background-color: #91b585"></div><div style="background-color: #739c66"></div><div style="background-color: #57824b"></div><div style="background-color: #406835"></div><div style="background-color: #2c4f23"></div><div style="background-color: #1d3617"></div><div style="background-color: #121e0c"></div></div><pre class=Article-codeFigure><code class="Code Code--js"><span class="Code-part Code-part--comment">// Import npm dependencies.</span>
+<span class="Code-part Code-part--keyword">var</span> chroma = <span class="Code-part Code-part--built_in">require</span>(<span class="Code-part Code-part--string">&apos;chroma-js&apos;</span>); <span class="Code-part Code-part--comment">// Version 0.6.x</span>
+<span class="Code-part Code-part--comment">// Settings.</span>
+<span class="Code-part Code-part--keyword">var</span> scaleSourceHex = <span class="Code-part Code-part--string">&apos;green&apos;</span>; <span class="Code-part Code-part--comment">// equivalent to #008000</span>
+<span class="Code-part Code-part--keyword">var</span> scaleVarName = <span class="Code-part Code-part--string">&apos;@color-Green&apos;</span>;
+<span class="Code-part Code-part--keyword">var</span> scaleVarNameDelimiter = <span class="Code-part Code-part--string">&apos;--&apos;</span>;
+<span class="Code-part Code-part--keyword">var</span> useBezierInterpolation = <span class="Code-part Code-part--literal">true</span>;
+<span class="Code-part Code-part--keyword">var</span> useLightnessCorrection = <span class="Code-part Code-part--literal">true</span>;
+<span class="Code-part Code-part--comment">// Prepare color scale.</span>
+<span class="Code-part Code-part--keyword">var</span> colors = [<span class="Code-part Code-part--string">&apos;#fff&apos;</span>, scaleSourceHex, <span class="Code-part Code-part--string">&apos;#000&apos;</span>];
+<span class="Code-part Code-part--keyword">if</span>(useBezierInterpolation) {
   colors = chroma.interpolate.bezier(colors);
 }
-var scale = chroma.scale(colors).mode(&#39;lab&#39;).correctLightness(useLightnessCorrection);
-// Output source color.
-console.log(scaleVarName + &#39;: &#39; + scaleSourceHex + &#39;;&#39;);
-// Interpolate colors, skipping the generation of white and black.
-for(var i = 1, steps = 10; i &lt; steps; i++) {
-  var point = i / steps;
-  // Convert point to numbering system value.
-  var name = Math.round(point * 1000);
-  // Generate RGB color from luminance location along scale.
-  var hex = scale(point).hex();
-  // Output.
-  var varName = scaleVarName + scaleVarNameDelimiter + name;
-  console.log(varName + &#39;: &#39; + hex + &#39;;&#39;);
-}
-</code></pre>
-<p>The color scale is generated as Less variables. However, with little tweaking, the output could be adapted as desired to better conform to other contexts.</p>
-<pre><code class="lang-less">@color-Green: green;
-@color-Green--100: #d8e7d2;
-@color-Green--200: #b3ceaa;
-@color-Green--300: #91b585;
-@color-Green--400: #739c66;
-@color-Green--500: #57824b;
-@color-Green--600: #406835;
-@color-Green--700: #2c4f23;
-@color-Green--800: #1d3617;
-@color-Green--900: #121e0c;
-</code></pre>
-<p>For those desiring a visual editor rather than running a custom Node script, the <a href="http://gka.github.io/palettes/">Chroma.js Color Scale Helper</a> tool is an excellent alternative to quickly experiment with various color scale configurations.</p>
-<figure class="Figure">
-  <a class="Figure-imgLink" href="http://gka.github.io/palettes/#colors=#fff,#ff0000,#000|steps=11|bez=1|coL=1">
-<img src="https://cloud.githubusercontent.com/assets/347558/6433936/c672b1ac-c049-11e4-8fff-6226b677c4ff.png" alt="Chroma.js Color Scale Helper">
-  </a>
-</figure>
+<span class="Code-part Code-part--keyword">var</span> scale = chroma.scale(colors).mode(<span class="Code-part Code-part--string">&apos;lab&apos;</span>).correctLightness(useLightnessCorrection);
+<span class="Code-part Code-part--comment">// Output source color.</span>
+<span class="Code-part Code-part--built_in">console</span>.log(scaleVarName + <span class="Code-part Code-part--string">&apos;: &apos;</span> + scaleSourceHex + <span class="Code-part Code-part--string">&apos;;&apos;</span>);
+<span class="Code-part Code-part--comment">// Interpolate colors, skipping the generation of white and black.</span>
+<span class="Code-part Code-part--keyword">for</span>(<span class="Code-part Code-part--keyword">var</span> i = <span class="Code-part Code-part--number">1</span>, steps = <span class="Code-part Code-part--number">10</span>; i &lt; steps; i++) {
+  <span class="Code-part Code-part--keyword">var</span> point = i / steps;
+  <span class="Code-part Code-part--comment">// Convert point to numbering system value.</span>
+  <span class="Code-part Code-part--keyword">var</span> name = <span class="Code-part Code-part--built_in">Math</span>.round(point * <span class="Code-part Code-part--number">1000</span>);
+  <span class="Code-part Code-part--comment">// Generate RGB color from luminance location along scale.</span>
+  <span class="Code-part Code-part--keyword">var</span> hex = scale(point).hex();
+  <span class="Code-part Code-part--comment">// Output.</span>
+  <span class="Code-part Code-part--keyword">var</span> varName = scaleVarName + scaleVarNameDelimiter + name;
+  <span class="Code-part Code-part--built_in">console</span>.log(varName + <span class="Code-part Code-part--string">&apos;: &apos;</span> + hex + <span class="Code-part Code-part--string">&apos;;&apos;</span>);
+}</code></pre><p class=Article-paragraph>The color scale is generated as Less variables. However, with little tweaking, the output could be adapted as desired to better conform to other contexts.</p><pre class=Article-codeFigure><code class="Code Code--less"><span class="Code-part Code-part--variable">@color-Green:</span> green;
+<span class="Code-part Code-part--variable">@color-Green--100:</span> <span class="Code-part Code-part--hexcolor">#d8e7d2</span>;
+<span class="Code-part Code-part--variable">@color-Green--200:</span> <span class="Code-part Code-part--hexcolor">#b3ceaa</span>;
+<span class="Code-part Code-part--variable">@color-Green--300:</span> <span class="Code-part Code-part--hexcolor">#91b585</span>;
+<span class="Code-part Code-part--variable">@color-Green--400:</span> <span class="Code-part Code-part--hexcolor">#739c66</span>;
+<span class="Code-part Code-part--variable">@color-Green--500:</span> <span class="Code-part Code-part--hexcolor">#57824b</span>;
+<span class="Code-part Code-part--variable">@color-Green--600:</span> <span class="Code-part Code-part--hexcolor">#406835</span>;
+<span class="Code-part Code-part--variable">@color-Green--700:</span> <span class="Code-part Code-part--hexcolor">#2c4f23</span>;
+<span class="Code-part Code-part--variable">@color-Green--800:</span> <span class="Code-part Code-part--hexcolor">#1d3617</span>;
+<span class="Code-part Code-part--variable">@color-Green--900:</span> <span class="Code-part Code-part--hexcolor">#121e0c</span>;</code></pre><p class=Article-paragraph>For those desiring a visual editor rather than running a custom Node script, the <a href="http://gka.github.io/palettes/">Chroma.js Color Scale Helper</a> tool is an excellent alternative to quickly experiment with various color scale configurations.</p><figure class=Figure><a class=Figure-imgLink href="http://gka.github.io/palettes/#colors=#fff,#ff0000,#000|steps=11|bez=1|coL=1"><img src=https://cloud.githubusercontent.com/assets/347558/6433936/c672b1ac-c049-11e4-8fff-6226b677c4ff.png alt="Chroma.js Color Scale Helper"></a></figure><h2 class=Article-h2 id=conclusion>Conclusion</h2><p class=Article-paragraph>We demonstrated it is very possible to consistently devise color scales, linearly graduating from light to dark. By codifying the scale based on perceived brightness, we have a normalized way to compare colors across any scale, and it can simplify how we choose colors.</p><p class=Article-paragraph>From here, there are several more tools and features that could be created to assist designers and developers interested in using codified color scales:</p><ul class=Article-list><li class=Article-listItem>Publish a <a href="https://www.npmjs.com/"><code class="Code Code--inline">npm</code></a> package to codify color scales.</li><li class=Article-listItem>Create a visual editor for codifying color scales, similar to the <a href="http://gka.github.io/palettes/">Chroma.js Color Scale Helper</a>.</li><li class=Article-listItem>Allow the source color to be retained and placed within the generated scale, instead of the scale merely being seeded by it.</li><li class=Article-listItem>The output from these tools should be highly tailorable, and the output should not be bias toward any tangental tool; for example, its usefulness would be severely limited if it only is compatible with Less variables.</li></ul></article></main><footer class="Body-part Contact"><a class=Button href=https://twitter.com/chrisbasham title="Follow me on Twitter">@chrisbasham</a> <a class="Button Button--clear" href=mailto:chris@bash.am>chris@bash.am</a> <a class="Button Button--clear" href=tel:18124599891>(812) 459-9891</a></footer><script>(function(){'use strict';function f(a){this.a=k;this.b=void 0;this.d=[];var b=this;try{a(function(a){l(b,a)},function(a){m(b,a)})}catch(c){m(b,c)}}var k=2;function n(a){return new f(function(b,c){c(a)})}function p(a){return new f(function(b){b(a)})}
+function l(a,b){if(a.a===k){if(b===a)throw new TypeError("Promise resolved with itself.");var c=!1;try{var d=b&&b.then;if(null!==b&&"object"===typeof b&&"function"===typeof d){d.call(b,function(b){c||l(a,b);c=!0},function(b){c||m(a,b);c=!0});return}}catch(e){c||m(a,e);return}a.a=0;a.b=b;q(a)}}function m(a,b){if(a.a===k){if(b===a)throw new TypeError("Promise rejected with itself.");a.a=1;a.b=b;q(a)}}
+function q(a){setTimeout(function(){if(a.a!==k)for(;a.d.length;){var b=a.d.shift(),c=b[0],d=b[1],e=b[2],b=b[3];try{0===a.a?"function"===typeof c?e(c.call(void 0,a.b)):e(a.b):1===a.a&&("function"===typeof d?e(d.call(void 0,a.b)):b(a.b))}catch(g){b(g)}}},0)}f.prototype.e=function(a){return this.c(void 0,a)};f.prototype.c=function(a,b){var c=this;return new f(function(d,e){c.d.push([a,b,d,e]);q(c)})};
+function r(a){return new f(function(b,c){function d(c){return function(d){g[c]=d;e+=1;e===a.length&&b(g)}}var e=0,g=[];0===a.length&&b(g);for(var h=0;h<a.length;h+=1)a[h].c(d(h),c)})}function s(a){return new f(function(b,c){for(var d=0;d<a.length;d+=1)a[d].c(b,c)})};window.Promise||(window.Promise=f,window.Promise.resolve=p,window.Promise.reject=n,window.Promise.race=s,window.Promise.all=r,window.Promise.prototype.then=f.prototype.c,window.Promise.prototype["catch"]=f.prototype.e);}());
 
-<h2 id="conclusion">Conclusion</h2>
-<p>We demonstrated it is very possible to consistently devise color scales, linearly graduating from light to dark. By codifying the scale based on perceived brightness, we have a normalized way to compare colors across any scale, and it can simplify how we choose colors.</p>
-<p>From here, there are several more tools and features that could be created to assist designers and developers interested in using codified color scales:</p>
-<ul>
-<li>Publish a <a href="https://www.npmjs.com/"><code>npm</code></a> package to codify color scales.</li>
-<li>Create a visual editor for codifying color scales, similar to the <a href="http://gka.github.io/palettes/">Chroma.js Color Scale Helper</a>.</li>
-<li>Allow the source color to be retained and placed within the generated scale, instead of the scale merely being seeded by it.</li>
-<li>The output from these tools should be highly tailorable, and the output should not be bias toward any tangental tool; for example, its usefulness would be severely limited if it only is compatible with Less variables.</li>
-</ul>
-<style>
-.Scale {
-  border: 0.0625em solid #ddd;
-  margin-top: 1em;
-}
-.Scale-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  height: 3em;
-}
-.Scale-row > div {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-</style>
+(function(){'use strict';function g(a){this.a=document.createElement("div");this.a.setAttribute("aria-hidden","true");this.a.appendChild(document.createTextNode(a));this.b=document.createElement("span");this.c=document.createElement("span");this.f=document.createElement("span");this.e=document.createElement("span");this.d=-1;this.b.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.c.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";
+this.e.style.cssText="display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;";this.f.style.cssText="display:inline-block;width:200%;height:200%;";this.b.appendChild(this.f);this.c.appendChild(this.e);this.a.appendChild(this.b);this.a.appendChild(this.c)}function u(a,b,c){a.a.style.cssText="min-width:20px;min-height:20px;display:inline-block;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font-size:100px;font-family:"+b+";"+c}
+function v(a){var b=a.a.offsetWidth,c=b+100;a.e.style.width=c+"px";a.c.scrollLeft=c;a.b.scrollLeft=a.b.scrollWidth+100;return a.d!==b?(a.d=b,!0):!1}function w(a,b){a.b.addEventListener("scroll",function(){v(a)&&null!==a.a.parentNode&&b(a.d)},!1);a.c.addEventListener("scroll",function(){v(a)&&null!==a.a.parentNode&&b(a.d)},!1);v(a)};function x(a,b){this.family=a;this.style=b.style||"normal";this.variant=b.variant||"normal";this.weight=b.weight||"normal";this.stretch=b.stretch||"stretch";this.featureSettings=b.featureSettings||"normal"}var y=null;
+x.prototype.a=function(a,b){var c=a||"BESbswy",A=b||3E3,h="font-style:"+this.style+";font-variant:"+this.variant+";font-weight:"+this.weight+";font-stretch:"+this.stretch+";font-feature-settings:"+this.featureSettings+";-moz-font-feature-settings:"+this.featureSettings+";-webkit-font-feature-settings:"+this.featureSettings+";",k=document.createElement("div"),m=new g(c),n=new g(c),p=new g(c),d=-1,e=-1,f=-1,q=-1,r=-1,t=-1,l=this;u(m,"sans-serif",h);u(n,"serif",h);u(p,"monospace",h);k.appendChild(m.a);
+k.appendChild(n.a);k.appendChild(p.a);document.body.appendChild(k);q=m.a.offsetWidth;r=n.a.offsetWidth;t=p.a.offsetWidth;return new Promise(function(a,b){function c(){null!==k.parentNode&&document.body.removeChild(k)}function z(){if(-1!==d&&-1!==e||-1!==d&&-1!==f||-1!==e&&-1!==f)if(d===e||d===f||e===f){if(null===y){var b=/AppleWeb[kK]it\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent);y=!!b&&(536>parseInt(b[1],10)||536===parseInt(b[1],10)&&11>=parseInt(b[2],10))}y?d===q&&e===q&&f===q||d===
+r&&e===r&&f===r||d===t&&e===t&&f===t||(c(),a(l)):(c(),a(l))}}setTimeout(function(){c();b(l)},A);w(m,function(a){d=a;z()});u(m,l.family+",sans-serif",h);w(n,function(a){e=a;z()});u(n,l.family+",serif",h);w(p,function(a){f=a;z()});u(p,l.family+",monospace",h)})};window.FontFaceObserver=x;window.FontFaceObserver.prototype.check=x.prototype.a;}());
 
-    </article>
-  </main>
-  <footer class="Body-part Contact">
-    <a class="Button" href="https://twitter.com/chrisbasham" title="Follow me on Twitter">@chrisbasham</a>
-    <a class="Button Button--clear" href="mailto:chris@bash.am">chris@bash.am</a>
-    <a class="Button Button--clear" href="tel:18124599891">(812) 459-9891</a>
-  </footer>
-  <script>
+    // Font event technique sourced from:
+    // https://github.com/filamentgroup/font-loading/blob/master/font-events.html
+    (function(w){
+      if(w.document.body.className.indexOf('Body--fontsLoaded') > -1) {
+        return;
+      }
+      var fontA = new w.FontFaceObserver('Inconsolata', {
+        weight: 400
+      });
+      var fontB = new w.FontFaceObserver('Inconsolata', {
+        weight: 700
+      });
+      var fontC = new w.FontFaceObserver('Merriweather', {
+        weight: 400
+      });
+      var fontD = new w.FontFaceObserver('Merriweather', {
+        weight: 400,
+        style: 'italic'
+      });
+      var fontE = new w.FontFaceObserver('Merriweather', {
+        weight: 700
+      });
+      w.Promise
+        .all([fontA.check(), fontB.check(), fontC.check(), fontD.check(), fontE.check()])
+        .then(function() {
+          var cn = w.document.body.className;
+          cn = cn.length ? cn.split(' ') : [];
+          cn.push('Body--fontsLoaded');
+          w.document.body.className = cn.join(' ');
+        });
+    }(this));
+    // Google Analytics.
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-837636-4', 'auto');
-    ga('send', 'pageview');
-  </script>
-</body>
-</html>
+    ga('send', 'pageview');</script></body></html>
