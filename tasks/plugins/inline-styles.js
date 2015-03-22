@@ -43,7 +43,7 @@ function plugin(opts) {
                 return true;
               }
               // Retain any classes with `fontsLoaded` in the name.
-              var matchesFontsLoaded = selector.match(/(\..+fontsLoaded)+/ig);
+              var matchesFontsLoaded = selector.match(/(\..*fontsLoaded)+/ig);
               if(!!matchesFontsLoaded) {
                 return true;
               }
