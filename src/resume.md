@@ -1,6 +1,5 @@
 ---
 title: Résumé
-order: 4
 ---
 
 ## Experience

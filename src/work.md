@@ -1,5 +1,5 @@
 ---
-title: Portfolio
+title: Work
 order: 2
 ---
 
@@ -146,9 +146,3 @@ In late 2012, the [Indiana University](http://www.iu.edu/) student billing user 
     </p>
   </figcaption>
 </figure>
-
-## Past portfolios
-
-- [Version 3, 2010&ndash;2014](http://v3.bash.am)
-- [Version 2, 2008&ndash;2009](http://v2.bash.am)
-- [Version 1, 2007&ndash;2008](http://v1.bash.am)
