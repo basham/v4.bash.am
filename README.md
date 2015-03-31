@@ -10,7 +10,7 @@ Clone and navigate to the repo. Then install [npm](https://www.npmjs.com/) packa
 npm install
 ```
 
-## Developing
+## Development
 
 Run the development environment through the default [gulp](http://gulpjs.com/) task.
 
