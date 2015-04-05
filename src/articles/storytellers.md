@@ -11,7 +11,7 @@ An experience can't be imposed upon someone, as if forcing a reader to flawlessl
 
 For countless generations, humans have purposed oral and written communication in the form of storytelling to share experiences with one another. Short of science fiction, a dream cannot cross the barrier of the dreamer's mind. However, a dream can be told, a dream can be listened to, and a dream can be relived.
 
-Designers tell stories of encounters with the digital world. They craft interactions, interfaces, and systems that shape the story between a person and a product or service. They ask questions like:
+Designers curate and tell stories of encounters with the digital world. They craft interactions, interfaces, and systems that shape the story between a person and a product or service. They ask questions like:
 
 - What stories *do* users tell about using the product or service?
 - What stories *should* users tell about using the product or service?
