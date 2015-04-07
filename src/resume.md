@@ -4,6 +4,16 @@ title: Résumé
 
 ## Experience
 
+### UX Designer &middot; Enterprise Student Services, [Indiana University](http://iu.edu)
+
+<time datetime="2014-10">October 2014</time> &ndash; Present
+&middot;
+[Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana)
+
+Conducted user research; produced sketches, wireframes, and prototypes; and developed front-end production code for various Academic Advising products.
+Contributed to enterprise-wide design and front-end development standards.
+Trained coworkers regarding front-end development practices.
+
 ### Co-organizer &middot; [IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/)
 
 <time datetime="2013-05">May 2013</time> &ndash; Present
@@ -136,7 +146,7 @@ General Honors
 ### Tools
 
 - [HTML](http://en.wikipedia.org/wiki/HTML), [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
-- Client-side frameworks ([AngularJS](https://angularjs.org/))
+- Client-side libraries and frameworks ([React](https://facebook.github.io/react/), [AngularJS](https://angularjs.org/))
 - Server-side runtimes ([Node.js](http://nodejs.org/))
 - Task runners ([gulp](http://gulpjs.com/))
 - Pre- and post-processors ([Less.js](http://lesscss.org/))
