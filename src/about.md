@@ -9,6 +9,18 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 
 <a class="Button" href="../resume">View Résumé</a>
 
+## Colophon
+
+This site is forged with [Metalsmith](http://www.metalsmith.io/) and hosted via [GitHub Pages](https://pages.github.com/). [Merriweather](https://www.google.com/fonts/specimen/Merriweather) and [Inconsolata](http://www.google.com/fonts/specimen/Inconsolata) typefaces are supplied through [Google Fonts](http://www.google.com/fonts).
+
+<a class="Button" href="https://github.com/basham/v4.bash.am">GitHub repository</a>
+
+Past versions of the site are archived for reasons of historical stewardship and general amusement.
+
+- [Version 3, 2010&ndash;2014](http://v3.bash.am)
+- [Version 2, 2008&ndash;2009](http://v2.bash.am)
+- [Version 1, 2007&ndash;2008](http://v1.bash.am)
+
 ## Find me elsewhere
 
 <p class="Elsewhere">
@@ -16,9 +28,3 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
   <a class="Button" href="{{this}}">{{@key}}</a>
 {{/each}}
 </p>
-
-## Past portfolios
-
-- [Version 3, 2010&ndash;2014](http://v3.bash.am)
-- [Version 2, 2008&ndash;2009](http://v2.bash.am)
-- [Version 1, 2007&ndash;2008](http://v1.bash.am)
