@@ -29,24 +29,23 @@
   {{/if}}
 {{/each}}
   </nav>
-  <main class="Body-part">
-    <article class="Article">
+  <article class="Body-part Body-part--divide Article">
 {{#unless hide_heading}}
   {{#ifIsInCollection 'articles'}}
-      <h1 class="Article-h1 Article-h1--center">{{title}}</h1>
+    <h1 class="Article-h1 Article-h1--center">{{title}}</h1>
     {{else}}
-      <h1 class="Article-h1">{{title}}</h1>
+    <h1 class="Article-h1">{{title}}</h1>
   {{/ifIsInCollection}}
 {{/unless}}
 {{#if date}}
-      <p class="Article-paragraph">
-        <time class="Article-time" datetime="{{date}}" pubdate>{{formatDate date}}</time>
-      </p>
+    <p class="Article-paragraph">
+      <time class="Article-time" datetime="{{date}}" pubdate>{{formatDate date}}</time>
+    </p>
 {{/if}}
 {{{ contents }}}
-    </article>
+  </article>
   </main>
-  <footer class="Body-part Contact">
+  <footer class="Body-part Body-part--divide Contact">
     <a class="Button Button--clear" href="{{site.elsewhere.Twitter}}" title="Follow me on Twitter">@{{site.twitter}}</a>
     <a class="Button Button--clear" href="mailto:{{site.email}}">{{site.email}}</a>
     <a class="Button Button--clear" href="tel:{{site.phone_tel}}">{{site.phone}}</a>
