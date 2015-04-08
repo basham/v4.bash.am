@@ -4,9 +4,13 @@
   font-size: 100%;
   line-height: @ratio-Scale--15;
   margin: 0 auto;
-  max-width: 52em;
+  max-width: 48em;
   padding: 0;
   text-size-adjust: 100%;
+
+  @media @md and @sm-height {
+    font-size: @ratio-Scale--05;
+  }
 
   &--fontsLoaded {
     font-family: 'Merriweather', Georgia, serif;
@@ -21,11 +25,6 @@
 
     &--divide {
       border-top: 0.5vh solid @color-Base;
-    }
-
-    @media @md and @sm-height {
-      font-size: @ratio-Scale--05;
-      line-height: @ratio-Scale--15;
     }
   }
 }
