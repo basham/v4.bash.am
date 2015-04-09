@@ -10,6 +10,7 @@ var publish = require('metalsmith-publish');
 var fileMetadata = require('metalsmith-filemetadata');
 var metadata = require('metalsmith-metadata');
 var markdown = require('metalsmith-markdown');
+var jadeMarkup = require('./plugins/jade-markup');
 var templates = require('metalsmith-templates');
 var htmlMinifier = require('metalsmith-html-minifier');
 
@@ -19,8 +20,14 @@ var autoprefixer = require('metalsmith-autoprefixer');
 var inlineStyles = require('./plugins/inline-styles');
 
 // Configs
-require('./config/handlebars');
+require('./config/jade');
 var renderer = require('./config/marked');
+
+var templateFunctions = require('./config/functions');
+var extend = require('extend');
+var _fileMetadata = extend({}, templateFunctions, {
+  template: 'default.jade'
+});
 
 gulp.task('build', function(callback) {
   Metalsmith('./')
@@ -44,9 +51,7 @@ gulp.task('build', function(callback) {
     .use(fileMetadata([
       {
         pattern: '**/*.md',
-        metadata: {
-          template: 'default.html'
-        },
+        metadata: _fileMetadata,
         preserve: true
       }
     ]))
@@ -62,22 +67,15 @@ gulp.task('build', function(callback) {
       }
     }))
     .use(markdown({
+      pedantic: true,
       renderer: renderer,
       smartypants: true
     }))
     .use(permalinks({
       relative: false
     }))
-    .use(templates({
-      engine: 'handlebars',
-      inPlace: false
-    }))
-    // Have to run templates a second time,
-    // in order to render Handlbars within markdown.
-    .use(templates({
-      engine: 'handlebars',
-      inPlace: true
-    }))
+    .use(jadeMarkup())
+    .use(templates('jade'))
     .use(inlineStyles())
     .use(ignore([
       '**/main.css'

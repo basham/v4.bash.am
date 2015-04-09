@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(
+      http-equiv="X-UA-Compatible"
+      content="IE=edge")
+    meta(
+      name="viewport"
+      content="width=device-width, initial-scale=1.0")
+    meta(
+      name="description"
+      content=site.description)
+    meta(
+      name="author",
+      content=site.author)
+    - var titles = hide_title ? [] : [title];
+    - titles.push(site.author);
+    - var pageTitle = titles.join(' &middot; ');
+    title !{pageTitle}
+    script
+      include:js ../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
+      include:js ../node_modules/fg-loadcss/loadCSS.js
+      include:js default.head.js
+  body.Body
+    header.Body-part.Header
+      a.Header-name(href="/")= site.author
+      p.Header-specialties
+        each speciality in site.specialties
+          span.Header-specialty= speciality
+          | 
+    nav.Body-part.Nav
+      each page in collections.pages
+        if page.order
+          - var url = '/' + (page.path || '');
+          a.Nav-item(href=url)= page.title
+    article.Body-part.Body-part--divide.Article
+      - var isArticle = contains(collection, 'articles');
+      - var cn = { 'Article-h1--center': isArticle };
+      h1.Article-h1(class=cn)= title
+      if date
+        p.Article-paragraph
+          time.Article-time(datetime=date, pubdate)= dateFormat(date)
+      != contents
+    footer.Body-part.Body-part--divide.Contact
+      a.Button.Button--clear(href=site.elsewhere.Twitter, title="Follow me on Twitter") @#{site.twitter}
+      a.Button.Button--clear(href="mailto:#{site.email}")=site.email
+      a.Button.Button--clear(href="tel:#{site.phone_tel}")=site.phone
+    script
+      include:js default.body.js
