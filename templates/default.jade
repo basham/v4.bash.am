@@ -12,7 +12,7 @@ html(lang="en")
       name="description"
       content=site.description)
     meta(
-      name="author",
+      name="author"
       content=site.author)
     - var titles = hide_title ? [] : [title];
     - titles.push(site.author);
@@ -33,7 +33,10 @@ html(lang="en")
       each page in collections.pages
         if page.order
           - var url = '/' + (page.path || '');
-          a.Nav-item(href=url)= page.title
+          - var isSelf = page.path === path;
+          - var isInCollection = contains(collection, page.index);
+          - var cn = { 'Nav-item--active': isSelf || isInCollection };
+          a.Nav-item(href=url, class=cn)= page.title
     article.Body-part.Body-part--divide.Article
       - var isArticle = contains(collection, 'articles');
       - var cn = { 'Article-h1--center': isArticle };

@@ -2,6 +2,7 @@
 title: Articles
 order: 1
 hide_title: true
+index: articles
 permalink: false
 ---
 
