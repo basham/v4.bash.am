@@ -140,8 +140,7 @@ By establishing this shared data layer, there can be cleaner separation of back-
 * Erik Rath, contributor
 * George Wendal, contributor
 
-<footer class="Article-footer">
-
-This article is republished from the [Kuali wiki](https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT).
-
-</footer>
+<jade>
+footer.Article-footer
+  | This article is republished from the <a href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT">Kuali wiki</a>.
+</jade>

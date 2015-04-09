@@ -11,19 +11,23 @@ Naming colors is quite an art in itself, but I'm more interested in how to name 
 
 [Google Material Design color palette](http://www.google.com/design/spec/style/color.html) uses a 10-point scale of 50 to 900, with 50 being the lightest tint, 900 being the darkest shade, and 500 representing the primary color. They also introduce an almost neon-like A-series for most colors (A100, A200, A400, and A700), although they don’t elaborate on how or why to use those variations.
 
-<figure class="Figure">
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png">
-![Material Design Color Palette](https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png)
-  </a>
-</figure>
+<jade>
+figure.Figure
+  a.Figure-imgLink
+    img(
+      alt="Material Design Color Palette"
+      src="https://cloud.githubusercontent.com/assets/347558/6315830/867de73c-b9dd-11e4-8b96-2a74124b26c9.png")
+</jade>
 
 [PANTONE uses numbering systems](http://www.pantone.com/pages/pantone/Pantone.aspx?pg=20051) in a variety of ways to codify either the color family or where the color is located within their print materials. However, that shallow explanation fails to describe the methods of how they map color families to particular numbers. One can roughly interpret a [pattern of shifting hues to their 3-digit numbers](http://www.pantone-colours.com/), but the 4-digit numbers tend to become much less comprehensible.
 
-<figure class="Figure">
-  <a class="Figure-imgLink" href="https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png">
-![PANTONE colors](https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png)
-  </a>
-</figure>
+<jade>
+figure.Figure
+  a.Figure-imgLink
+    img(
+      alt="PANTONE colors"
+      src="https://cloud.githubusercontent.com/assets/347558/6315939/7521cd0c-b9e0-11e4-8483-156e6a6903ea.png")
+</jade>
 
 The CSS [`font-weight` property](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) shares a similar scale to that of Material Design. A lighter and thinner font weight starts at `100`, graduating in heaviness in 100-point increments until `900`. `400` maps to a *normal* weight, while `700` maps to a traditionally *bold* weight.
 
@@ -120,25 +124,21 @@ Luckily, much of the difficulty of generating color scales is solved by the work
 
 Using Chroma.js, we can interpolate any color within our scale. For this example, the scale will be seeded with white, green, and black colors.
 
-<div class="article-Scale article-Scale-row">
-  <div style="background-color: white;"></div>
-  <div style="background-color: green;"></div>
-  <div style="background-color: black;"></div>
-</div>
+<jade>
+- var colors = ['white', 'green', 'black'];
+.article-Scale.article-Scale-row
+  each color in colors
+    div(style="background-color: #{color}")
+</jade>
 
 [Bezier interpolation](https://github.com/gka/chroma.js/blob/master/doc/api.md#chromainterpolatebeziercolors) will ease the blending of the colors, while [lightness correction](https://github.com/gka/chroma.js/blob/master/doc/api.md#scalecorrectlightness) will ensure a linear lightness progression throughout the scale. Run the following [Node](http://nodejs.org/) script to generate the nine-point color scale.
 
-<div class="article-Scale article-Scale-row">
-  <div style="background-color: #d8e7d2;"></div>
-  <div style="background-color: #b3ceaa;"></div>
-  <div style="background-color: #91b585;"></div>
-  <div style="background-color: #739c66;"></div>
-  <div style="background-color: #57824b;"></div>
-  <div style="background-color: #406835;"></div>
-  <div style="background-color: #2c4f23;"></div>
-  <div style="background-color: #1d3617;"></div>
-  <div style="background-color: #121e0c;"></div>
-</div>
+<jade>
+- var colors = ['#d8e7d2', '#b3ceaa', '#91b585', '#739c66', '#57824b', '#406835', '#2c4f23', '#1d3617', '#121e0c'];
+.article-Scale.article-Scale-row
+  each color in colors
+    div(style="background-color: #{color}")
+</jade>
 
 ```js
 // Import npm dependencies.
@@ -187,11 +187,13 @@ The color scale is generated as Less variables. However, with little tweaking, t
 
 For those desiring a visual editor rather than running a custom Node script, the [Chroma.js Color Scale Helper](http://gka.github.io/palettes/) tool is an excellent alternative to quickly experiment with various color scale configurations.
 
-<figure class="Figure">
-  <a class="Figure-imgLink" href="http://gka.github.io/palettes/#colors=#fff,#ff0000,#000|steps=11|bez=1|coL=1">
-![Chroma.js Color Scale Helper](https://cloud.githubusercontent.com/assets/347558/6433936/c672b1ac-c049-11e4-8fff-6226b677c4ff.png)
-  </a>
-</figure>
+<jade>
+figure.Figure
+  a.Figure-imgLink(href="http://gka.github.io/palettes/#colors=#fff,#ff0000,#000|steps=11|bez=1|coL=1")
+    img(
+      alt="Chroma.js Color Scale Helper"
+      src="https://cloud.githubusercontent.com/assets/347558/6433936/c672b1ac-c049-11e4-8fff-6226b677c4ff.png")
+</jade>
 
 ## Conclusion
 

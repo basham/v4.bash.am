@@ -23,8 +23,8 @@ Past versions of the site are archived for reasons of historical stewardship and
 
 ## Find me elsewhere
 
-<p class="Elsewhere">
-{{#each site.elsewhere}}
-  <a class="Button" href="{{this}}">{{@key}}</a>
-{{/each}}
-</p>
+<jade>
+p.Elsewhere
+  each value, key in site.elsewhere
+    a.Button(href=value)= key
+</jade>
