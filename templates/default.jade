@@ -54,12 +54,12 @@ html(lang="en")
             if next
               a.Button.Button--clear.Pager-previous(
                 href="/#{next.path}"
-                title=dateFormat(next.date))
+                title="Previous article published #{dateFormat(next.date)}")
                 cite= next.title
             if previous
               a.Button.Button--clear.Pager-next(
                 href="/#{previous.path}"
-                title=dateFormat(previous.date))
+                title="Next article published #{dateFormat(previous.date)}")
                 cite= previous.title
     footer.Body-part.Body-part--divide.Contact
       a.Button.Button--clear(href=site.elsewhere.Twitter, title="Follow me on Twitter") @#{site.twitter}
