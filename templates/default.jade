@@ -22,7 +22,7 @@ html(lang="en")
       include:js ../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
-  body.Body
+  body.Body#top
     header.Body-part.Header
       a.Header-name(href="/")= site.author
       p.Header-specialties
@@ -48,6 +48,7 @@ html(lang="en")
       if isArticle
         footer.Article-footer.Pager
           .Pager-controls
+            a.Button.Button--clear.Pager-top(href="#top") Back to top
             a.Button.Button--clear(href="/") All articles
           .Pager-paging
             if next
