@@ -10,6 +10,7 @@ permalink: false
 ol.ArticleList
   each article in collections.articles
     li.ArticleList-item
-      a.ArticleList-title(href=article.path)= article.title
+      a(href="/#{article.path}")
+        cite.ArticleList-title= article.title
       time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
 </jade>
