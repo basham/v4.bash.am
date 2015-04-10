@@ -1,8 +1,5 @@
 .Article {
-
-  :last-child {
-    margin-bottom: 0;
-  }
+  padding: 5% 0;
 
   &-h1 {
     font-size: @ratio-Scale--20;
@@ -38,7 +35,7 @@
 
   &-h3 + &-list,
   &-h3 + &-paragraph {
-    margin: 0;
+    margin-top: 0;
   }
 
   &-h3 {
@@ -97,16 +94,14 @@
   }
 
   &-footer {
+    border-top: unit(1/16, rem) solid @color-Base;
+    margin-top: 5%;
+    padding-top: 5%;
+    text-align: center;
+  }
 
-    @media @xs {
-      text-align: center;
-    }
-
-    &::before {
-      content: '';
-      border-top: 0.5vh solid @color-Base;
-      margin: 6vh 45%;
-      display: block;
-    }
+  > * {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }

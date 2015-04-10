@@ -45,6 +45,21 @@ html(lang="en")
         p.Article-paragraph
           time.Article-time(datetime=date, pubdate)= dateFormat(date)
       != contents
+      if isArticle
+        footer.Article-footer.Pager
+          .Pager-controls
+            a.Button.Button--clear(href="/") All articles
+          .Pager-paging
+            if next
+              a.Button.Button--clear.Pager-previous(
+                href="/#{next.path}"
+                title=dateFormat(next.date))
+                em= next.title
+            if previous
+              a.Button.Button--clear.Pager-next(
+                href="/#{previous.path}"
+                title=dateFormat(previous.date))
+                em= previous.title
     footer.Body-part.Body-part--divide.Contact
       a.Button.Button--clear(href=site.elsewhere.Twitter, title="Follow me on Twitter") @#{site.twitter}
       a.Button.Button--clear(href="mailto:#{site.email}")=site.email

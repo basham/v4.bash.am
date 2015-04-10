@@ -1,0 +1,49 @@
+.Pager {
+
+  @media @xxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-controls {
+    display: flex;
+
+    //
+    // BUG
+    //
+    // `justify-content` has to be wrapped in a media query for the value to
+    // change from `space-between` to `flex-start` in Chrome 41.
+    // It works as expected in Safari and Firefox.
+    // If `space-between` or `space-around` is not in a media query, it will
+    // override any other `justify-content` value in a matched media query.
+    @media @xxsMax {
+      justify-content: space-between;
+    }
+
+    @media @xxs {
+      flex-grow: 100;
+      justify-content: flex-start;
+    }
+  }
+
+  &-paging {
+
+    @media @xxs {
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &-next::after {
+    content: '\203A';
+    padding-left: 0.5em;
+  }
+
+  &-previous::before {
+    content: '\2039';
+    padding-right: 0.5em;
+  }
+}
