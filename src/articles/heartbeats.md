@@ -22,7 +22,7 @@ Instead of business-centric models, perhaps we should prefer more user-centric m
 - Aesthetics
 - Brand reputation
 
-Quantifiable and qualifiable measures paint more holistic pictures detailing the practical benefits of design. But these all seem to dodge more fundamental truths. They are tailored for the times, culture, politics, affiliations, economics, social and ecological conditions, circumstance, opinion, preference, and emotion. Perhaps a human metric could be used that transcends all of these.
+Quantifiable and qualifiable measures paint more holistic pictures detailing the practical benefits of design. But these all seem to dodge more fundamental truths. They are tailored for the times, culture, politics, affiliations, economics, social and environmental conditions, circumstance, opinion, preference, and emotion. Perhaps a human metric could be used that transcends all of these.
 
 Humanity partakes in the embodied existence known as *life*, and it is affirmed in heartbeats, starting at its first and ceasing at its last. Heartbeats are the rhythmic purr of a mortal engine, powering a body meant for action and activity. They quicken with excitement and exertion. They quiet with rest and peace. They remind us we are alive, that we have more to give and to gain. They seem infinite and cheap until health is threatened. They are precious, yet taken for granted. They are limited, yet the volume is unknowable. They are betrayed by the demands of the world, but they are best sacrificed in service to the world. They are stolen by relentless cruelty, but they are best gifted in unconditional love. They are wasted in apathy, but they are best purposed in caring.
 
@@ -33,7 +33,7 @@ Design is for people, benefiting and shaping their interactions within the world
 - Does it build accomplishment instead of frustration?
 - Does it give voice to the voiceless?
 - Does it encourage love, for oneself, others, and the world?
-- Does it promote physical, mental, emotional, spiritual, economic, professional, social, or ecological health?
+- Does it promote physical, mental, emotional, spiritual, economic, professional, social, or environmental health?
 - Does it rejuvenate life or stifle life?
 
 Measuring design against the cost of heartbeats may not be practical, but in so many ways, it is the most important measure. Decisions about a design can be balanced on a new human-centric scale. A design is worthwhile if it cost the development team 100,000 heartbeats (roughly one person week), yet it saves at least that number of user heartbeats over the lifetime of the design. A design is worthwhile if it empowers users to spend their heartbeats more confidently, effectively, proficiently, and wisely. A design is worthwhile if it strengthens the weak, restores the disenfranchised, and elates the brokenhearted.
