@@ -15,7 +15,7 @@ I'm interested in building Web software that is adaptable, robust, and reliable.
 
 ## Values
 
-Courageously make choices to be what should be instead of making choices to continue to be as is.
+How I work and behave should be designed, not just the work itself. Courageously make choices to be what should be instead of making choices to continue to be as is.
 
 - *Intention:* Every decision in work processes and work output should be deliberate.
 - *Challenge:* Question the status quo. Encourage pioneering over settling for the present circumstances.
