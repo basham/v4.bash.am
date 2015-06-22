@@ -7,3 +7,7 @@ exports.contains = function(array, item) {
 exports.dateFormat = function(date) {
   return moment(date).format('MMMM D, YYYY');
 };
+
+exports.monthFormat = function(date) {
+  return moment(date).format('MMMM YYYY');
+};
