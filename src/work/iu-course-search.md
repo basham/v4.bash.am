@@ -1,5 +1,5 @@
 ---
-title: Course Search proof of concept
+title: IU Course Search
 startDate: '2013-03'
 startDateLabel: March
 endDate: '2013-05-16'

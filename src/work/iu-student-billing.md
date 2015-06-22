@@ -1,5 +1,5 @@
 ---
-title: Student Billing functional prototype
+title: IU Student Billing
 startDate: '2013-03'
 startDateLabel: March
 endDate: '2013-05-07'
