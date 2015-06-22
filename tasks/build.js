@@ -64,6 +64,11 @@ gulp.task('build', function(callback) {
         pattern: 'articles/*.md',
         sortBy: 'date',
         reverse: true
+      },
+      work: {
+        pattern: 'work/*.md',
+        sortBy: 'endDate',
+        reverse: true
       }
     }))
     .use(markdown({

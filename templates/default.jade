@@ -39,27 +39,40 @@ html(lang="en")
           a.Nav-item(href=url, class=cn)= page.title
     article.Body-part.Body-part--divide.Article
       - var isArticle = contains(collection, 'articles');
-      - var cn = { 'Article-h1--center': isArticle };
+      - var isWork = contains(collection, 'work');
+      - var isCollection = isArticle || isWork;
+      - var cn = { 'Article-h1--center': isCollection };
       h1.Article-h1(class=cn)= title
       if date
         p.Article-paragraph
           time.Article-time(datetime=date, pubdate)= dateFormat(date)
+      if endDate
+        p.Article-paragraph
+          time.Article-time(datetime=startDate)= startDateLabel
+          |  &ndash; 
+          time.Article-time(datetime=endDate, pubdate)= endDateLabel
       != contents
-      if isArticle
+      if isCollection
+        - var collectionSingular = isArticle ? 'article' : 'work';
+        - var collectionPlural = isArticle ? 'articles' : 'work';
+        - var allLabel = ['All', collectionPlural].join(' ');
+        - var allLink = isArticle ? '/' : '/work';
         footer.Article-footer.Pager
           .Pager-controls
             a.Button.Button--clear.Pager-top(href="#top") Back to top
-            a.Button.Button--clear(href="/") All articles
+            a.Button.Button--clear(href=allLink)= allLabel
           .Pager-paging
             if next
+              - var pagerTitle = ['Previous', collectionSingular, 'published', next.endDateLabel].join(' ')
               a.Button.Button--clear.Pager-previous(
                 href="/#{next.path}"
-                title="Previous article published #{dateFormat(next.date)}")
+                title=pagerTitle)
                 cite= next.title
             if previous
+              - var pagerTitle = ['Next', collectionSingular, 'published', previous.endDateLabel].join(' ')
               a.Button.Button--clear.Pager-next(
                 href="/#{previous.path}"
-                title="Next article published #{dateFormat(previous.date)}")
+                title=pagerTitle)
                 cite= previous.title
     footer.Body-part.Body-part--divide.Contact
       a.Button.Button--clear(href=site.elsewhere.Twitter, title="Follow me on Twitter") @#{site.twitter}
