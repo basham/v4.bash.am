@@ -15,6 +15,8 @@ html(lang="en")
       name="author"
       content=site.author)
     - var titles = hide_title ? [] : [title];
+    if client
+      - titles.push(client);
     - titles.push(site.author);
     - var pageTitle = titles.join(' &middot; ');
     title !{pageTitle}
@@ -48,6 +50,9 @@ html(lang="en")
           time.Article-time(datetime=date, pubdate)= dateFormat(date)
       if endDate
         p.Article-paragraph
+          if client
+            span.Article-client
+              a(href=clientLink)= client
           time.Article-time(datetime=startDate)= startDateLabel
           |  &ndash; 
           time.Article-time(datetime=endDate, pubdate)= endDateLabel

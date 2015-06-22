@@ -15,6 +15,7 @@
     line-height: @ratio-Scale--10;
     margin-bottom: 0;
     margin-top: 2vh;
+    text-align: center;
   }
 
   &-h1--center,
@@ -70,6 +71,23 @@
   &-h2 + &-h3 {
     margin-top: 1em;
     padding-top: 1vh;
+  }
+
+  &-client {
+    display: block;
+    white-space: nowrap;
+
+    @media @xs {
+      display: inline;
+    }
+
+    &::after {
+
+      @media @xs {
+        content: '\00b7';
+        margin: 0 0.5em;
+      }
+    }
   }
 
   &-time,

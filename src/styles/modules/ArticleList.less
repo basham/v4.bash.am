@@ -9,6 +9,7 @@
     }
 
     @media @xs {
+      align-items: baseline;
       display: flex;
     }
   }
@@ -22,10 +23,26 @@
     display: block;
 
     @media @xs {
+      flex-basis: 10em;
       text-align: right;
       margin-right: 1em;
-      min-width: 10em;
       order: -1;
+    }
+  }
+
+  &-client {
+    display: block;
+
+    @media @xs {
+      white-space: nowrap;
+    }
+
+    &::before {
+
+      @media @xs {
+        content: '\2014';
+        margin: 0 0.5em;
+      }
     }
   }
 }
