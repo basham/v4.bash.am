@@ -1,6 +1,7 @@
 ---
 title: Work
 order: 2
+index: work
 ---
 
 <jade>
