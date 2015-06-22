@@ -36,7 +36,8 @@ function plugin(opts) {
               // Convert pseudo element selectors to their bases.
               // `a:hover` => `a`
               // `.Component::before` => `.Component`
-              selector = selector.replace(/(:+[\-\w]+)+/g, '');
+              // `.Component:nth-last-child(2)` => `.Component`
+              selector = selector.replace(/(:+[\-\w()]+)+/g, '');
               // Retain `.wf-*` classes, for the Web Font loading technique.
               var matchesWebFont = selector.match(/(\.wf-[\w\-]+)+/g);
               if(!!matchesWebFont) {
