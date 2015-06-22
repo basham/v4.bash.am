@@ -2,9 +2,9 @@
 title: Course Registration
 client: Kuali Student
 clientLink: http://www.kuali.org/ks
-startDate: '2013-12'
+startDate: '2013-12-01'
 startDateLabel: December 2013
-endDate: '2014-01'
+endDate: '2014-01-01'
 endDateLabel: January 2014
 ---
 

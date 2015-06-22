@@ -8,8 +8,9 @@ index: work
 ol.ArticleList
   each work in collections.work
     li.ArticleList-item
-      a(href="/#{work.path}")
-        cite.ArticleList-title= work.title
+      span.ArticleList-link
+        a(href="/#{work.path}")
+          cite.ArticleList-title= work.title
       span.ArticleList-client= work.client
-      time.ArticleList-time(datetime=work.endDate, pubdate)= work.endDateLabel
+      time.ArticleList-time.ArticleList-time--year(datetime=work.endDate)= yearFormat(work.endDate)
 </jade>

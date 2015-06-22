@@ -2,9 +2,9 @@
 title: Design Guide
 client: Kuali Student
 clientLink: http://www.kuali.org/ks
-startDate: '2014-03'
+startDate: '2014-03-01'
 startDateLabel: March
-endDate: '2014-08'
+endDate: '2014-08-01'
 endDateLabel: August 2014
 ---
 

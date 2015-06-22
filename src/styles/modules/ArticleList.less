@@ -14,35 +14,46 @@
     }
   }
 
+  &-link {
+    display: block;
+    flex-grow: 1;
+  }
+
   &-title {
     font-size: @ratio-Scale--10;
     font-style: normal;
   }
 
   &-time {
-    display: block;
+    flex-shrink: 0;
 
     @media @xs {
       flex-basis: 10em;
-      text-align: right;
-      margin-right: 1em;
+      margin-right: 5%;
       order: -1;
+      text-align: right;
+    }
+
+    &--year {
+
+      &::before {
+        content: '\00b7';
+        margin: 0 0.5em;
+
+        @media @xs {
+          content: '';
+          margin: 0;
+        }
+      }
+
+      @media @xs {
+        flex-basis: auto;
+      }
     }
   }
 
   &-client {
-    display: block;
-
-    @media @xs {
-      white-space: nowrap;
-    }
-
-    &::before {
-
-      @media @xs {
-        content: '\2014';
-        margin: 0 0.5em;
-      }
-    }
+    flex-basis: 13em;
+    flex-shrink: 0;
   }
 }

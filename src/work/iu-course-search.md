@@ -2,7 +2,7 @@
 title: Course Search
 client: Indiana University (UITS)
 clientLink: https://uits.iu.edu/
-startDate: '2013-03'
+startDate: '2013-03-01'
 startDateLabel: March
 endDate: '2013-05-16'
 endDateLabel: May 2013

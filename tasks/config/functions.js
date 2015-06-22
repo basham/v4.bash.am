@@ -11,3 +11,7 @@ exports.dateFormat = function(date) {
 exports.monthFormat = function(date) {
   return moment(date).format('MMMM YYYY');
 };
+
+exports.yearFormat = function(date) {
+  return moment(date).format('YYYY');
+};
