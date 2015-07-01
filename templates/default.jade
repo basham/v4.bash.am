@@ -62,19 +62,23 @@ html(lang="en")
         - var collectionPlural = isArticle ? 'articles' : 'work';
         - var allLabel = ['All', collectionPlural].join(' ');
         - var allLink = isArticle ? '/' : '/work';
+        - collectionSingular += ',';
+        - collectionPlural += ',';
         footer.Article-footer.Pager
           .Pager-controls
             a.Button.Button--clear.Pager-top(href="#top") Back to top
             a.Button.Button--clear(href=allLink)= allLabel
           .Pager-paging
             if next
-              - var pagerTitle = ['Previous', collectionSingular, 'published', next.endDateLabel].join(' ')
+              - var pagerDate = next.endDateLabel || dateFormat(next.date);
+              - var pagerTitle = ['Previous', collectionSingular, 'published', pagerDate].join(' ')
               a.Button.Button--clear.Pager-previous(
                 href="/#{next.path}"
                 title=pagerTitle)
                 cite= next.title
             if previous
-              - var pagerTitle = ['Next', collectionSingular, 'published', previous.endDateLabel].join(' ')
+              - var pagerDate = previous.endDateLabel || dateFormat(previous.date);
+              - var pagerTitle = ['Next', collectionSingular, 'published', pagerDate].join(' ')
               a.Button.Button--clear.Pager-next(
                 href="/#{previous.path}"
                 title=pagerTitle)
