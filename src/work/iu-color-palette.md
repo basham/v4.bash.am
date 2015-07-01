@@ -81,7 +81,7 @@ figure.Figure
   .work-Toggle
     input.work-Toggle-checkbox(type="checkbox", id="toggleFigure")
     .work-Toggle-control
-      label.work-Toggle-label(for="toggleFigure") Show original
+      label.work-Toggle-label(for="toggleFigure") Show original use of color
     a.work-Toggle-item.work-Toggle-item--showWhenSelected.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
       img(
         alt="Screenshot of Schedule Manager, with original coloration"
