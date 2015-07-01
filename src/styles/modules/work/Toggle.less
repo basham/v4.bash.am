@@ -1,0 +1,61 @@
+.work-Toggle {
+
+  &-checkbox {
+    .screenReadersOnly();
+  }
+
+  &-control {
+    margin-bottom: 1em;
+    text-align: right;
+  }
+
+  &-label {
+    .Button;
+    color: @color-Link;
+
+    &::before {
+      background-color: #fff;
+      border: unit(2/16, em) solid @color-Link;
+      border-radius: 0.25em;
+      color: transparent;
+      content: '\2713';
+      display: inline-block;
+      height: 1em;
+      line-height: (20/16);
+      margin-right: 0.5em;
+      width: 1em;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: @color-Link--bg;
+    }
+  }
+
+  &-item {
+
+    &--showWhenSelected {
+      display: none;
+    }
+
+    &--hideWhenSelected {
+      display: block;
+    }
+  }
+
+  &-checkbox:focus ~ &-control > &-label::before {
+    box-shadow: 0 0 0 unit(1/16, em) #fff, 0 0 0 unit(2/16, em) @color-Link;
+  }
+
+  &-checkbox:checked ~ &-control > &-label::before {
+    color: @color-Link;
+  }
+
+  &-checkbox:checked ~ &-item--showWhenSelected {
+    display: block;
+  }
+
+  &-checkbox:checked ~ &-item--hideWhenSelected {
+    display: none;
+  }
+}

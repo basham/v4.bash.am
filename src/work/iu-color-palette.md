@@ -12,7 +12,11 @@ Before 2015, there were rarely any designers permanently staffed on development 
 
 ## Audit
 
-To discover the severity of current color usage, a sampling of screenshots and style sheets were curated from over a dozen applications. Colors were overused, were used inconsistently, and clashed, both within a single application and among applications. While an objective analysis of the overall color usage could have been conducted, the screenshots were sufficiently self-revealing for our purposes.
+To discover the severity of current color usage, a sampling of screenshots and style sheets were curated from over a dozen applications, then subjectively assessed. Colors were overused, were used inconsistently, and clashed, both within a single application and among applications.
+
+[SCREENSHOTS OF OTHER APPLICATIONS]
+
+Given its diversity of both color and user interface components, the *Schedule Manager* application was chosen for further analysis and eventual experimentation with a new palette.
 
 <jade>
 figure.Figure
@@ -22,17 +26,7 @@ figure.Figure
       src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
 </jade>
 
-Given its diversity of color and user interface components, the *Schedule Manager* application was chosen for analysis and experimentation with a new palette.
-
-<jade>
-figure.Figure
-  a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
-    img(
-      alt="Screenshot of Schedule Manager"
-      src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
-</jade>
-
-The application is composed of 34 colors. Twelve colors are variations of black and white:
+*Schedule Manager* is composed of 34 colors. Twelve colors are variations of black and white:
 
 <jade>
 - var colors = ['#000', '#212121', '#2a2a2a', '#333', '#474747', '#666', '#737373', '#999', '#ddd', '#e6e6e6', '#f5f5f5', '#fff'].reverse();
@@ -68,7 +62,7 @@ Eleven colors are from unknown origins:
     div(style="background-color: #{color}")
 </jade>
 
-The visual language becomes meaningless in its struggle to be meaningful. Its loud chaos encourages only inaction. It is confounding, paralyzing, and unsure, and those traits are imparted on the user.
+Within the context of this exemplar, as more color is added, the louder and more meaningless the visual language becomes. This chaos encourages only inaction. It is confounding, paralyzing, and unsure, and those traits are inevitably imparted on the user.
 
 ## Goals
 
@@ -78,14 +72,36 @@ Ensuing from the audit, three goals guided the process of determining a new colo
 2. **Limit breadth**: Identify a few primary colors to be the foundation of the entire palette, each with its own unique meaning.
 3. **Control depth**: Introduce a very controlled set of shades and tints based on the primary colors, and standardize their naming schema.
 
-## Experimentation
+## Palette
 
-[Getting the repo prepped]
-https://github.com/iuux/ess-color
+In order to quickly experiment with alternative colors to determine a new palette, a static HTML snapshot of the *Schedule Manager* application was grabbed and all colors in its style sheets were abstracted into [Less variables](http://lesscss.org/features/#variables-feature). As much as possible, markup remained unaltered from the original source and only CSS color properties were adjusted. A [custom build system](https://github.com/iuux/ess-color/tree/master/tasks), managed by the [gulp](http://gulpjs.com/) task runner, allowed the snapshot to instantly update when the variable values changed. Once the untampered snapshot (located in the [repository's `master` branch](https://github.com/iuux/ess-color)) was ready, all new application of color existed in the [`palette` branch](https://github.com/iuux/ess-color/tree/palette).
 
-## Primary palette
+<jade>
+figure.Figure
+  .work-Toggle
+    input.work-Toggle-checkbox(type="checkbox", id="toggleFigure")
+    .work-Toggle-control
+      label.work-Toggle-label(for="toggleFigure") Show original
+    a.work-Toggle-item.work-Toggle-item--showWhenSelected.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
+      img(
+        alt="Screenshot of Schedule Manager, with original coloration"
+        src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
+    a.work-Toggle-item.work-Toggle-item--hideWhenSelected.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png")
+      img(
+        alt="Screenshot of Schedule Manager colored with new palette"
+        src="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png")
+  figcaption.Figure-caption
+    p
+      | Particular color values were chosen through experimentation, testing the colors in numerous permutations for their aesthetic harmony. Code for the experiment is located on
+      | #{' '}
+      a(href="https://github.com/iuux/ess-color")
+        | GitHub (
+        code iuux/ess-color
+        | )
+      | .
+</jade>
 
-The experiment resulted basing the new color palette from five primary colors:
+The experiment resulted in a new color palette based on five primary colors:
 
 <jade>
 - var colors = ['#fff', '#000', '#e1d8b7', '#4b306a', '#7d110c'];
@@ -94,13 +110,13 @@ The experiment resulted basing the new color palette from five primary colors:
     div(style="background-color: #{color}")
 </jade>
 
-1. **White** is the background color, a pure and clean backdrop capable of hosting any interface.
-2. **Black** and its shades are used for static text (*Text*).
-3. **IU Cream** and its variants structure the interface (*Base*).
-4. **IU Majestic (violet)** and its variants indicate interactive elements (*Interactive*).
+1. **White** is the background color, a pure and clean backdrop capable of hosting any user interface.
+2. **Black** and its shades are used for static, non-interactive text (*Text*).
+3. **IU Cream** and its variants frame the interface, coloring structural items such as borders and headers (*Base*).
+4. **IU Majestic (violet)** and its variants indicate interactive components, such as form fields and buttons (*Interactive*).
 5. **IU Crimson** is used as a rare accent (*Accent*).
 
-## Variants
+Variants to these primary colors were generated according to techniques described in the <a href="/articles/codifying-colors/"><cite>Codying Colors</cite></a> article. The technique allows a full range of tints and shades to be interpolated from a single color. These colors are codified on a scale of `0` (representing pure white) to `1000` (representing pure black) in steps of `50` units. Each source color is placed roughly along its appropriate place in the scale. For example, IU Cream is coded as `Base-150`, while IU Majestic is coded as `Interactive-750` and IU Crimson as `Accent-750`.
 
 <jade>
 - var colors = [];
@@ -138,7 +154,13 @@ The experiment resulted basing the new color palette from five primary colors:
                 div= item.hex
 </jade>
 
-## Variants (Version 2)
+An ancillary benefit of codifying colors is their ability to approximate text contrast ratios. As long as the background and foreground colors are at least a code value of `450` different, then most likely acceptable [AA text contrast (`4.5:1`)](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) is achieved. However, these approximations should always be confirmed.
+
+## Palette, version 2
+
+After several months of applying the color palette to a variety of applications, none of the original colors have been removed or altered. Instead, a darker gray was added to the Text family, and a new shade and tint were added to the Interactive family. Danger (red) and Success (green) color families, not sourced from the IU brand guidelines, were added to accommodate alert messages.
+
+The only deviant to the norm was the Link color. Any variant along the IU Majestic scale resulted in links appearing dull. In order for links to pop, without the aid of additional visual affordances like underlines, the color needed to be brighter. More specifically, it was generated by increasing the saturation of IU Majestic to `100%`. Mostly, colors in the Interactive family are used for borders and backgrounds, not for text.
 
 <jade>
 - var colors = [];
@@ -178,5 +200,13 @@ figure.Figure.Figure--deck
                     div= value
                   div= item.hex
   figcaption.Figure-caption
-    p Note: Colors added in this second version are outlined in black.
+    p Colors added in the second version of the palette are outlined in black.
 </jade>
+
+[SCREENSHOT OF ADRX CASELOAD]
+
+## Conclusion
+
+The exercise to design a new color palette for Indiana University student enterprise applications resulted in a controlled visual language that will allow users familiar with one interface to quickly understand unfamiliar interfaces. Systematic methods for generating and codifying colors will allow the palette to become richer with new colors as needed, enable consistent naming schemes, and provide utility to those applying the colors.
+
+As the palette is challenged against more user interfaces, it'll become increasingly important to conduct user studies to determine how effective the color families are on describing interfaces and discover if there are any unforseen accessibility issues. Color families outside of the IU brand guidelines, such as Danger and Success, should be occasionally refined to better fit within the rest of the palette. The Link family may soon need additional colors to represent visited or active states.
