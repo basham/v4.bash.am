@@ -46,7 +46,7 @@ figure.Figure
       alt="Sketch of a list of selectable university terms."
       src="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png")
   figcaption.Figure-caption
-    | A <a href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0">series of sketches</a> explored how to navigate among academic terms.
+    | A <a class="Link" href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0">series of sketches</a> explored how to navigate among academic terms.
 </jade>
 
 <jade>
@@ -64,14 +64,14 @@ Leveraging my experience using the [AngularJS](https://angularjs.org/) framework
 figure.Figure.Figure--code
   <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js?footer=no"></script>
   figcaption.Figure-caption
-    | Templates were originally driven by static JSON fixtures, such as in the <a href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>ScheduleService</em></a>.
+    | Templates were originally driven by static JSON fixtures, such as in the <a class="Link" href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>ScheduleService</em></a>.
 </jade>
 
 <jade>
 figure.Figure.Figure--code
   <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/8cb8ce312cb3a8fa828b7dcdf703a742bd7eaf89/app/modules/app/schedule.js?footer=no"></script>
   figcaption.Figure-caption
-    | Once built, JSON fixtures were replaced by live web services, such as in the <a href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>scheduleService</em> provider</a>.
+    | Once built, JSON fixtures were replaced by live web services, such as in the <a class="Link" href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>scheduleService</em> provider</a>.
 </jade>
 
 Even though the proof of concept was primarily concerned with the technical feasibility of this approach, I was still able to receive rudimentary student feedback to guide refinement of the user interface throughout the entire project, by means of an Indiana University undergraduate intern.

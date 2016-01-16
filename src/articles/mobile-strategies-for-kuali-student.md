@@ -142,5 +142,5 @@ By establishing this shared data layer, there can be cleaner separation of back-
 
 <jade>
 footer.Article-footer
-  | This article is republished from the <a href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT">Kuali wiki</a>.
+  | This article is republished from the <a class="Link" href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT">Kuali wiki</a>.
 </jade>

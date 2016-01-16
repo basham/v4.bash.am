@@ -11,7 +11,7 @@ ol.ArticleList
   each article in collections.articles
     li.ArticleList-item
       span.ArticleList-link
-        a(href="/#{article.path}")
+        a.Link(href="/#{article.path}")
           cite.ArticleList-title= article.title
       time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
 </jade>

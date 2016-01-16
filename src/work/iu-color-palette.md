@@ -112,7 +112,7 @@ figure.Figure
     p
       | Particular color values were chosen through experimentation, testing the colors in numerous permutations for their aesthetic harmony. Code for the experiment is located on
       | #{' '}
-      a(href="https://github.com/iuux/ess-color")
+      a.Link(href="https://github.com/iuux/ess-color")
         | GitHub (
         code iuux/ess-color
         | )
@@ -134,7 +134,7 @@ The experiment resulted in a new color palette based on five primary colors:
 4. **IU Majestic (violet)** and its variants indicate interactive components, such as form fields and buttons (*Interactive*).
 5. **IU Crimson** is used as a rare accent (*Accent*).
 
-Variants to these primary colors were generated according to techniques described in the <a href="/articles/codifying-colors/"><cite>Codying Colors</cite></a> article. The technique allows a full range of tints and shades to be interpolated from a single color. These colors are codified on a scale of `0` (representing pure white) to `1000` (representing pure black) in steps of `50` units. Each source color is placed roughly along its appropriate place in the scale. For example, IU Cream is coded as `Base-150`, while IU Majestic is coded as `Interactive-750` and IU Crimson as `Accent-750`.
+Variants to these primary colors were generated according to techniques described in the <a class="Link" href="/articles/codifying-colors/"><cite>Codying Colors</cite></a> article. The technique allows a full range of tints and shades to be interpolated from a single color. These colors are codified on a scale of `0` (representing pure white) to `1000` (representing pure black) in steps of `50` units. Each source color is placed roughly along its appropriate place in the scale. For example, IU Cream is coded as `Base-150`, while IU Majestic is coded as `Interactive-750` and IU Crimson as `Accent-750`.
 
 <jade>
 - var colors = [];

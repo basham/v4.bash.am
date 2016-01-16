@@ -53,6 +53,27 @@ renderer.heading = function(text, level, raw) {
     + '</' + type + '>';
 };
 
+renderer.link = function(href, title, text) {
+  if(this.options.sanitize) {
+    try {
+      var prot = decodeURIComponent(unescape(href))
+        .replace(/[^\w:]/g, '')
+        .toLowerCase();
+    } catch(e) {
+      return '';
+    }
+    if(prot.indexOf('javascript:') === 0 || prot.indexOf('vbscript:') === 0) {
+      return '';
+    }
+  }
+  var out = '<a class="Link" href="' + href + '"';
+  if(title) {
+    out += ' title="' + title + '"';
+  }
+  out += '>' + text + '</a>';
+  return out;
+};
+
 renderer.list = function(body, ordered) {
   var type = ordered ? 'ol' : 'ul';
   return '<' + type + ' class="Article-list">' + body + '</' + type + '>';

@@ -52,7 +52,7 @@ html(lang="en")
         p.Article-paragraph
           if client
             span.Article-client
-              a(href=clientLink)= client
+              a.Link(href=clientLink)= client
           time.Article-time(datetime=startDate)= startDateLabel
           |  &ndash; 
           time.Article-time(datetime=endDate, pubdate)= endDateLabel
