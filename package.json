@@ -47,7 +47,7 @@
     "moment": "^2.9.0",
     "postcss": "5.0.14",
     "require-directory": "2.1.1",
-    "run-sequence": "^1.0.2",
+    "run-sequence": "1.1.5",
     "uglify-js": "^2.4.19"
   }
 }
