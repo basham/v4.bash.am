@@ -23,7 +23,7 @@
     "css-mqpacker": "^4.0.0",
     "extend": "^2.0.0",
     "fg-loadcss": "0.2.4",
-    "fontfaceobserver": "^1.4.3",
+    "fontfaceobserver": "1.6.3",
     "gulp": "^3.8.10",
     "gulp-exit": "0.0.2",
     "gulp-gh-pages": "^0.5.0",
