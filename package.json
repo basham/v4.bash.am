@@ -27,7 +27,7 @@
     "gulp": "3.9.0",
     "gulp-exit": "0.0.2",
     "gulp-gh-pages": "0.5.4",
-    "highlight.js": "^8.4.0",
+    "highlight.js": "9.1.0",
     "htmlmin": "0.0.4",
     "jade": "^1.9.2",
     "marked": "^0.3.3",
