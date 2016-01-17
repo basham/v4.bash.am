@@ -12,7 +12,7 @@ var metadata = require('metalsmith-metadata');
 var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdown');
 var jadeMarkup = require('./plugins/jade-markup');
-var templates = require('metalsmith-templates');
+var layouts = require('metalsmith-layouts');
 var htmlMinifier = require('metalsmith-html-minifier');
 
 // CSS
@@ -25,10 +25,6 @@ require('./config/jade');
 var renderer = require('./config/marked');
 
 var templateFunctions = require('./config/functions');
-var extend = require('extend');
-var _fileMetadata = extend({}, templateFunctions, {
-  template: 'default.jade'
-});
 
 gulp.task('build', function(callback) {
   Metalsmith('./')
@@ -51,8 +47,8 @@ gulp.task('build', function(callback) {
     }))
     .use(fileMetadata([
       {
+        metadata: templateFunctions,
         pattern: '**/*.md',
-        metadata: _fileMetadata,
         preserve: true
       }
     ]))
@@ -85,7 +81,12 @@ gulp.task('build', function(callback) {
       relative: false
     }))
     .use(jadeMarkup())
-    .use(templates('jade'))
+    .use(layouts({
+      default: 'default.jade',
+      directory: 'layouts',
+      engine: 'jade',
+      pattern: '**/*.html'
+    }))
     .use(inlineStyles())
     .use(ignore([
       '**/main.css'
