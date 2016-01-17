@@ -22,7 +22,7 @@
     "classnames": "2.2.3",
     "css-mqpacker": "^4.0.0",
     "extend": "^2.0.0",
-    "fg-loadcss": "^0.1.6",
+    "fg-loadcss": "0.2.4",
     "fontfaceobserver": "^1.4.3",
     "gulp": "^3.8.10",
     "gulp-exit": "0.0.2",
