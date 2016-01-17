@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/basham/v4.bash.am",
   "devDependencies": {
-    "autoprefixer": "^5.1.0",
+    "autoprefixer": "6.3.1",
     "browser-sync": "^2.5.3",
     "cheerio": "^0.19.0",
     "classnames": "^1.2.0",
@@ -32,7 +32,7 @@
     "jade": "^1.9.2",
     "marked": "^0.3.3",
     "metalsmith": "^1.0.1",
-    "metalsmith-autoprefixer": "^1.0.1",
+    "metalsmith-autoprefixer": "1.1.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-filemetadata": "0.0.4",
     "metalsmith-html-minifier": "^1.1.0",
@@ -45,7 +45,7 @@
     "metalsmith-templates": "^0.7.0",
     "minimatch": "^2.0.4",
     "moment": "^2.9.0",
-    "postcss": "^4.0.6",
+    "postcss": "5.0.14",
     "require-directory": "^2.0.0",
     "run-sequence": "^1.0.2",
     "uglify-js": "^2.4.19"
