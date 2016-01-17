@@ -9,6 +9,7 @@ var publish = require('metalsmith-publish');
 // Content
 var fileMetadata = require('metalsmith-filemetadata');
 var metadata = require('metalsmith-metadata');
+var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdown');
 var jadeMarkup = require('./plugins/jade-markup');
 var templates = require('metalsmith-templates');
@@ -70,6 +71,10 @@ gulp.task('build', function(callback) {
         sortBy: 'endDate',
         reverse: true
       }
+    }))
+    .use(inplace({
+      engine: 'handlebars',
+      pattern: '**/*.md'
     }))
     .use(markdown({
       pedantic: true,
