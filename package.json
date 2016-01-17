@@ -17,7 +17,7 @@
   "homepage": "https://github.com/basham/v4.bash.am",
   "devDependencies": {
     "autoprefixer": "6.3.1",
-    "browser-sync": "^2.5.3",
+    "browser-sync": "2.11.0",
     "cheerio": "^0.19.0",
     "classnames": "2.2.3",
     "css-mqpacker": "^3.1.0",
