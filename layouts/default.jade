@@ -25,31 +25,27 @@ html(lang="en")
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
   body.Body#top
-    header.Body-part.Header
-      a.Header-name(href="/")= site.author
-      p.Header-specialties
-        each speciality in site.specialties
-          span.Header-specialty= speciality
-          | 
-    nav.Body-part.Nav
-      each page in collections.pages
-        if page.order
-          - var url = '/' + (page.path || '');
-          - var isSelf = page.path === path;
-          - var isInCollection = contains(collection, page.index);
-          - var cn = { 'Nav-item--active': isSelf || isInCollection };
-          a.Nav-item(href=url, class=cn)= page.title
+    nav.Body-part.Header
+      .Header-identity
+        a.Header-name(href="/")= site.author
+      .Header-nav.Nav
+        each page in collections.pages
+          if page.order
+            - var url = '/' + (page.path || '');
+            - var isSelf = page.path === path;
+            - var isInCollection = contains(collection, page.index);
+            - var cn = { 'Nav-item--active': isSelf || isInCollection };
+            a.Nav-item(href=url, class=cn)= page.title
     article.Body-part.Body-part--divide.Article
       - var isArticle = contains(collection, 'articles');
       - var isWork = contains(collection, 'work');
       - var isCollection = isArticle || isWork;
-      - var cn = { 'Article-h1--center': isCollection };
-      h1.Article-h1(class=cn)= title
+      h1.Article-h1= title
       if date
-        p.Article-paragraph
+        p.Article-paragraph.Article-meta
           time.Article-time(datetime=date, pubdate)= dateFormat(date)
       if endDate
-        p.Article-paragraph
+        p.Article-paragraph.Article-meta
           if client
             span.Article-client
               a.Link(href=clientLink)= client
@@ -61,7 +57,7 @@ html(lang="en")
         - var collectionSingular = isArticle ? 'article' : 'work';
         - var collectionPlural = isArticle ? 'articles' : 'work';
         - var allLabel = ['All', collectionPlural].join(' ');
-        - var allLink = isArticle ? '/' : '/work';
+        - var allLink = isArticle ? '/articles' : '/work';
         - collectionSingular += ',';
         - collectionPlural += ',';
         footer.Article-footer.Pager
@@ -83,9 +79,5 @@ html(lang="en")
                 href="/#{previous.path}"
                 title=pagerTitle)
                 cite= previous.title
-    footer.Body-part.Body-part--divide.Contact
-      a.Button.Button--clear(href=site.elsewhere.Twitter, title="Follow me on Twitter") @#{site.twitter}
-      a.Button.Button--clear(href="mailto:#{site.email}")=site.email
-      a.Button.Button--clear(href="tel:#{site.phone_tel}")=site.phone
     script
       include:js default.body.js

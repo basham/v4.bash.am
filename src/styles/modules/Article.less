@@ -14,13 +14,7 @@
     font-size: @ratio-Scale--20;
     line-height: @ratio-Scale--10;
     margin-bottom: 0;
-    margin-top: 2vh;
-    text-align: center;
-  }
-
-  &-h1--center,
-  &-h1--center + &-paragraph {
-    text-align: center;
+    margin-top: 1em;
   }
 
   &-h2 {
@@ -61,6 +55,10 @@
     padding-top: 1vh;
   }
 
+  &-meta {
+    margin-bottom: 3em;
+  }
+
   &-client {
     display: block;
     white-space: nowrap;
@@ -81,6 +79,17 @@
   &-time,
   time {
     white-space: nowrap;
+  }
+
+  &-notice {
+    background-color: @color-Base--light;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    padding: 5%;
+
+    :first-child {
+      margin-top: 0;
+    }
   }
 
   &-blockquote {

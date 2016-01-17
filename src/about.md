@@ -1,9 +1,11 @@
 ---
 title: About
-order: 4
+order: 1
 ---
 
-I'm Chris Basham, an [interaction designer](http://en.wikipedia.org/wiki/Interaction_design) and [front-end developer](http://en.wikipedia.org/wiki/Front_end_development) living in the quaint town of [Bloomington, Indiana](http://en.wikipedia.org/wiki/Bloomington,_Indiana). Since <time class="Article-time" datetime="2012-07">mid-2012</time>, I've worked for [Indiana University](http://www.iu.edu/), designing and developing various student-related web software.
+Since mid-2012, I’ve worked for [Indiana University](http://www.iu.edu/) in the quaint town of [Bloomington](http://en.wikipedia.org/wiki/Bloomington,_Indiana), designing and developing various student-related Web software. As the lead UX designer in a cross-functional Agile team, I train coworkers on design and development processes, and I coordinate best practices with sister teams.
+
+I also co-organize the [Bloomington chapter of IxDA](http://www.meetup.com/IxDA-Bloomington/) in an effort to cultivate the local design community, encouraging student designers and local professionals to share and network. Occasionally I [write](/articles) or [talk](/talks) about my craft, but freely inquire about more details via [email](mailto:chris@bash.am) or [Twitter]({{site.elsewhere.Twitter}} 'Follow me on Twitter').
 
 When not slicing fingers with sticky notes or [refactoring repositories](https://github.com/basham), I'm desperately convincing others to play a backed [Kickstarter](https://www.kickstarter.com/profile/1468456177) game, fervently listening to an [audiobook](http://www.audible.com) or [podcast](http://99percentinvisible.org/), or blissfully running trails in my [sandals](http://www.lunasandals.com/).
 

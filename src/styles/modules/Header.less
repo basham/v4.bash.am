@@ -1,24 +1,36 @@
 .Header {
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 0;
-  text-align: center;
+  padding-left: 0;
+
+  @media @xs {
+    flex-direction: row;
+  }
+
+  &-identity {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-left: 5%;
+  }
 
   &-name {
-    display: inline-block;
     font-size: @ratio-Scale--10;
     font-weight: bold;
-    margin-top: 2vh;
     text-decoration: none;
 
-    &, &:visited {
+    &,
+    &:visited {
       color: @color-Text;
     }
   }
 
-  &-specialties {
-    margin: 0;
-  }
+  &-nav {
+    padding-left: 0.75em;
 
-  &-specialty {
-    white-space: nowrap;
+    @media @xs {
+      padding-left: 0;
+    }
   }
 }
