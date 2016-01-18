@@ -1,18 +1,15 @@
 .Header {
-  align-items: baseline;
   display: flex;
   flex-direction: column;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding: 5% 5% 0;
 
   @media @xs {
+    align-items: baseline;
     flex-direction: row;
   }
 
   &-identity {
-    flex-grow: 1;
     flex-shrink: 0;
-    padding-left: 5%;
   }
 
   &-name {
@@ -27,13 +24,15 @@
   }
 
   &-nav {
-    padding-left: 5%;
-    margin-left: -2.5vw;
+    display: flex;
+    margin-left: -2.5%;
+    padding: 0.5em 0;
+    width: 100%;
 
     @media @xs {
-      padding-left: 0;
+      justify-content: flex-end;
       margin-left: 0;
-      margin-right: -2.5vw;
+      margin-right: -2%;
     }
   }
 }
