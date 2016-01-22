@@ -41,6 +41,13 @@
     margin-top: 0;
   }
 
+  &-paragraph {
+
+    &--center {
+      text-align: center;
+    }
+  }
+
   &-list {
     padding-left: 1em;
   }
@@ -131,15 +138,11 @@
     overflow: scroll;
   }
 
-  &-footer {
-    text-align: center;
-
-    &::before {
-      border-top: unit(3/16, rem) solid @color-Base;
-      display: block;
-      content: '';
-      margin: 10% 40%;
-    }
+  &-hr {
+    border: none;
+    border-top: unit(3/16, rem) solid @color-Base;
+    display: block;
+    margin: 10% 40%;
   }
 
   &-signature {

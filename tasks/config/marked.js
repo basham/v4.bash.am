@@ -53,6 +53,10 @@ renderer.heading = function(text, level, raw) {
     + '</' + type + '>';
 };
 
+renderer.hr = function() {
+  return '<hr class="Article-hr"/>\n';
+};
+
 renderer.link = function(href, title, text) {
   if(this.options.sanitize) {
     try {

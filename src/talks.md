@@ -56,7 +56,9 @@ figure.Figure.Figure--deck
 
 We discuss how to choose a typeface and how typography is transforming the Web through iconography and font services.
 
+***
+
 <jade>
-footer.Article-footer
+p.Article-paragraph.Article-paragraph--center
   a.Button(href="https://speakerdeck.com/basham") View more slide decks on Speaker Deck
 </jade>
