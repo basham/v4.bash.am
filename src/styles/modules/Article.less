@@ -131,6 +131,17 @@
     overflow: scroll;
   }
 
+  &-footer {
+    text-align: center;
+
+    &::before {
+      border-top: unit(3/16, rem) solid @color-Base;
+      display: block;
+      content: '';
+      margin: 10% 40%;
+    }
+  }
+
   &-signature {
     height: 3em;
   }
