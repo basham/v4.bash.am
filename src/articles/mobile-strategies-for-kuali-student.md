@@ -3,6 +3,11 @@ title: Mobile Strategies for Kuali Student
 date: '2013-12-16'
 ---
 
+<jade>
+footer.Article-notice
+  | This article is republished from the #[a.Link(href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT") Kuali wiki].
+</jade>
+
 ## Executive summary
 
 To produce future friendly web software, we must embrace both the unpredictable nature of the Internet and the increasing quantity and diversity of devices capable of accessing the Web. Responsive web design is only one technique of a fuller strategy needed to build services for not only mobile but any device. Kuali software must accommodate more than screen size and consider the context of use. While we're in the process of understanding who is using the software and what they may need to accomplish, we can't accurately predict how, where, or when they will access the software, but we can orient the software in ways that will empower it to adapt to these varied contexts.
@@ -139,8 +144,3 @@ By establishing this shared data layer, there can be cleaner separation of back-
 * Tara Bazler, co-author
 * Erik Rath, contributor
 * George Wendal, contributor
-
-<jade>
-footer.Article-footer
-  | This article is republished from the <a class="Link" href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT">Kuali wiki</a>.
-</jade>
