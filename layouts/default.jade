@@ -25,10 +25,9 @@ html(lang="en")
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
   body.Body#top
-    nav.Body-part.Header
-      .Header-identity
-        a.Header-name(href="/")= site.author
-      .Header-nav.Nav
+    header.Header(role="banner")
+      a.Header-name(href="/")= site.author
+      nav.Header-nav.Nav(role="navigation")
         each page in collections.pages
           if page.order
             - var url = '/' + (page.path || '');
@@ -36,7 +35,7 @@ html(lang="en")
             - var isInCollection = contains(collection, page.index);
             - var cn = { 'Nav-item--active': isSelf || isInCollection };
             a.Nav-item(href=url, class=cn)= page.title
-    article.Body-part.Body-part--divide.Article
+    main.Article(role="main")
       - var isArticle = contains(collection, 'articles');
       - var isWork = contains(collection, 'work');
       - var isCollection = isArticle || isWork;

@@ -1,23 +1,26 @@
 .Nav {
 
   &-item {
+    border-bottom: unit(3/16, em) solid transparent;
     color: @color-Link;
     line-height: 1;
-    padding: 1em 2.5% unit(13/16, em);
-    position: relative;
+    padding: 1em 2.5% unit(10/16, em);
     text-decoration: none;
+
+    @media @xs {
+      padding-bottom: 1em;
+      padding-top: 1.5em;
+    }
 
     &:focus,
     &:hover {
       background-color: @color-Link--bg;
     }
 
+    &:focus,
+    &:hover,
     &--active {
-      box-shadow: 0 unit(8/16, rem) 0 0 #fff, 0 unit(11/16, rem) 0 0 @color-Link;
-
-      @media @md and @sm-height {
-        box-shadow: 0 unit(10/16, rem) 0 0 #fff, 0 unit(13/16, rem) 0 0 @color-Link;
-      }
+      border-color: @color-Link;
     }
   }
 }
