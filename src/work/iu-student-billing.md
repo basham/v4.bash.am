@@ -6,6 +6,7 @@ startDate: '2013-03-01'
 startDateLabel: March
 endDate: '2013-05-07'
 endDateLabel: May 2013
+description: Prototyping with AngularJS.
 ---
 
 In late 2012, the Indiana University student billing user interface was redesigned in order to make it easier for students to understand their monthly statements and pay the balance on their accounts. After numerous low-fidelity design iterations and subsequent user tests, a functional prototype was crafted in [AngularJS](https://angularjs.org/) as a model for the production version.

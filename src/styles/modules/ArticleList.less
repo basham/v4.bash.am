@@ -1,22 +1,27 @@
 .ArticleList {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style-type: none;
+  margin: 1em 0 0;
   padding: 0;
 
   &-item {
+    flex-basis: 100%;
 
     & + & {
-      margin-top: 1em;
+      padding-top: 1.5em;
     }
 
     @media @xs {
-      align-items: baseline;
-      display: flex;
-    }
-  }
+      flex-basis: 50%;
+      padding-right: 1em;
 
-  &-link {
-    display: block;
-    flex-grow: 1;
+      &:nth-child(2) {
+        padding-top: 0;
+      }
+    }
   }
 
   &-title {
@@ -24,36 +29,7 @@
     font-style: normal;
   }
 
-  &-time {
-    flex-shrink: 0;
-
-    @media @xs {
-      flex-basis: 10em;
-      margin-right: 5%;
-      order: -1;
-      text-align: right;
-    }
-
-    &--year {
-
-      &::before {
-        content: '\00b7';
-        margin: 0 0.5em;
-
-        @media @xs {
-          content: '';
-          margin: 0;
-        }
-      }
-
-      @media @xs {
-        flex-basis: auto;
-      }
-    }
-  }
-
-  &-client {
-    flex-basis: 13em;
-    flex-shrink: 0;
+  &-description {
+    margin: 0.25em 0 0;
   }
 }

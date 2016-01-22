@@ -23,16 +23,11 @@ p.Article-paragraph
 
 <jade>
 ol.ArticleList
-  each work in collections.work.slice(0, 3)
+  each work in collections.work.slice(0, 2)
     li.ArticleList-item
-      span.ArticleList-link
-        a.Link(href="/#{work.path}")
-          cite.ArticleList-title= work.title
-      span.ArticleList-client= work.client
-      time.ArticleList-time.ArticleList-time--year(datetime=work.endDate)= yearFormat(work.endDate)
-</jade>
-
-<jade>
+      a.Link(href="/#{work.path}")
+        cite.ArticleList-title= work.title
+      p.ArticleList-description= work.description
 p.Article-paragraph
   a.Link.Link--primary(href="/work") All work
 </jade>
@@ -41,15 +36,12 @@ p.Article-paragraph
 
 <jade>
 ol.ArticleList
-  each article in collections.articles.slice(0, 3)
+  each article in collections.articles.slice(0, 2)
     li.ArticleList-item
-      span.ArticleList-link
-        a.Link(href="/#{article.path}")
-          cite.ArticleList-title= article.title
-      time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
-</jade>
-
-<jade>
+      a.Link(href="/#{article.path}")
+        cite.ArticleList-title= article.title
+      p.ArticleList-description
+        time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
 p.Article-paragraph
   a.Link.Link--primary(href="/articles") All articles
 </jade>

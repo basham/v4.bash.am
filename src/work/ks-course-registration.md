@@ -6,6 +6,7 @@ startDate: '2013-12-01'
 startDateLabel: December 2013
 endDate: '2014-01-01'
 endDateLabel: January 2014
+description: Building a proof of concept, mobile-first app with AngularJS.
 ---
 
 Using the recommendations as outlined in the [<cite>Mobile Strategies for Kuali Student</cite>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).

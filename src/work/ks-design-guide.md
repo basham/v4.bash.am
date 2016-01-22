@@ -6,6 +6,7 @@ startDate: '2014-03-01'
 startDateLabel: March
 endDate: '2014-08-01'
 endDateLabel: August 2014
+description: Starting a user interface design pattern library.
 ---
 
 The [Kuali Student Design Guide](http://ksux.github.io/ks-design-guide/) is an initial foundation for a design pattern library created to centralize and articulate user interface design decisions occurring within Kuali Student products. The guide is meant to be maintained by Kuali designers and front-end developers, regularly updated as problems are encountered and resolved throughout development. Patterns are abstracted as nested components, following the [Atomic design methodology](http://bradfrost.com/blog/post/atomic-web-design/). It serves as a daily reference for designers and developers, yet also invites the larger non-design community to see and engage in the process. Research and recommendations are initially documented as [repository issues](https://github.com/ksux/ks-design-guide/issues) before being adopted into the guide.
