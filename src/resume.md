@@ -4,7 +4,7 @@ title: Résumé
 
 ## Experience
 
-### UX Designer &middot; Enterprise Student Services, [Indiana University](http://iu.edu)
+### UX Designer &middot; Enterprise Student Systems, [Indiana University](http://iu.edu)
 
 <time datetime="2014-10">October 2014</time> &ndash; Present
 &middot;
