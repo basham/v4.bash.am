@@ -14,7 +14,7 @@ p.Article-paragraph
 <jade>
 .Article-notice
   p.Article-paragraph
-   | #[strong January 2016:] I’m seeking to relocate to Colorado and join a design team in a mid-to-senior-level role, contributing as both an interaction designer and a front-end developer. I want practice in user research, and I want to mentor junior team members. If you think I’m a good fit for your company or if you have any leads, please #[a.Link(href="mailto:{{site.email}}") email me].
+   | #[strong February 2016:] I’m seeking to relocate to Colorado and join a design team in a mid-to-senior-level role, contributing as both an interaction designer and a front-end developer. I want practice in user research, and I want to mentor junior team members. If you think I’m a good fit for your company or if you have any leads, please #[a.Link(href="mailto:{{site.email}}") email me].
   p.Article-paragraph
     a.Link.Link--primary(href="/resume") Résumé
 </jade>
