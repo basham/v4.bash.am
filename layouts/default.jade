@@ -37,6 +37,8 @@ html(lang="en")
             a.Nav-item(href=url, class=cn)= page.title
     main.Body-part.Article(role="main")
       h1.Article-h1= title
+      if description
+        p.Article-paragraph.Article-meta= description
       if date
         p.Article-paragraph.Article-meta
           time.Article-time(datetime=date, pubdate)= dateFormat(date)

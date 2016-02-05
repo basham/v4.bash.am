@@ -1,6 +1,7 @@
 ---
 title: Talks
 order: 4
+description: I speak at conferences and local meetups.
 ---
 
 ## The Role of the UI Developer

@@ -21,34 +21,34 @@ p.Article-paragraph
 
 ## Work
 
+I [reflect](/work) on what I've designed and what I've learned from the process.
+
 <jade>
 ol.ArticleList
   each work in collections.work.slice(0, 2)
     li.ArticleList-item
       a.Link(href="/#{work.path}")
-        cite.ArticleList-title= work.title
+        cite.ArticleList-title.ArticleList-title--small= work.title
       p.ArticleList-description= work.description
-p.Article-paragraph
-  a.Link.Link--primary(href="/work") All work
 </jade>
 
 ## Articles
+
+I [write](/articles) about design philosophy, practices, and strategy.
 
 <jade>
 ol.ArticleList
   each article in collections.articles.slice(0, 2)
     li.ArticleList-item
       a.Link(href="/#{article.path}")
-        cite.ArticleList-title= article.title
+        cite.ArticleList-title.ArticleList-title--small= article.title
       p.ArticleList-description
         time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
-p.Article-paragraph
-  a.Link.Link--primary(href="/articles") All articles
 </jade>
 
 ## Talks
 
-Occasionally, I've given talks.
+I [speak](/talks) at conferences and local meetups.
 
 ## Contact
 

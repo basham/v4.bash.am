@@ -2,6 +2,7 @@
 title: Work
 order: 2
 index: work
+description: I reflect on what I’ve designed and what I’ve learned from the process.
 ---
 
 <jade>

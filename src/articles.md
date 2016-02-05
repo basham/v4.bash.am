@@ -2,6 +2,7 @@
 title: Articles
 order: 3
 index: articles
+description: I write about design philosophy, practices, and strategy.
 ---
 
 <jade>
