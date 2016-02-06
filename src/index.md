@@ -50,6 +50,15 @@ ol.ArticleList
 
 I [speak](/talks) at conferences and local meetups.
 
+<jade>
+ol.ArticleList
+  each talk in collections.talks.slice(0, 2)
+    li.ArticleList-item
+      a.Link(href="/#{talk.path}")
+        cite.ArticleList-title.ArticleList-title--small= talk.title
+      p.ArticleList-description= talk.location
+</jade>
+
 ## Contact
 
 Reach me via email at <{{site.email}}> or Twitter at [@{{site.twitter}}]({{site.elsewhere.Twitter}} 'Follow me on Twitter').

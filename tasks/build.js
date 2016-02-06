@@ -66,6 +66,11 @@ gulp.task('build', function(callback) {
         pattern: 'work/*.md',
         sortBy: 'endDate',
         reverse: true
+      },
+      talks: {
+        pattern: 'talks/*.md',
+        sortBy: 'date',
+        reverse: true
       }
     }))
     .use(inplace({

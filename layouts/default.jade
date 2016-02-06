@@ -35,14 +35,18 @@ html(lang="en")
             - var isInCollection = contains(collection, page.index);
             - var cn = { 'Nav-item--active': isSelf || isInCollection };
             a.Nav-item(href=url, class=cn)= page.title
+    - var isArticle = contains(collection, 'articles');
+    - var isWork = contains(collection, 'work');
+    - var isTalk = contains(collection, 'talks');
+    - var isCollection = isArticle || isWork || isTalk;
     main.Body-part.Article(role="main")
       h1.Article-h1= title
       if description
         p.Article-paragraph.Article-meta= description
-      if date
+      if isArticle
         p.Article-paragraph.Article-meta
           time.Article-time(datetime=date, pubdate)= dateFormat(date)
-      if endDate
+      if isWork
         p.Article-paragraph.Article-meta
           if client
             span.Article-client
@@ -50,17 +54,41 @@ html(lang="en")
           time.Article-time(datetime=startDate)= startDateLabel
           |  &ndash; 
           time.Article-time(datetime=endDate, pubdate)= endDateLabel
+      if isTalk
+        p.Article-paragraph.Article-meta
+          | Presented&nbsp;
+          time.Article-time(datetime=date, pubdate)= dateFormat(date)
+          |  at&nbsp;
+          a.Link(href=locationLink)= location
+          | .
+        figure.Figure.Figure--deck
+          script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
+          figcaption.Figure-caption
+            a.Button(href=deckLink) View slide deck
+            if recordingLink
+              a.Button(href=recordingLink) View recording
       != contents
-    - var isArticle = contains(collection, 'articles');
-    - var isWork = contains(collection, 'work');
-    - var isCollection = isArticle || isWork;
     if isCollection
-      - var collectionSingular = isArticle ? 'article' : 'work';
-      - var collectionPlural = isArticle ? 'articles' : 'work';
-      - var allLabel = ['All', collectionPlural].join(' ');
-      - var allLink = isArticle ? '/articles' : '/work';
-      - collectionSingular += ',';
-      - collectionPlural += ',';
+      -
+        function makeCollection(singular, plural, link) {
+          return { singular: singular, plural: plural, link: link };
+        }
+        var metaCollection = null;
+        if(isArticle) {
+          metaCollection = makeCollection('article', 'articles', '/articles');
+        }
+        if(isWork) {
+          metaCollection = makeCollection('work', 'work', '/work');
+        }
+        if(isTalk) {
+          metaCollection = makeCollection('talk', 'talks', '/talks');
+        }
+        var collectionSingular = metaCollection.singular;
+        var collectionPlural = metaCollection.plural;
+        var allLink = metaCollection.link;
+        var allLabel = ['All', collectionPlural].join(' ');
+        collectionSingular += ',';
+        collectionPlural += ',';
       nav.Body-part.Pager(role="navigation")
         .Pager-controls
           a.Button.Button--clear.Pager-top(href="#top") Back to top
