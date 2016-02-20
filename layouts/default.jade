@@ -25,7 +25,7 @@ html(lang="en")
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
   body.Body#top
-    header.Body-part.Header(role="banner")
+    header.Body-part.Body-part--constrain.Header(role="banner")
       a.Header-name(href="/")= site.author
       nav.Header-nav.Nav(role="navigation")
         ul.Nav-list
@@ -91,7 +91,7 @@ html(lang="en")
         var allLabel = ['All', collectionPlural].join(' ');
         collectionSingular += ',';
         collectionPlural += ',';
-      nav.Body-part.Pager(role="navigation")
+      nav.Body-part.Body-part--constrain.Pager(role="navigation")
         .Pager-controls
           a.Button.Button--clear.Pager-top(href="#top") Back to top
           a.Button.Button--clear(href=allLink)= allLabel

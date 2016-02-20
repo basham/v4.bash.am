@@ -3,8 +3,7 @@
   font-family: Georgia, serif;
   font-size: 100%;
   line-height: @ratio-Scale--15;
-  margin: 0 auto;
-  max-width: 45em;
+  margin: 0;
   padding: 0;
   text-size-adjust: 100%;
 
@@ -22,5 +21,10 @@
 
   &-part {
     padding: 5%;
+
+    &--constrain {
+      box-sizing: content-box;
+      max-width: 45em;
+    }
   }
 }

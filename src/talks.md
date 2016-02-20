@@ -11,11 +11,8 @@ ol.ArticleList
       a.Link(href="/#{talk.path}")
         cite.ArticleList-title= talk.title
       p.ArticleList-description= talk.location
-</jade>
-
-***
-
-<jade>
+.Article-section
+  hr.Article-hr
 p.Article-paragraph.Article-paragraph--center
   a.Button(href="https://speakerdeck.com/basham") View more slide decks on Speaker Deck
 </jade>

@@ -1,11 +1,25 @@
 .Figure {
   margin: 3em 0;
-  max-width: 100%;
+  max-width: 45em;
   padding: 0;
 
   & + & {
     border-top-width: 0;
     margin-top: 0;
+  }
+
+  &--grow {
+    max-width: 75em;
+  }
+
+  &--code {
+    max-width: none;
+    overflow: scroll;
+    padding: 0 1em;
+
+    @media @xs {
+      padding: 0 2em;
+    }
   }
 
   &--deck {
@@ -16,19 +30,11 @@
     }
   }
 
-  &--code {
+  &-content {
+    margin: 0;
 
-    > div {
-      margin-bottom: -0.5em;
-    }
-
-    pre {
-      font-size: @ratio-Scale--05i;
-      line-height: @ratio-Scale--10;
-    }
-
-    .Figure-caption {
-      padding: 1em 0 0;
+    &--scroll {
+      overflow: scroll;
     }
   }
 
@@ -51,14 +57,6 @@
     }
   }
 
-  &-grow {
-
-    @media @md {
-      margin-left: -6em;
-      margin-right: -6em;
-    }
-  }
-
   &-imgLink {
 
     &:hover {
@@ -68,6 +66,7 @@
 
   &-caption {
     margin-top: 1em;
+    max-width: 45em;
   }
 
   &-paragraph {

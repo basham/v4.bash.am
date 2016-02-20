@@ -16,8 +16,8 @@ Before 2015, there were rarely any designers permanently staffed on development 
 To discover the severity of current color usage, a sampling of screenshots and style sheets were curated from over a dozen applications, then subjectively assessed. Colors were overused, were used inconsistently, and clashed, both within a single application and among applications.
 
 <jade>
-figure.Figure
-  .Figure-grow.Figure-wrap.Figure-wrap--2
+figure.Figure.Figure--grow
+  .Figure-wrap.Figure-wrap--2
     a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455110/3285c556-1fd0-11e5-901a-26fb8f97c65c.png")
       img(
         alt="Screenshot of academic planner application"
@@ -97,8 +97,8 @@ Ensuing from the audit, three goals guided the process of determining a new colo
 In order to quickly experiment with alternative colors to determine a new palette, a static HTML snapshot of the *Schedule Manager* application was grabbed and all colors in its style sheets were abstracted into [Less variables](http://lesscss.org/features/#variables-feature). As much as possible, markup remained unaltered from the original source and only CSS color properties were adjusted. A [custom build system](https://github.com/iuux/ess-color/tree/master/tasks), managed by the [gulp](http://gulpjs.com/) task runner, allowed the snapshot to instantly update when the variable values changed. Once the untampered snapshot (located in the [repository's `master` branch](https://github.com/iuux/ess-color)) was ready, all new application of color existed in the [`palette` branch](https://github.com/iuux/ess-color/tree/palette).
 
 <jade>
-figure.Figure
-  .Figure-grow.work-Toggle
+figure.Figure.Figure--grow
+  .work-Toggle
     input.work-Toggle-checkbox(type="checkbox", id="toggleFigure")
     .work-Toggle-control
       label.work-Toggle-label(for="toggleFigure") Show original use of color
@@ -142,29 +142,30 @@ Variants to these primary colors were generated according to techniques describe
 - colors.forEach(function(color) { color.variants.forEach(function(c) { values[c.label] = true; }) });
 - values = Object.keys(values).sort();
 
-.Article-tableFigure
-  table.Article-table.work-Palette
-    thead
-      tr
-        each color in colors
-          th.Article-tableCell.Article-tableCell--center.Article-tableCell--header= color.label
-    tbody
-      each value in values
+.Figure
+  .Figure-content.Figure-content--scroll
+    table.Article-table.work-Palette
+      thead
         tr
           each color in colors
-            - var item = color.variants.filter(function(c) { return c.label === value })[0];
-            - var style = '';
-            - style += item ? 'background-color: ' + item.hex : '';
-            - var cn = [];
-            - if(item && value > 500) { cn.push('work-Palette-color--dark'); }
-            - if(item && item.isNew) { cn.push('work-Palette-color--highlight'); }
-            td.Article-tableCell.Article-tableCell--center.work-Palette-color(style=style, class=cn)
-              if item
-                if item.name
-                  em= item.name
-                if !item.hideValue
-                  div= value
-                div= item.hex
+            th.Article-tableCell.Article-tableCell--center.Article-tableCell--header= color.label
+      tbody
+        each value in values
+          tr
+            each color in colors
+              - var item = color.variants.filter(function(c) { return c.label === value })[0];
+              - var style = '';
+              - style += item ? 'background-color: ' + item.hex : '';
+              - var cn = [];
+              - if(item && value > 500) { cn.push('work-Palette-color--dark'); }
+              - if(item && item.isNew) { cn.push('work-Palette-color--highlight'); }
+              td.Article-tableCell.Article-tableCell--center.work-Palette-color(style=style, class=cn)
+                if item
+                  if item.name
+                    em= item.name
+                  if !item.hideValue
+                    div= value
+                  div= item.hex
 </jade>
 
 An ancillary benefit of codifying colors is their ability to approximate text contrast ratios. As long as the background and foreground colors are at least a code value of `450` different, then most likely acceptable [AA text contrast (`4.5:1`)](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) is achieved. However, these approximations should always be confirmed.
@@ -189,7 +190,7 @@ The only deviant to the norm was the Link color. Any variant along the IU Majest
 - values = Object.keys(values).sort();
 
 figure.Figure
-  .Article-tableFigure
+  .Figure-content.Figure-content--scroll
     table.Article-table.work-Palette
       thead
         tr

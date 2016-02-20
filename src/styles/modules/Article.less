@@ -6,6 +6,13 @@
     padding-bottom: 0;
   }
 
+  &-list,
+  &-notice,
+  &-paragraph,
+  &-section {
+    max-width: 45em;
+  }
+
   &-h1 {
     font-size: @ratio-Scale--20;
     line-height: @ratio-Scale--10;
@@ -121,11 +128,6 @@
     }
   }
 
-  &-tableFigure {
-    margin: 3em 0;
-    overflow: scroll;
-  }
-
   &-table {
     border-spacing: 0.5em;
     margin: 0 auto;
@@ -142,13 +144,6 @@
     &--right {
       text-align: right;
     }
-  }
-
-  &-codeFigure {
-    border: unit(1/16, rem) solid @color-Base;
-    margin: 3em 0;
-    padding: 1em;
-    overflow: scroll;
   }
 
   &-hr {

@@ -34,9 +34,13 @@ renderer.code = function(code, lang, escaped) {
 
   var cn = classNames(cn);
 
-  return '<pre class="Article-codeFigure"><code class="' + cn + '">'
+  return '<figure class="Figure Figure--code">'
+    + '<pre class="Figure-content">'
+    + '<code class="' + cn + '">'
     + (escaped ? code : escape(code, true))
-    + '</code></pre>';
+    + '</code>'
+    + '</pre>'
+    + '</figure>';
 };
 
 renderer.codespan = function(text) {
@@ -92,7 +96,8 @@ renderer.paragraph = function(text) {
 };
 
 renderer.table = function(header, body) {
-  return '<div class="Article-tableFigure">'
+  return '<figure class="Figure">'
+  + '<div class="Figure-content Figure-content--scroll">'
   + '<table class="Article-table">'
   + '<thead>'
   + header
@@ -101,7 +106,8 @@ renderer.table = function(header, body) {
   + body
   + '</tbody>'
   + '</table>'
-  + '</div>';
+  + '</div>'
+  + '</figure>';
 };
 
 renderer.tablecell = function(content, flags) {
