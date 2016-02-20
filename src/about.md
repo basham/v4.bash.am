@@ -14,9 +14,10 @@ When not slicing fingers with sticky notes or [refactoring repositories](https:/
 ## Find me elsewhere
 
 <jade>
-p.Elsewhere
+ul.Elsewhere
   each value, key in site.elsewhere
-    a.Button(href=value)= key
+    li.Elsewhere-item
+      a.Button(href=value)= key
 </jade>
 
 ## Colophon
