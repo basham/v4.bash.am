@@ -46,8 +46,8 @@ figure.Figure
     img(
       alt="Sketch of a list of selectable university terms."
       src="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png")
-  figcaption.Figure-caption
-    | A <a class="Link" href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0">series of sketches</a> explored how to navigate among academic terms.
+  figcaption.Figure-caption.Figure-paragraph
+    | A #[a(class="Link", href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0") series of sketches] explored how to navigate among academic terms.
 </jade>
 
 <jade>
@@ -56,7 +56,8 @@ figure.Figure
     img(
       alt="Wireframe of course search form for mobile."
       src="https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png")
-  figcaption.Figure-caption Wireframes helped to define relationships within the interface and explore rudimentary interactions.
+  figcaption.Figure-caption.Figure-paragraph
+    | Wireframes helped to define relationships within the interface and explore rudimentary interactions.
 </jade>
 
 Leveraging my experience using the [AngularJS](https://angularjs.org/) framework the past year for Indiana University projects, I was able to quickly develop the general architecture of the front-end. Once the markup and styles fleshed out, data embedded into the markup was abstracted into static [JSON](http://en.wikipedia.org/wiki/JSON) fixtures, and the template was altered to be dynamically driven by these fixtures. With the fixtures as a guide, the services team was able to adapt the [web API](http://en.wikipedia.org/wiki/Web_API) to match the fixtures. By the third week, the fixtures were starting to be replaced by live web services.
@@ -64,15 +65,15 @@ Leveraging my experience using the [AngularJS](https://angularjs.org/) framework
 <jade>
 figure.Figure.Figure--code
   <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js?footer=no"></script>
-  figcaption.Figure-caption
-    | Templates were originally driven by static JSON fixtures, such as in the <a class="Link" href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>ScheduleService</em></a>.
+  figcaption.Figure-caption.Figure-paragraph
+    | Templates were originally driven by static JSON fixtures, such as in the #[a(class="Link", href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js") #[em ScheduleService]].
 </jade>
 
 <jade>
 figure.Figure.Figure--code
   <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/8cb8ce312cb3a8fa828b7dcdf703a742bd7eaf89/app/modules/app/schedule.js?footer=no"></script>
-  figcaption.Figure-caption
-    | Once built, JSON fixtures were replaced by live web services, such as in the <a class="Link" href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js"><em>scheduleService</em> provider</a>.
+  figcaption.Figure-caption.Figure-paragraph
+    | Once built, JSON fixtures were replaced by live web services, such as in the #[a(class="Link", href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js") #[em scheduleService] provider].
 </jade>
 
 Even though the proof of concept was primarily concerned with the technical feasibility of this approach, I was still able to receive rudimentary student feedback to guide refinement of the user interface throughout the entire project, by means of an Indiana University undergraduate intern.
@@ -90,8 +91,8 @@ figure.Figure
   .Embed
     <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   figcaption.Figure-caption
-    p The proof of concept was demonstrated to Kuali Student development teams at the end of the allotted six weeks.
-    p
+    p.Figure-paragraph The proof of concept was demonstrated to Kuali Student development teams at the end of the allotted six weeks.
+    p.Figure-meta
       a.Button(href="https://vimeo.com/112133422") Watch demo video
       a.Button(href="https://github.com/ksux/kscr-poc") GitHub repository
 </jade>

@@ -2,8 +2,10 @@
 @ratio-PerfectForth: 4/3;
 
 @ratio-Scale: @ratio-PerfectForth;
+@ratio-Scale--05i: percentage(pow(@ratio-Scale, -0.5));
+@ratio-Scale--00: percentage(@ratio-Scale);
 @ratio-Scale--05: percentage(pow(@ratio-Scale, 0.5));
-@ratio-Scale--10: percentage(@ratio-Scale);
+@ratio-Scale--10: percentage(pow(@ratio-Scale, 1));
 @ratio-Scale--15: percentage(pow(@ratio-Scale, 1.5));
 @ratio-Scale--20: percentage(pow(@ratio-Scale, 2));
 @ratio-Scale--25: percentage(pow(@ratio-Scale, 2.5));

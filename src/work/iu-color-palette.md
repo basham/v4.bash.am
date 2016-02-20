@@ -109,15 +109,8 @@ figure.Figure
       img(
         alt="Screenshot of Schedule Manager colored with new palette"
         src="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png")
-  figcaption.Figure-caption
-    p
-      | Particular color values were chosen through experimentation, testing the colors in numerous permutations for their aesthetic harmony. Code for the experiment is located on
-      | #{' '}
-      a.Link(href="https://github.com/iuux/ess-color")
-        | GitHub (
-        code iuux/ess-color
-        | )
-      | .
+  figcaption.Figure-caption.Figure-paragraph
+    | Particular color values were chosen through experimentation, testing the colors in numerous permutations for their aesthetic harmony. Code for the experiment is located on #[a(class="Link", href="https://github.com/iuux/ess-color") GitHub (#[code iuux/ess-color])].
 </jade>
 
 The experiment resulted in a new color palette based on five primary colors:
@@ -194,7 +187,7 @@ The only deviant to the norm was the Link color. Any variant along the IU Majest
 - colors.forEach(function(color) { color.variants.forEach(function(c) { values[c.label] = true; }) });
 - values = Object.keys(values).sort();
 
-figure.Figure.Figure--deck
+figure.Figure
   .Article-tableFigure
     table.Article-table.work-Palette
       thead
@@ -218,8 +211,8 @@ figure.Figure.Figure--deck
                   if !item.hideValue
                     div= value
                   div= item.hex
-  figcaption.Figure-caption
-    p Colors added in the second version of the palette are outlined in black.
+  figcaption.Figure-caption.Figure-paragraph
+    | Colors added in the second version of the palette are outlined in black.
 </jade>
 
 <jade>
@@ -228,8 +221,8 @@ figure.Figure
     img(
       alt="Screenshot of AdRx Caseload, which uses the newest version of the color palette"
       src="https://cloud.githubusercontent.com/assets/347558/8455455/c633a924-1fd2-11e5-99b6-fc2ab78d2e88.png")
-  figcaption.Figure-caption
-    p Implemented in spring 2015, the feature called <em>Caseload</em> contributed significantly to the refinements in version 2 of the color palette.
+  figcaption.Figure-caption.Figure-paragraph
+    | Implemented in spring 2015, the feature called #[em Caseload] contributed significantly to the refinements in version 2 of the color palette.
 </jade>
 
 ## Conclusion

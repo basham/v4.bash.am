@@ -1,14 +1,7 @@
 .Figure {
-  border-bottom: unit(1/16, rem) solid @color-Base;
-  border-top: unit(1/16, rem) solid @color-Base;
-  margin: 1em 0 0;
+  margin: 3em 0;
   max-width: 100%;
-  padding: 1em 0;
-
-  &:nth-last-child(2) {
-    border-width: 0;
-    padding-bottom: 0;
-  }
+  padding: 0;
 
   & + & {
     border-top-width: 0;
@@ -20,10 +13,6 @@
     // in which the embed somehow adds spacing after the deck.
     > div {
       margin-bottom: -0.5em;
-    }
-
-    .Figure-caption {
-      padding: 1em 0 0;
     }
   }
 
@@ -66,16 +55,19 @@
   }
 
   &-caption {
+    margin-top: 1em;
+  }
+
+  &-paragraph {
     color: @color-Text--light;
-    padding: 1em 0 0;
+    font-size: @ratio-Scale--05i;
+    margin: 1rem 0 0;
+    padding: 0;
+  }
 
-    @media @xs {
-      padding: 1em 1em 0;
-    }
-
-    > p:first-child {
-      margin-top: 0;
-    }
+  &-meta {
+    margin: 1em 0 0;
+    padding: 0;
   }
 
   img {

@@ -18,8 +18,8 @@ figure.Figure
       alt="Screenshot of the Amount Due and Account Status summaries in the student billing prototype."
       src="https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png")
   figcaption.Figure-caption
-    p The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.
-    p
+    p.Figure-paragraph The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.
+    p.Figure-meta
       a.Button(href="http://pxa.github.io/billing") View prototype
       a.Button(href="https://github.com/pxa/billing") GitHub repository
 </jade>
