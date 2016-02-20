@@ -9,7 +9,7 @@ description: I reflect on what I’ve designed and what I’ve learned from the 
 ol.ArticleList
   each work in collections.work
     li.ArticleList-item
-      a.Link(href="/#{work.path}")
-        cite.ArticleList-title= work.title
+      cite.ArticleList-title
+        a.Link(href="/#{work.path}")= work.title
       p.ArticleList-description= work.description
 </jade>

@@ -27,8 +27,8 @@ I [reflect](/work) on what I've designed and what I've learned from the process.
 ol.ArticleList
   each work in collections.work.slice(0, 2)
     li.ArticleList-item
-      a.Link(href="/#{work.path}")
-        cite.ArticleList-title.ArticleList-title--small= work.title
+      cite.ArticleList-title.ArticleList-title--small
+        a.Link(href="/#{work.path}")= work.title
       p.ArticleList-description= work.description
 </jade>
 
@@ -40,8 +40,8 @@ I [write](/articles) about design philosophy, practices, and strategy.
 ol.ArticleList
   each article in collections.articles.slice(0, 2)
     li.ArticleList-item
-      a.Link(href="/#{article.path}")
-        cite.ArticleList-title.ArticleList-title--small= article.title
+      cite.ArticleList-title.ArticleList-title--small
+        a.Link(href="/#{article.path}")= article.title
       p.ArticleList-description
         time.ArticleList-time(datetime=article.date)= dateFormat(article.date)
 </jade>
@@ -54,8 +54,8 @@ I [speak](/talks) at conferences and local meetups.
 ol.ArticleList
   each talk in collections.talks.slice(0, 2)
     li.ArticleList-item
-      a.Link(href="/#{talk.path}")
-        cite.ArticleList-title.ArticleList-title--small= talk.title
+      cite.ArticleList-title.ArticleList-title--small
+        a.Link(href="/#{talk.path}")= talk.title
       p.ArticleList-description= talk.location
 </jade>
 
