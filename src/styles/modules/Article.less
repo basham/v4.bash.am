@@ -49,7 +49,15 @@
   }
 
   &-list {
-    padding-left: 1em;
+    padding: 0;
+  }
+
+  &-listItem {
+    margin: 1em 0 0 1em;
+
+    @media @xs {
+      margin-left: 2em;
+    }
   }
 
   &-h1 + &-h2,
