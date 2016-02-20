@@ -62,19 +62,48 @@ figure.Figure
 
 Leveraging my experience using the [AngularJS](https://angularjs.org/) framework the past year for Indiana University projects, I was able to quickly develop the general architecture of the front-end. Once the markup and styles fleshed out, data embedded into the markup was abstracted into static [JSON](http://en.wikipedia.org/wiki/JSON) fixtures, and the template was altered to be dynamically driven by these fixtures. With the fixtures as a guide, the services team was able to adapt the [web API](http://en.wikipedia.org/wiki/Web_API) to match the fixtures. By the third week, the fixtures were starting to be replaced by live web services.
 
-<jade>
-figure.Figure.Figure--code
-  <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js?footer=no"></script>
-  figcaption.Figure-caption.Figure-paragraph
-    | Templates were originally driven by static JSON fixtures, such as in the #[a(class="Link", href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js") #[em ScheduleService]].
-</jade>
+Templates were originally driven by static JSON fixtures, such as in the [*ScheduleService*](https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js):
 
-<jade>
-figure.Figure.Figure--code
-  <script src="http://gist-it.sudarmuthu.com/https://github.com/ksux/kscr-poc/blob/8cb8ce312cb3a8fa828b7dcdf703a742bd7eaf89/app/modules/app/schedule.js?footer=no"></script>
-  figcaption.Figure-caption.Figure-paragraph
-    | Once built, JSON fixtures were replaced by live web services, such as in the #[a(class="Link", href="https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js") #[em scheduleService] provider].
-</jade>
+```js
+angular.module('kscrPocApp')
+  .value('ScheduleService', [
+    {
+      termName: 'Fall 2012',
+      registrationGroups: [
+        {
+          courseCode: 'CHEM105',
+          courseTitle: 'Introduction to Chemistry',
+          creditType: 'fixed',
+          fixedCredits: 4,
+          activityOfferings: [
+            {
+              type: 'Lecture',
+              isMon: true,
+              isWed: true,
+              isFri: true,
+              startTime: '13:00',
+              endTime: '15:00',
+              buildingCode: 'CHM',
+              roomCode: '1105'
+            }
+          ]
+        }
+      ]
+    }
+  ]);
+```
+
+Once built, JSON fixtures were replaced by live web services, such as in the [*scheduleService* provider](https://github.com/ksux/kscr-poc/blob/069e8ac18a45aadfb380eb3ebfe7275223690b49/app/modules/shared/services/ScheduleService.js):
+
+```js
+angular.module('kscrPocApp')
+  .controller('AppScheduleCtrl', function ($scope, scheduleService) {
+    $scope.schedule = scheduleService.query({
+      person: 'admin',
+      termCode: '201208'
+    });
+  });
+```
 
 Even though the proof of concept was primarily concerned with the technical feasibility of this approach, I was still able to receive rudimentary student feedback to guide refinement of the user interface throughout the entire project, by means of an Indiana University undergraduate intern.
 
