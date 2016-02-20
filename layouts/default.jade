@@ -28,13 +28,15 @@ html(lang="en")
     header.Body-part.Header(role="banner")
       a.Header-name(href="/")= site.author
       nav.Header-nav.Nav(role="navigation")
-        each page in collections.pages
-          if page.order
-            - var url = '/' + (page.path || '');
-            - var isSelf = page.path === path;
-            - var isInCollection = contains(collection, page.index);
-            - var cn = { 'Nav-item--active': isSelf || isInCollection };
-            a.Nav-item(href=url, class=cn)= page.title
+        ul.Nav-list
+          each page in collections.pages
+            if page.order
+              - var url = '/' + (page.path || '');
+              - var isSelf = page.path === path;
+              - var isInCollection = contains(collection, page.index);
+              - var cn = { 'Nav-link--active': isSelf || isInCollection };
+              li.Nav-item
+                a.Nav-link(href=url, class=cn)= page.title
     - var isArticle = contains(collection, 'articles');
     - var isWork = contains(collection, 'work');
     - var isTalk = contains(collection, 'talks');

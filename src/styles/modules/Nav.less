@@ -1,15 +1,43 @@
 .Nav {
 
+  &-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0 0 0 -0.5em;
+    padding: 0.25em 0 0;
+
+    @media @xs {
+      justify-content: flex-end;
+      margin-left: 0;
+      margin-right: -0.75em;
+      padding-top: 0;
+    }
+
+    @media @sm {
+      margin-right: -1em;
+    }
+  }
+
   &-item {
+    margin: 0;
+    padding: 0;
+  }
+
+  &-link {
     border-bottom: unit(3/16, em) solid transparent;
     color: @color-Link;
+    display: block;
     line-height: 1;
-    padding: 1em 2.5% unit(10/16, em);
+    padding: 1em 0.5em unit(10/16, em);
     text-decoration: none;
 
     @media @xs {
-      padding-bottom: 1em;
-      padding-top: 1.5em;
+      padding: 1.5em 0.75em 1em;
+    }
+
+    @media @sm {
+      padding-left: 1em;
+      padding-right: 1em;
     }
 
     &:focus,
