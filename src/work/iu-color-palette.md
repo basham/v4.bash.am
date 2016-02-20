@@ -16,23 +16,24 @@ Before 2015, there were rarely any designers permanently staffed on development 
 To discover the severity of current color usage, a sampling of screenshots and style sheets were curated from over a dozen applications, then subjectively assessed. Colors were overused, were used inconsistently, and clashed, both within a single application and among applications.
 
 <jade>
-figure.Figure.Figure-wrap.Figure-wrap--2
-  a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455110/3285c556-1fd0-11e5-901a-26fb8f97c65c.png")
-    img(
-      alt="Screenshot of academic planner application"
-      src="https://cloud.githubusercontent.com/assets/347558/8455099/209cde6a-1fd0-11e5-915b-2f36f50614d9.jpg")
-  a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455089/07d03256-1fd0-11e5-8717-e879842d6993.png")
-    img(
-      alt="Screenshot of application login page"
-      src="https://cloud.githubusercontent.com/assets/347558/8455082/00201dbe-1fd0-11e5-858a-14d126a1c949.jpg")
-  a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455138/67cbedc6-1fd0-11e5-851a-55332bd42c06.png")
-    img(
-      alt="Screenshot of online admissions application"
-      src="https://cloud.githubusercontent.com/assets/347558/8455072/ed340954-1fcf-11e5-9292-acbaf31bf0b3.png")
-  a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455143/77bcb8a0-1fd0-11e5-8e60-c07c41242164.png")
-    img(
-      alt="Screenshot of administrative interface"
-      src="https://cloud.githubusercontent.com/assets/347558/8455052/c38555ea-1fcf-11e5-8777-431c29301500.jpg")
+figure.Figure
+  .Figure-grow.Figure-wrap.Figure-wrap--2
+    a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455110/3285c556-1fd0-11e5-901a-26fb8f97c65c.png")
+      img(
+        alt="Screenshot of academic planner application"
+        src="https://cloud.githubusercontent.com/assets/347558/8455099/209cde6a-1fd0-11e5-915b-2f36f50614d9.jpg")
+    a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455089/07d03256-1fd0-11e5-8717-e879842d6993.png")
+      img(
+        alt="Screenshot of application login page"
+        src="https://cloud.githubusercontent.com/assets/347558/8455082/00201dbe-1fd0-11e5-858a-14d126a1c949.jpg")
+    a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455138/67cbedc6-1fd0-11e5-851a-55332bd42c06.png")
+      img(
+        alt="Screenshot of online admissions application"
+        src="https://cloud.githubusercontent.com/assets/347558/8455072/ed340954-1fcf-11e5-9292-acbaf31bf0b3.png")
+    a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455143/77bcb8a0-1fd0-11e5-8e60-c07c41242164.png")
+      img(
+        alt="Screenshot of administrative interface"
+        src="https://cloud.githubusercontent.com/assets/347558/8455052/c38555ea-1fcf-11e5-8777-431c29301500.jpg")
 </jade>
 
 Given its diversity of both color and user interface components, the *Schedule Manager* application was chosen for further analysis and eventual experimentation with a new palette.
@@ -97,7 +98,7 @@ In order to quickly experiment with alternative colors to determine a new palett
 
 <jade>
 figure.Figure
-  .work-Toggle
+  .Figure-grow.work-Toggle
     input.work-Toggle-checkbox(type="checkbox", id="toggleFigure")
     .work-Toggle-control
       label.work-Toggle-label(for="toggleFigure") Show original use of color

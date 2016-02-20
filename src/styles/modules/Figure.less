@@ -35,15 +35,27 @@
   &-wrap {
     display: flex;
     flex-wrap: wrap;
-    padding: 0.5em 0;
+    margin: -0.5em 0;
+
+    @media @xs {
+      margin: -0.5em;
+    }
   }
 
   &-wrap--2 &-imgLink {
     padding: 0.5em 0;
 
     @media @xs {
-      max-width: 50%;
-      padding: 1em;
+      width: 50%;
+      padding: 0.5em;
+    }
+  }
+
+  &-grow {
+
+    @media @md {
+      margin-left: -6em;
+      margin-right: -6em;
     }
   }
 
