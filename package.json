@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Professional portfolio of Chris Basham.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -24,9 +24,8 @@
     "extend": "3.0.0",
     "fg-loadcss": "0.2.4",
     "fontfaceobserver": "1.6.3",
+    "gh-pages": "0.10.0",
     "gulp": "3.9.0",
-    "gulp-exit": "0.0.2",
-    "gulp-gh-pages": "0.5.4",
     "handlebars": "4.0.5",
     "highlight.js": "9.1.0",
     "htmlmin": "0.0.4",

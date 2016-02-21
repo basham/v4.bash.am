@@ -23,7 +23,7 @@ gulp
 Save the generated `./build` directory to the [`gh-pages` branch](https://github.com/basham/v4.bash.am/tree/gh-pages) and publish.
 
 ```
-gulp deploy
+npm run deploy
 ```
 
 ## Depreciated portfolios
