@@ -31,7 +31,7 @@ function plugin(opts) {
 
         // Processor for removing unused styles.
         function unstyle(css) {
-          css.eachRule(function(rule) {
+          css.walkRules(function(rule) {
             var matches = rule.selectors.filter(function(selector) {
               // Convert pseudo element selectors to their bases.
               // `a:hover` => `a`
@@ -53,16 +53,16 @@ function plugin(opts) {
             });
             // Remove rule if the selector has no matches in the HTML.
             if(!matches.length) {
-              rule.removeSelf();
+              rule.remove();
             }
           });
         }
 
         // Processor for removing unused atRules.
         function unAtRule(css) {
-          css.eachAtRule(function(atRule) {
+          css.walkAtRules(function(atRule) {
             if(!atRule.nodes.length) {
-              atRule.removeSelf();
+              atRule.remove();
             }
           });
         }
