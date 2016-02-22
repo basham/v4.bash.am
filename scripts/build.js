@@ -16,12 +16,13 @@ var publish = require('metalsmith-publish');
 var watch = require('metalsmith-watch')
 
 // Custom plugins
-var jadeMarkup = require('./plugins/jade-markup');
 var inlineStyles = require('./plugins/inline-styles');
+var jadeMarkup = require('./plugins/jade-markup');
+var markdownMarkup = require('./plugins/markdown-markup');
 
 // Configs
 require('./config/jade');
-var renderer = require('./config/marked');
+var markedConfig = require('./config/marked');
 var templateFunctions = require('./config/functions');
 
 Metalsmith('./')
@@ -80,11 +81,8 @@ Metalsmith('./')
     engine: 'handlebars',
     pattern: '**/*.md'
   }))
-  .use(markdown({
-    pedantic: true,
-    renderer: renderer,
-    smartypants: true
-  }))
+  .use(markdown(markedConfig))
+  .use(markdownMarkup())
   .use(permalinks({
     relative: false
   }))

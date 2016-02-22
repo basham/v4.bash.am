@@ -121,4 +121,8 @@ renderer.tablecell = function(content, flags) {
   return '<' + type + ' class="' + cn + '">' + content + '</' + type + '>';
 };
 
-module.exports = renderer;
+module.exports = {
+  pedantic: true,
+  renderer: renderer,
+  smartypants: true
+};
