@@ -1,6 +1,5 @@
 var minimatch = require('minimatch');
 var cheerio = require('cheerio');
-var extend = require('extend');
 var marked = require('marked');
 
 var config = require('../config/marked');
@@ -28,8 +27,6 @@ function plugin(opts) {
         $('md').each(function(i, el) {
           // Get the content.
           var source = $(this).html();
-          // Merge global metadata with local file data.
-          var options = extend({}, opts, metadata, data);
           // Render the content as Jade.
           var html = marked(source);
           // Replace the <jade> node with the new rendered content.
