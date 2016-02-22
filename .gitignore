@@ -1,5 +1,6 @@
 # Dependency directories
 node_modules
+npm-debug.log
 
 # Compiled target directories
 build
