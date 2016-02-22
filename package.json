@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Professional portfolio of Chris Basham.",
   "scripts": {
-    "deploy": "gh-pages -d build"
+    "browser-sync": "browser-sync start --files 'build/**/*' --server 'build' --no-notify --reload-debounce 100",
+    "build": "node scripts/build",
+    "deploy": "gh-pages -d build",
+    "dev": "npm run build & npm run browser-sync"
   },
   "repository": {
     "type": "git",
@@ -25,7 +28,6 @@
     "fg-loadcss": "0.2.4",
     "fontfaceobserver": "1.6.3",
     "gh-pages": "0.10.0",
-    "gulp": "3.9.0",
     "handlebars": "4.0.5",
     "highlight.js": "9.1.0",
     "htmlmin": "0.0.4",
@@ -44,11 +46,10 @@
     "metalsmith-metadata": "0.0.4",
     "metalsmith-permalinks": "0.4.1",
     "metalsmith-publish": "0.1.3",
+    "metalsmith-watch": "1.0.1",
     "minimatch": "3.0.0",
     "moment": "2.11.1",
     "postcss": "5.0.14",
-    "require-directory": "2.1.1",
-    "run-sequence": "1.1.5",
     "uglify-js": "2.6.1"
   }
 }

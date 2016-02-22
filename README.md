@@ -12,10 +12,10 @@ npm install
 
 ## Development
 
-Run the development environment through the default [gulp](http://gulpjs.com/) task.
+Run a local development server and watch for changes.
 
 ```
-gulp
+npm run dev
 ```
 
 ## Deployment
