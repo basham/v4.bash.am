@@ -41,35 +41,37 @@ html(lang="en")
     - var isWork = contains(collection, 'work');
     - var isTalk = contains(collection, 'talks');
     - var isCollection = isArticle || isWork || isTalk;
-    main.Body-part.Article(role="main")
-      h1.Article-h1= title
-      if description
-        p.Article-paragraph.Article-meta= description
-      if isArticle
-        p.Article-paragraph.Article-meta
-          time.Article-time(datetime=date, pubdate)= dateFormat(date)
-      if isWork
-        p.Article-paragraph.Article-meta
-          if client
-            span.Article-client
-              a.Link(href=clientLink)= client
-          time.Article-time(datetime=startDate)= startDateLabel
-          |  &ndash; 
-          time.Article-time(datetime=endDate, pubdate)= endDateLabel
-      if isTalk
-        p.Article-paragraph.Article-meta
-          | Presented&nbsp;
-          time.Article-time(datetime=date, pubdate)= dateFormat(date)
-          |  at&nbsp;
-          a.Link(href=locationLink)= location
-          | .
-        figure.Figure.Figure--deck
-          script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
-          figcaption.Figure-caption
-            a.Button(href=deckLink) View slide deck
-            if recordingLink
-              a.Button(href=recordingLink) View recording
-      != contents
+    main.Article(role="main")
+      .Article-section
+        h1.Article-h1= title
+        if description
+          p.Article-paragraph.Article-meta= description
+        if isArticle
+          p.Article-paragraph.Article-meta
+            time.Article-time(datetime=date, pubdate)= dateFormat(date)
+        if isWork
+          p.Article-paragraph.Article-meta
+            if client
+              span.Article-client
+                a.Link(href=clientLink)= client
+            time.Article-time(datetime=startDate)= startDateLabel
+            |  &ndash; 
+            time.Article-time(datetime=endDate, pubdate)= endDateLabel
+        if isTalk
+          p.Article-paragraph.Article-meta
+            | Presented&nbsp;
+            time.Article-time(datetime=date, pubdate)= dateFormat(date)
+            |  at&nbsp;
+            a.Link(href=locationLink)= location
+            | .
+          figure.Figure.Figure--deck
+            script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
+            figcaption.Figure-caption
+              a.Button(href=deckLink) View slide deck
+              if recordingLink
+                a.Button(href=recordingLink) View recording
+        md
+          != contents
     if isCollection
       -
         function makeCollection(singular, plural, link) {

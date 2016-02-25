@@ -77,22 +77,32 @@ Metalsmith('./')
       reverse: true
     }
   }))
-  .use(inplace({
-    engine: 'handlebars',
-    pattern: '**/*.md'
-  }))
-  .use(markdown(markedConfig))
-  .use(markdownMarkup())
+  // Rename `*.md` files to `*.html`.
+  .use(function(files, ms, done) {
+    Object.keys(files).forEach(function(file) {
+      var fileName = file.replace(/(.md)$/, '.html');
+      if(fileName !== file) {
+        files[fileName] = files[file];
+        delete files[file];
+      }
+    });
+    done();
+  })
   .use(permalinks({
     relative: false
   }))
-  .use(jadeMarkup())
   .use(layouts({
     default: 'default.jade',
     directory: 'layouts',
     engine: 'jade',
     pattern: '**/*.html'
   }))
+  .use(inplace({
+    engine: 'handlebars',
+    pattern: '**/*.html'
+  }))
+  .use(jadeMarkup())
+  .use(markdownMarkup())
   .use(inlineStyles())
   .use(ignore([
     '**/main.css'
