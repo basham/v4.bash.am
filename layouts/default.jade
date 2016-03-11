@@ -64,12 +64,13 @@ html(lang="en")
             |  at&nbsp;
             a.Link(href=locationLink)= location
             | .
-          figure.Figure.Figure--deck
-            script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
-            figcaption.Figure-caption
-              a.Button(href=deckLink) View slide deck
-              if recordingLink
-                a.Button(href=recordingLink) View recording
+          if deckId
+            figure.Figure.Figure--deck
+              script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
+              figcaption.Figure-caption
+                a.Button(href=deckLink) View slide deck
+                if recordingLink
+                  a.Button(href=recordingLink) View recording
         md
           != contents
     if isCollection
