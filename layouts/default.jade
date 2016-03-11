@@ -59,11 +59,7 @@ html(lang="en")
             time.Article-time(datetime=endDate, pubdate)= endDateLabel
         if isTalk
           p.Article-paragraph.Article-meta
-            | Presented&nbsp;
-            time.Article-time(datetime=date, pubdate)= dateFormat(date)
-            |  at&nbsp;
-            a.Link(href=locationLink)= location
-            | .
+            | Presented #[time.Article-time(datetime=date, pubdate)= dateFormat(date)] at #[a.Link(href=locationLink)= location].
           if deckId
             figure.Figure.Figure--deck
               script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
