@@ -48,7 +48,7 @@ figure.Figure
       width="960",
       height="720")
   figcaption.Figure-caption.Figure-paragraph
-    | Mind mapping can be used for diary entries. Branches grow from the hour locations around a 12-hour clock, with a full page spread representing one day. Sketches around the #[em chrono-map] help to evoke personal stories about that day. I elaborated on this diary technique in talk titled #[a.Link(href="https://speakerdeck.com/basham/total-recall-an-experiment-with-daily-sketch-diaries") #[cite Total Recall: An Experiment with Daily Sketch Diaries]] for #[a.Link(href="http://www.ignitebtown.com/") Ignite Bloomington] in 2011.
+    | Mind mapping can be used for diary entries. Branches grow from the hour locations around a 12-hour clock, with a full page spread representing one day. Sketches around the #[em chrono-map] help to evoke personal stories about that day. I elaborated on this diary technique in a talk titled #[a.Link(href="https://speakerdeck.com/basham/total-recall-an-experiment-with-daily-sketch-diaries") #[cite Total Recall: An Experiment with Daily Sketch Diaries]] for #[a.Link(href="http://www.ignitebtown.com/") Ignite Bloomington] in 2011.
 figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/13715832/56467006-e7a5-11e5-9f49-1f128bf0698c.jpg")
     img(
