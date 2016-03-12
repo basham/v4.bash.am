@@ -68,3 +68,7 @@ figure.Figure
   figcaption.Figure-caption.Figure-paragraph
     | In four minutes, participants created mind maps concerning a variety of topics of their choosing, such as entertainment, travel, psychology, sadness, and tasks.
 </jade>
+
+More resources, exemplars, and photos of the event can be viewed on Google Drive:
+
+<a class="Button" href="https://drive.google.com/folderview?id=0B0SrbFZ-iXKzbFBVaFN2VDRWZlU&usp=sharing">Mind Mapping Workshop resources</a>
