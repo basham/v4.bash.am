@@ -1,6 +1,7 @@
 ---
 title: Talks
 order: 4
+index: talks
 description: I speak at conferences and local meetups.
 ---
 
