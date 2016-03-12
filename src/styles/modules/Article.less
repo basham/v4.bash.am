@@ -20,6 +20,7 @@
     }
   }
 
+  &-blockquote,
   &-hr,
   &-list,
   &-notice,
@@ -54,8 +55,7 @@
 
   &-list,
   &-paragraph {
-    margin-bottom: 0;
-    margin-top: 1em;
+    margin: 1em 0 0 0;
   }
 
   &-h3 + &-list,
@@ -133,8 +133,26 @@
   }
 
   &-blockquote {
-    border-left: unit(3/16, rem) solid @color-Base;
-    padding-left: 5%;
+    color: @color-Text--light;
+    font-size: @ratio-Scale--05i;
+    margin: 3em 0;
+    padding: 0 0 0 1em;
+
+    @media @xs {
+      padding: 0 0 0 2em;
+    }
+  }
+
+  &-blockquoteFooter {
+    margin-top: 1em;
+
+    &::before {
+      content: '— ';
+    }
+  }
+
+  &-blockquoteCite {
+    font-style: normal;
   }
 
   &-cite {

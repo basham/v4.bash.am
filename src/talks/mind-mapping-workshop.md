@@ -69,6 +69,12 @@ figure.Figure
     | In four minutes, participants created mind maps concerning a variety of topics of their choosing, such as entertainment, travel, psychology, sadness, and tasks.
 </jade>
 
+One participant shared her enthusiasm for learning the technique:
+
+> Mind maps were what my life was missing. For lists, for articulation, for reflecting. Ohhh maaaa gawd
+
+> = [@Amoli](https://twitter.com/Amoli) &middot; [February 22, 2016](https://twitter.com/Amoli/status/701949945511866368)
+
 More resources, exemplars, and photos of the event can be viewed on Google Drive:
 
 <a class="Button" href="https://drive.google.com/folderview?id=0B0SrbFZ-iXKzbFBVaFN2VDRWZlU&usp=sharing">Mind Mapping Workshop resources</a>

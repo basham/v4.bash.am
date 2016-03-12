@@ -9,8 +9,8 @@ highlight.configure({
 var renderer = new marked.Renderer();
 
 renderer.blockquote = function(quote) {
-  var citeRegex = /(<p[^>]*>)(<cite>.*<\/cite>)(<\/p>)/g;
-  quote = quote.replace(citeRegex, '<footer class="Article-cite">$2</footer>');
+  var citeRegex = /(<p[^>]*>)= (.*)(<\/p>)/g;
+  quote = quote.replace(citeRegex, '<footer class="Article-blockquoteFooter"><cite class="Article-blockquoteCite">$2</cite></footer>');
   return '<blockquote class="Article-blockquote">' + quote + '</blockquote>';
 }
 
