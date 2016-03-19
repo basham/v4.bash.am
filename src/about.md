@@ -3,6 +3,16 @@ title: About
 order: 1
 ---
 
+<jade>
+figure.ProfileFigure
+  a(href="https://cloud.githubusercontent.com/assets/347558/13899180/a64ead02-edbd-11e5-91a1-7eaa06e06f18.jpg")
+    img.ProfileFigure-img(
+      alt="headshot of Chris Basham",
+      height="200",
+      src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
+      width="200")
+</jade>
+
 Since 2012, I’ve worked for [Indiana University](http://www.iu.edu/) in the quaint town of [Bloomington](http://en.wikipedia.org/wiki/Bloomington,_Indiana), designing and developing student-related Web software. As the lead UX designer in a cross-functional Agile team, I train coworkers on design and development processes, and I coordinate best practices with sister teams.
 
 I also co-organize the [Bloomington chapter of IxDA](http://www.meetup.com/IxDA-Bloomington/) in an effort to cultivate the local design community, encouraging student designers and local professionals to socialize and share expertise. Occasionally I [write](/articles) or [talk](/talks) about my [craft](/work). The best ways to contact me are by [email](mailto:chris@bash.am) or [Twitter]({{site.elsewhere.Twitter}} 'Follow me on Twitter').
