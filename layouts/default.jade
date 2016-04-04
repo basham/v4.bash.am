@@ -1,3 +1,7 @@
+- var isArticle = contains(collection, 'articles');
+- var isWork = contains(collection, 'work');
+- var isTalk = contains(collection, 'talks');
+- var isCollection = isArticle || isWork || isTalk;
 doctype html
 html(lang="en")
   head
@@ -14,6 +18,11 @@ html(lang="en")
     meta(
       name="author"
       content=site.author)
+    - var pubdate = date || startDate;
+    if pubdate
+      meta(
+        name="date"
+        content=pubdate)
     - var titles = hide_title ? [] : [title];
     if client
       - titles.push(client);
@@ -37,10 +46,6 @@ html(lang="en")
               - var cn = { 'Nav-link--active': isSelf || isInCollection };
               li.Nav-item
                 a.Nav-link(href=url, class=cn)= page.title
-    - var isArticle = contains(collection, 'articles');
-    - var isWork = contains(collection, 'work');
-    - var isTalk = contains(collection, 'talks');
-    - var isCollection = isArticle || isWork || isTalk;
     main.Article(role="main")
       .Article-section
         h1.Article-h1= title
