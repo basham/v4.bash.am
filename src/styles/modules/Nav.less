@@ -25,7 +25,7 @@
 
   &-link {
     border-bottom: unit(3/16, em) solid transparent;
-    color: @color-Link;
+    color: @color-Text;
     display: block;
     line-height: 1;
     padding: 1em 0.5em unit(10/16, em);
@@ -42,11 +42,9 @@
 
     &:focus,
     &:hover {
-      background-color: @color-Link--bg;
+      color: @color-Link;
     }
 
-    &:focus,
-    &:hover,
     &--active {
       border-color: @color-Link;
     }

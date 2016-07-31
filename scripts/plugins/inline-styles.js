@@ -1,7 +1,6 @@
 var minimatch = require('minimatch');
 var cheerio = require('cheerio');
 var postcss = require('postcss');
-var mqpacker = require('css-mqpacker');
 
 function plugin(opts) {
   return function(files, metalsmith, done) {
@@ -72,8 +71,6 @@ function plugin(opts) {
           .use(unstyle)
           // Remove unused atRules.
           .use(unAtRule)
-          // Repackage atRules.
-          .use(mqpacker.postcss)
           .process(css);
 
         // Append CSS to <head>.

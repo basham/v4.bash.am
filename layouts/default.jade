@@ -35,7 +35,8 @@ html(lang="en")
       include:js default.head.js
   body.Body#top
     header.Body-part.Body-part--constrain.Header(role="banner")
-      a.Header-name(href="/")= site.author
+      - var cn = { 'Header-name--active': !path };
+      a.Header-name(href="/", class=cn)= site.author
       nav.Header-nav.Nav(role="navigation")
         ul.Nav-list
           each page in collections.pages

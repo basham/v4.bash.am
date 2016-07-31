@@ -15,9 +15,38 @@
     font-weight: bold;
     text-decoration: none;
 
+    @media @xs {
+      border-bottom: unit(3/16, rem) solid transparent;
+      margin-left: -0.75rem;
+      padding: unit(19/16, rem) 0.75rem unit(13/16, rem);
+    }
+
+    &--active {
+
+      @media @xs {
+        border-color: @color-Link;
+      }
+    }
+
+    @media @sm {
+      margin-left: -1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    @media @md and @sm-height {
+      padding-bottom: unit(15/16, rem);
+      padding-top: unit(21/16, rem);
+    }
+
     &,
     &:visited {
       color: @color-Text;
+    }
+
+    &:focus,
+    &:hover {
+      color: @color-Link;
     }
   }
 
