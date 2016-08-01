@@ -1,6 +1,7 @@
 .Pager {
   border-top: unit(3/16, rem) solid @color-Base;
   text-align: center;
+  margin: 0 -1em;
 
   @media @xxs {
     display: flex;
@@ -26,6 +27,20 @@
     @media @xxs {
       flex-grow: 100;
       justify-content: flex-start;
+    }
+  }
+
+  &-control {
+    color: @color-Text;
+    display: block;
+    padding: unit(14/16, em) 1em unit(10/16, em);
+    text-align: center;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      color: @color-Link;
     }
   }
 
