@@ -29,6 +29,10 @@ html(lang="en")
     - titles.push(site.author);
     - var pageTitle = titles.join(' &middot; ');
     title !{pageTitle}
+    link(
+      rel="shortcut icon"
+      href="/favicon.ico"
+      sizes="16x16 32x32")
     script
       include:js ../node_modules/fontfaceobserver/fontfaceobserver.js
       include:js ../node_modules/fg-loadcss/loadCSS.js
