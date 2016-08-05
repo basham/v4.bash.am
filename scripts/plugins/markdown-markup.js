@@ -23,7 +23,7 @@ function plugin(opts) {
         var $ = cheerio.load(html, {
           decodeEntities: false
         });
-        // Find all <jade> nodes.
+        // Find all <md> nodes.
         $('md').each(function(i, el) {
           // Get the content.
           var source = $(this).html();
