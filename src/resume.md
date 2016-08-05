@@ -1,6 +1,13 @@
 ---
 title: Résumé
+ignore_auto_md: true
 ---
+
+<div class="Article-row">
+
+<div class="Article-column">
+
+<md>
 
 ## Experience
 
@@ -117,6 +124,14 @@ General Honors
 [Purdue University (IUPUI)](http://iupui.edu),
 [Indianapolis, Indiana](http://en.wikipedia.org/wiki/Indianapolis)
 
+</md>
+
+</div>
+
+<div class="Article-column Article-column--half">
+
+<md>
+
 ## Skills
 
 ### Practices
@@ -153,3 +168,16 @@ General Honors
 - NoSQL databases ([Firebase](http://firebase.com/))
 - Version control systems ([Git](http://git-scm.com/))
 - Visual design tools ([Axure](http://www.axure.com/), [OmniGraffle](http://www.omnigroup.com/omniGraffle/), [Illustrator](http://www.adobe.com/products/illustrator.html), [InDesign](http://www.adobe.com/products/indesign.html), [Photoshop](http://www.adobe.com/products/photoshop.html))
+
+***
+
+</md>
+
+<jade>
+p.Article-paragraph.Article-paragraph--center
+  a.Button(href="/basham-resume.pdf") Download Résumé (PDF)
+</jade>
+
+</div>
+
+</div>

@@ -77,8 +77,11 @@ html(lang="en")
                 a.Button(href=deckLink) View slide deck
                 if recordingLink
                   a.Button(href=recordingLink) View recording
-        md
+        if ignore_auto_md
           != contents
+        else
+          md
+            != contents
     if isCollection
       -
         function makeCollection(singular, plural, link) {
