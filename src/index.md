@@ -1,7 +1,6 @@
 ---
 title: Designer & Developer
 hide_title: true
-permalink: false
 ---
 
 I'm Chris Basham, a craftsman of Web applications, equally skilled in both designing and developing user interfaces. I believe every word, byte, and pixel is an opportunity for a person to experience a [new and better story](/articles/storytellers), one [worth the heartbeats](/articles/heartbeats) it demands.
