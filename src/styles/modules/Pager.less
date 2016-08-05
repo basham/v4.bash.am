@@ -1,12 +1,16 @@
 .Pager {
   border-top: unit(3/16, rem) solid @color-Base;
   text-align: center;
-  margin: 0 -1em;
 
-  @media @xxs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &-wrap {
+    margin: 0 -1em;
+
+    @media @xxs {
+      align-items: baseline;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &-controls {

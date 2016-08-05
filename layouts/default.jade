@@ -101,23 +101,24 @@ html(lang="en")
         collectionSingular += ',';
         collectionPlural += ',';
       nav.Body-part.Body-part--constrain.Pager(role="navigation")
-        .Pager-controls
-          a.Pager-control.Pager-top(href="#top") Back to top
-          a.Pager-control(href=allLink)= allLabel
-        .Pager-paging
-          if next
-            - var pagerDate = next.endDateLabel || dateFormat(next.date);
-            - var pagerTitle = ['Previous', collectionSingular, 'published', pagerDate].join(' ')
-            a.Pager-control.Pager-previous(
-              href="/#{next.path}"
-              title=pagerTitle)
-              cite= next.title
-          if previous
-            - var pagerDate = previous.endDateLabel || dateFormat(previous.date);
-            - var pagerTitle = ['Next', collectionSingular, 'published', pagerDate].join(' ')
-            a.Pager-control.Pager-next(
-              href="/#{previous.path}"
-              title=pagerTitle)
-              cite= previous.title
+        .Pager-wrap
+          .Pager-controls
+            a.Pager-control.Pager-top(href="#top") Back to top
+            a.Pager-control(href=allLink)= allLabel
+          .Pager-paging
+            if next
+              - var pagerDate = next.endDateLabel || dateFormat(next.date);
+              - var pagerTitle = ['Previous', collectionSingular, 'published', pagerDate].join(' ')
+              a.Pager-control.Pager-previous(
+                href="/#{next.path}"
+                title=pagerTitle)
+                cite= next.title
+            if previous
+              - var pagerDate = previous.endDateLabel || dateFormat(previous.date);
+              - var pagerTitle = ['Next', collectionSingular, 'published', pagerDate].join(' ')
+              a.Pager-control.Pager-next(
+                href="/#{previous.path}"
+                title=pagerTitle)
+                cite= previous.title
     script
       include:js default.body.js
