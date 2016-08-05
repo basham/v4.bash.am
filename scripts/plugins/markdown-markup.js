@@ -27,9 +27,9 @@ function plugin(opts) {
         $('md').each(function(i, el) {
           // Get the content.
           var source = $(this).html();
-          // Render the content as Jade.
+          // Render the content as Markdown.
           var html = marked(source);
-          // Replace the <jade> node with the new rendered content.
+          // Replace the <md> node with the new rendered content.
           $(this).replaceWith(html);
         });
         // Save updated HTML.
