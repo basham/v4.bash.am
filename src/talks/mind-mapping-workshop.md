@@ -2,7 +2,7 @@
 title: Mind Mapping Workshop
 date: '2016-02-22'
 location: IxDA Bloomington
-locationLink: http://www.meetup.com/IxDA-Bloomington/events/228787452/
+locationLink: https://www.facebook.com/ixdabloomington
 ---
 
 <jade>

@@ -2,7 +2,7 @@
 title: Architecting CSS
 date: '2014-08-25'
 location: IxDA Bloomington
-locationLink: http://www.meetup.com/IxDA-Bloomington/events/198163982/
+locationLink: https://www.facebook.com/ixdabloomington
 deckId: 2afa8030088b0132420a3a536de4d520
 deckRatio: 1.77777777777778
 deckLink: https://speakerdeck.com/basham/architecting-css

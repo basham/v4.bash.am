@@ -1,12 +1,7 @@
 author: Chris Basham
-specialties:
-- Interaction designer &
-- Front-end developer
 description: Chris Basham is an interaction designer and front-end developer living in Bloomington, Indiana.
 twitter: chrisbasham
 email: chris@bash.am
-phone: (812) 459-9891
-phone_tel: +18124599891
 elsewhere:
   CodePen: http://codepen.io/basham
   Flickr: https://www.flickr.com/photos/chrisbasham
@@ -16,4 +11,6 @@ elsewhere:
   Speaker Deck: https://speakerdeck.com/basham
   Twitter: https://twitter.com/chrisbasham
   Vimeo: http://vimeo.com/basham
+repo: https://github.com/basham/v4.bash.am
 new_issue: https://github.com/basham/v4.bash.am/issues/new
+ixda_bloomington: https://www.facebook.com/ixdabloomington

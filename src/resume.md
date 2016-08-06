@@ -21,7 +21,7 @@ Conducted user research; produced sketches, wireframes, and prototypes; and deve
 Contributed to enterprise-wide design and front-end development standards.
 Trained coworkers regarding front-end development practices.
 
-### Co-organizer &middot; [IxDA Bloomington](http://www.meetup.com/IxDA-Bloomington/)
+### Co-organizer &middot; [IxDA Bloomington]({{site.ixda_bloomington}})
 
 <time datetime="2013-05">May 2013</time> &ndash; Present
 &middot;
@@ -51,7 +51,7 @@ Designed, wireframed, and prototyped web user interfaces to enhance the student
 experience with university informations systems.
 Refined front-end standards and practices.
 
-### Co-founder &middot; [BitHouse Design](http://bithousedesign.com)
+### Co-founder &middot; BitHouse Design
 
 <time datetime="2011-09">September 2011</time> &ndash; <time datetime="2012-09">September 2012</time>
 &middot;
