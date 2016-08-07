@@ -53,28 +53,29 @@ html(lang="en")
                 a.Nav-link(href=url, class=cn)= page.title
     main.Article(role="main")
       .Article-section
-        h1.Article-h1= title
-        if description
-          p.Article-paragraph.Article-meta= description
-        if isArticle
-          p.Article-paragraph.Article-meta
-            time.Article-time(datetime=date, pubdate)= dateFormat(date)
-        if isWork
-          p.Article-paragraph.Article-meta
-            if client
-              span.Article-client
-                a.Link(href=clientLink)= client
-            time.Article-time(datetime=startDate)= startDateLabel
-            |  &ndash; 
-            time.Article-time(datetime=endDate, pubdate)= endDateLabel
-        if isTalk
-          p.Article-paragraph.Article-meta
-            | Presented #[time.Article-time(datetime=date, pubdate)= dateFormat(date)] at 
-            if locationLink
-              | #[a.Link(href=locationLink)= location]
-            else
-              != location
-            | .
+        .Article-header
+          h1.Article-h1= title
+          if description
+            p.Article-paragraph.Article-description= description
+          if isArticle
+            p.Article-paragraph
+              time.Article-time(datetime=date, pubdate)= dateFormat(date)
+          if isWork
+            p.Article-paragraph
+              if client
+                span.Article-client
+                  a.Link(href=clientLink)= client
+              time.Article-time(datetime=startDate)= startDateLabel
+              |  &ndash; 
+              time.Article-time(datetime=endDate, pubdate)= endDateLabel
+          if isTalk
+            p.Article-paragraph
+              | Presented #[time.Article-time(datetime=date, pubdate)= dateFormat(date)] at 
+              if locationLink
+                | #[a.Link(href=locationLink)= location]
+              else
+                != location
+              | .
           if deckId
             figure.Figure.Figure--deck
               script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")

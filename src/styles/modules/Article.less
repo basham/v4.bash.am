@@ -20,6 +20,10 @@
     }
   }
 
+  &-header > &-paragraph:last-of-type {
+    margin-bottom: 3rem;
+  }
+
   &-row {
     margin: 0 -2.5%;
     margin: 0 -2.5vw;
@@ -42,6 +46,7 @@
   }
 
   &-blockquote,
+  &-header,
   &-hr,
   &-list,
   &-notice,
@@ -92,6 +97,10 @@
     }
   }
 
+  &-description {
+    font-size: @ratio-Scale--05;
+  }
+
   &-list {
     padding: 0;
   }
@@ -101,14 +110,6 @@
 
     @media @xs {
       margin-left: 2em;
-    }
-  }
-
-  &-meta {
-    margin-bottom: 3em;
-
-    & + & {
-      margin-top: -2em;
     }
   }
 
