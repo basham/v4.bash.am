@@ -1,6 +1,7 @@
 ---
 title: Storytellers
 date: '2015-04-06'
+description: Envision the stories users tell
 ---
 
 Design is a ubiquitous discipline spanning innumerable domains and specialities. Within digital disciplines, user experience design is probably the most comprehensive designation, minimally encompassing user research, interface design, interaction design, visual design, and product design. Regardless of speciality, designers practice user experience design when designs are motivated by how users feel, think about, and respond to the design.

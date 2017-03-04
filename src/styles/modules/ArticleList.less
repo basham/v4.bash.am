@@ -1,44 +1,19 @@
 .ArticleList {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   list-style-type: none;
   margin: 1em 0 0;
   max-width: @content-Width;
   padding: 0;
 
   &-item {
-    flex-basis: 100%;
 
     & + & {
       padding-top: 1.5em;
     }
-
-    @media @xs {
-      flex-basis: 50%;
-
-      &:nth-child(odd) {
-        padding-right: 0.5em;
-      }
-
-      &:nth-child(even) {
-        padding-left: 0.5em;
-      }
-
-      &:nth-child(2) {
-        padding-top: 0;
-      }
-    }
   }
 
   &-title {
-    font-size: @ratio-Scale--10;
+    font-size: @ratio-Scale--05;
     font-style: normal;
-
-    &--small {
-      font-size: @ratio-Scale--05;
-    }
   }
 
   &-description {

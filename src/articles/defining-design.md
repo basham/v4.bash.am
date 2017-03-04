@@ -1,6 +1,7 @@
 ---
 title: Defining Design
 date: '2015-03-30'
+description: Renderable, insightful intentionality
 ---
 
 By the encouragement and guidance of my parents, I grew up experimenting in the illustrative arts. My childhood companions were sketchbooks and assortments of pencils, markers, and measuring tools. Graphite stained the edges of my hands, and eraser shavings amassed in the unsuspecting carpet.

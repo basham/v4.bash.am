@@ -1,6 +1,7 @@
 ---
 title: Facilitating a Hackathon
 date: '2016-04-04'
+description: Agile practices at small scale
 ---
 
 In late February, Bloomington hosted a 3-day hackathon with the goal of designing, building, and launching a website for [Indiana.com](http://indiana.com/). It brought together about 20 professionals and students with expertise in design, development, writing, curation, legal practice, and business.

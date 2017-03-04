@@ -1,6 +1,7 @@
 ---
 title: Heartbeats
 date: '2015-04-13'
+description: The cost of design
 ---
 
 The metrics for accurately and effectively evaluating design are primarily categorized in two camps, [the quantifiable and the qualifiable](http://www.howdesign.com/parse/measure-design/ '"Measure Design" by Terry Lee Stone, published December 6, 2012').

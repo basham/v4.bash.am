@@ -1,56 +1,19 @@
 .Header {
-  box-shadow: inset 0 unit(-3/16, rem) 0 0 @color-Base;
-  display: flex;
-  flex-direction: column;
   padding-bottom: 0;
-
-  @media @xs {
-    align-items: center;
-    flex-direction: row;
-  }
+  margin-bottom: -1em;
 
   &-name {
-    flex-shrink: 0;
-    font-size: @ratio-Scale--10;
-    font-weight: bold;
-    text-decoration: none;
+    left: 1em;
+    position: relative;
 
-    @media @xs {
-      border-bottom: unit(3/16, rem) solid transparent;
-      margin-left: -0.75rem;
-      padding: unit(19/16, rem) 0.75rem unit(13/16, rem);
-    }
-
-    &--active {
-
-      @media @xs {
-        border-color: @color-Link;
-      }
+    &::before {
+      content: '\2039';
+      left: -1em;
+      position: absolute;
     }
 
     @media @sm {
-      margin-left: -1rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      left: 0;
     }
-
-    @media @md and @sm-height {
-      padding-bottom: unit(15/16, rem);
-      padding-top: unit(21/16, rem);
-    }
-
-    &,
-    &:visited {
-      color: @color-Text;
-    }
-
-    &:focus,
-    &:hover {
-      color: @color-Link;
-    }
-  }
-
-  &-nav {
-    width: 100%;
   }
 }

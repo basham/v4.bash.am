@@ -38,19 +38,9 @@ html(lang="en")
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
   body.Body#top
-    header.Body-part.Body-part--constrain.Header(role="banner")
-      - var cn = { 'Header-name--active': !path };
-      a.Header-name(href="/", class=cn)= site.author
-      nav.Header-nav.Nav(role="navigation")
-        ul.Nav-list
-          each page in collections.pages
-            if page.order
-              - var url = '/' + (page.path || '');
-              - var isSelf = page.path === path;
-              - var isInCollection = contains(collection, page.index);
-              - var cn = { 'Nav-link--active': isSelf || isInCollection };
-              li.Nav-item
-                a.Nav-link(href=url, class=cn)= page.title
+    if path
+      header.Body-part.Body-part--constrain.Header(role="banner")
+        a.Header-name.Link.Link--primary(href="/")= site.author
     main.Article(role="main")
       .Article-section
         .Article-header
