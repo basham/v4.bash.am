@@ -47,6 +47,11 @@ function plugin(opts) {
               if(!!matchesFontsLoaded) {
                 return true;
               }
+              // Retain any selectors that don't have any classes.
+              var matchesClass = selector.match(/\./g);
+              if(!matchesClass) {
+                return true;
+              }
               // Has matches.
               return !!$(selector).length;
             });
