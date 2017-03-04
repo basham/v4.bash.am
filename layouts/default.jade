@@ -1,3 +1,4 @@
+- var isHome = !path;
 - var isArticle = contains(collection, 'articles');
 - var isWork = contains(collection, 'work');
 - var isTalk = contains(collection, 'talks');
@@ -38,41 +39,42 @@ html(lang="en")
       include:js ../node_modules/fg-loadcss/loadCSS.js
       include:js default.head.js
   body.Body#top
-    if path
+    if !isHome
       header.Body-part.Body-part--constrain.Header(role="banner")
         a.Header-name.Link.Link--primary(href="/")= site.author
     main.Article(role="main")
       .Article-section
-        .Article-header
-          h1.Article-h1= title
-          if description
-            p.Article-paragraph.Article-description= description
-          if isArticle
-            p.Article-paragraph
-              time.Article-time(datetime=date, pubdate)= dateFormat(date)
-          if isWork
-            p.Article-paragraph
-              if client
-                span.Article-client
-                  a.Link(href=clientLink)= client
-              time.Article-time(datetime=startDate)= startDateLabel
-              |  &ndash; 
-              time.Article-time(datetime=endDate, pubdate)= endDateLabel
-          if isTalk
-            p.Article-paragraph
-              | Presented #[time.Article-time(datetime=date, pubdate)= dateFormat(date)] at 
-              if locationLink
-                | #[a.Link(href=locationLink)= location]
-              else
-                != location
-              | .
-          if deckId
-            figure.Figure.Figure--deck
-              script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
-              figcaption.Figure-caption
-                a.Button(href=deckLink) View slide deck
-                if recordingLink
-                  a.Button(href=recordingLink) View recording
+        if !hide_header
+          .Article-header
+            h1.Article-h1= title
+            if description
+              p.Article-paragraph.Article-description= description
+            if isArticle
+              p.Article-paragraph
+                time.Article-time(datetime=date, pubdate)= dateFormat(date)
+            if isWork
+              p.Article-paragraph
+                if client
+                  span.Article-client
+                    a.Link(href=clientLink)= client
+                time.Article-time(datetime=startDate)= startDateLabel
+                |  &ndash; 
+                time.Article-time(datetime=endDate, pubdate)= endDateLabel
+            if isTalk
+              p.Article-paragraph
+                | Presented #[time.Article-time(datetime=date, pubdate)= dateFormat(date)] at 
+                if locationLink
+                  | #[a.Link(href=locationLink)= location]
+                else
+                  != location
+                | .
+            if deckId
+              figure.Figure.Figure--deck
+                script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
+                figcaption.Figure-caption
+                  a.Button(href=deckLink) View slide deck
+                  if recordingLink
+                    a.Button(href=recordingLink) View recording
         if ignore_auto_md
           != contents
         else

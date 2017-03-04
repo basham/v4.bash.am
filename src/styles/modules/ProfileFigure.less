@@ -2,18 +2,25 @@
 .ProfileFigure {
   margin: 0;
 
-  @media @xs {
+  @media @sm {
     max-width: 60em;
   }
 
   &-img {
     float: right;
     height: 100px;
-    margin: -2em 0 1em 1em;
+    margin: 1em 0 0 1em;
     width: 100px;
 
     @media @xs {
+      height: 150px;
+      margin-top: -2em;
+      width: 150px;
+    }
+
+    @media @sm {
       height: 200px;
+      margin-top: -3em;
       width: 200px;
     }
   }
