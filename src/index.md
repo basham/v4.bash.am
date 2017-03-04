@@ -63,7 +63,7 @@ ol.ArticleList
       p.ArticleList-description
         time.ArticleList-time(datetime=article.date)= yearFormat(article.date)
         if article.description
-          |  &mdash; 
+          |  &middot; 
           = article.description
 </jade>
 
@@ -77,7 +77,7 @@ ol.ArticleList
         cite.ArticleList-title= talk.title
       p.ArticleList-description
         time.ArticleList-time(datetime=talk.date)= yearFormat(talk.date)
-        |  &mdash; 
+        |  &middot; 
         = talk.location
 p.Article-paragraph
   a.Link.Link--primary(href="#{site.elsewhere['Speaker Deck']}") More slide decks
