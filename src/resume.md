@@ -173,7 +173,7 @@ General Honors
 
 <jade>
 p.Article-paragraph.Article-paragraph--center
-  a.Button(href="/basham-resume.pdf") Download Résumé (PDF)
+  a.Link.Link--primary(href="/basham-resume.pdf") Download Résumé (PDF)
 </jade>
 
 </div>
