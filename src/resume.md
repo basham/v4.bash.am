@@ -36,7 +36,7 @@ Organized twice-monthly topical and networking events for the local chapter of
 [IxDA](http://ixda.org 'Interaction Design Association') to facilitate
 and grow the Bloomington design community.
 
-### Interaction Designer &middot; [Kuali Student](http://www.kuali.org/ks)
+### Interaction Designer &middot; Kuali Student
 
 <time datetime="2013-08">August 2013</time> &ndash; <time datetime="2014-10">October 2014</time>
 &middot;
@@ -46,7 +46,7 @@ Researched and established design and front-end development standards.
 Designed and developed proof-of-concept applications to explore experimental technologies and techniques.
 Facilitated collaboration among designers throughout the Kuali community.
 
-### Interaction Designer &middot; [Process Experience Architecture](http://pxa.iu.edu), [Indiana University][iu]
+### Interaction Designer &middot; Process Experience Architecture, [Indiana University][iu]
 
 <time datetime="2012-07">July 2012</time> &ndash; <time datetime="2013-07">July 2013</time>
 &middot;
@@ -160,11 +160,10 @@ General Honors
 ### Development
 
 - [HTML](http://en.wikipedia.org/wiki/HTML), [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets), and [JavaScript](http://en.wikipedia.org/wiki/JavaScript)
-- Build systems ([Node.js](http://nodejs.org/), [Webpack](https://webpack.github.io/), [Babel](https://babeljs.io/), [gulp](http://gulpjs.com/), [Less.js](http://lesscss.org/))
-- Front-end libraries and architectures ([React](https://facebook.github.io/react/), [BEM](/talks/architecting-css/ 'Block Element Modifier'))
+- Build systems ([Node.js](http://nodejs.org/), [Webpack](https://webpack.github.io/), [Babel](https://babeljs.io/), [Less.js](http://lesscss.org/))
+- Front-end libraries and architectures ([React](https://facebook.github.io/react/), [RxJS](http://reactivex.io/rxjs/), [BEM](/talks/architecting-css/ 'Block Element Modifier'))
 - NoSQL databases ([Firebase](http://firebase.com/))
 - [Performance optimization](http://en.wikipedia.org/wiki/Web_performance_optimization)
-- [Progressive enhancement](http://en.wikipedia.org/wiki/Progressive_enhancement)
 - Version control systems ([Git](http://git-scm.com/))
 
 ***
