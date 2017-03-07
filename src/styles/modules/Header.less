@@ -4,17 +4,9 @@
   padding-bottom: 0;
 
   &-name {
-    left: 1em;
-    position: relative;
-
-    &::before {
-      content: '\2039';
-      left: -1em;
-      position: absolute;
-    }
 
     @media @sm {
-      left: 0;
+      left: -1em;
     }
   }
 }

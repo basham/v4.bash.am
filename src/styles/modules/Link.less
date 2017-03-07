@@ -18,6 +18,28 @@
     color: @color-Link;
   }
 
+  &--back {
+    margin-left: 1em;
+    position: relative;
+
+    &::before {
+      content: '\2039';
+      left: -1em;
+      position: absolute;
+    }
+  }
+
+  &--top {
+    position: relative;
+    margin-right: 1em;
+
+    &::after {
+      content: '\2191';
+      position: absolute;
+      right: -1em;
+    }
+  }
+
   .Article-notice & {
     .textShadow(@color-Base--light);
   }

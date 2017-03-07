@@ -41,7 +41,7 @@ html(lang="en")
   body.Body#top
     if !isHome
       header.Body-part.Body-part--constrain.Header(role="banner")
-        a.Header-name.Link.Link--primary(href="/")= site.author
+        a.Header-name.Link.Link--primary.Link--back(href="/")= site.author
     main.Article(role="main")
       .Article-section
         if !hide_header
@@ -84,45 +84,16 @@ html(lang="en")
           md
             != contents
     if isCollection
-      -
-        function makeCollection(singular, plural, link) {
-          return { singular: singular, plural: plural, link: link };
-        }
-        var metaCollection = null;
-        if(isArticle) {
-          metaCollection = makeCollection('article', 'articles', '/articles');
-        }
-        if(isWork) {
-          metaCollection = makeCollection('work', 'work', '/work');
-        }
-        if(isTalk) {
-          metaCollection = makeCollection('talk', 'talks', '/talks');
-        }
-        var collectionSingular = metaCollection.singular;
-        var collectionPlural = metaCollection.plural;
-        var allLink = metaCollection.link;
-        var allLabel = ['All', collectionPlural].join(' ');
-        collectionSingular += ',';
-        collectionPlural += ',';
-      nav.Body-part.Body-part--constrain.Pager(role="navigation")
-        .Pager-wrap
-          .Pager-controls
-            a.Pager-control.Pager-top(href="#top") Back to top
-            a.Pager-control(href=allLink)= allLabel
-          .Pager-paging
-            if next
-              - var pagerDate = next.endDateLabel || dateFormat(next.date);
-              - var pagerTitle = ['Previous', collectionSingular, 'published', pagerDate].join(' ')
-              a.Pager-control.Pager-previous(
-                href="/#{next.path}"
-                title=pagerTitle)
-                cite= next.title
-            if previous
-              - var pagerDate = previous.endDateLabel || dateFormat(previous.date);
-              - var pagerTitle = ['Next', collectionSingular, 'published', pagerDate].join(' ')
-              a.Pager-control.Pager-next(
-                href="/#{previous.path}"
-                title=pagerTitle)
-                cite= previous.title
+      footer.Body-part.Body-part--constrain.Body-part--divider
+        ul.Nav
+          li.Nav-item
+            a.Link.Link--primary(href="/") Home
+          li.Nav-item
+            if(isArticle)
+              a.Link.Link--primary(href="/#articles") More Articles
+            if(isWork)
+              a.Link.Link--primary(href="/#work") More Work
+            if(isTalk)
+              a.Link.Link--primary(href="/#talk") More Talks
     script
       include:js default.body.js
