@@ -89,11 +89,11 @@ html(lang="en")
           li.Nav-item
             a.Link.Link--primary(href="/") Home
           li.Nav-item
-            if(isArticle)
-              a.Link.Link--primary(href="/#articles") More Articles
             if(isWork)
               a.Link.Link--primary(href="/#work") More Work
+            if(isArticle)
+              a.Link.Link--primary(href="/#articles") More Articles
             if(isTalk)
-              a.Link.Link--primary(href="/#talk") More Talks
+              a.Link.Link--primary(href="/#talks") More Talks
     script
       include:js default.body.js
