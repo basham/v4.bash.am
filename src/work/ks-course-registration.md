@@ -28,7 +28,7 @@ In understanding that there were numerous unknowns regarding the best approach f
 * serving data via [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) in order to decouple user interfaces from back-end concerns;
 * and generally encouraging more freedom when choosing tools.
 
-<a class="Button" href="/articles/mobile-strategies-for-kuali-student">Read <cite>Mobile Strategies for Kuali Student</cite></a>
+<a class="Link Link--primary" href="/articles/mobile-strategies-for-kuali-student">Read <cite>Mobile Strategies for Kuali Student</cite></a>
 
 Backing these recommendations, leadership allocated six weeks to develop a proof of concept application that embodied these recommendations.
 
@@ -121,9 +121,11 @@ figure.Figure
     <iframe src="//player.vimeo.com/video/112133422?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   figcaption.Figure-caption
     p.Figure-paragraph The proof of concept was demonstrated to Kuali Student development teams at the end of the allotted six weeks.
-    p.Figure-meta
-      a.Button(href="https://vimeo.com/112133422") Watch demo video
-      a.Button(href="https://github.com/ksux/kscr-poc") GitHub repository
+    ul.Nav
+      li.Nav-item
+        a.Link.Link--primary(href="https://vimeo.com/112133422") Watch demo video
+      li.Nav-item
+        a.Link.Link--primary(href="https://github.com/ksux/kscr-poc") GitHub repository
 </jade>
 
 ## Reflection

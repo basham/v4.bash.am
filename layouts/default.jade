@@ -71,10 +71,13 @@ html(lang="en")
             if deckId
               figure.Figure.Figure--deck
                 script(async, class="speakerdeck-embed" data-id=deckId data-ratio=deckRatio src="//speakerdeck.com/assets/embed.js")
-                figcaption.Figure-caption
-                  a.Button(href=deckLink) View slide deck
-                  if recordingLink
-                    a.Button(href=recordingLink) View recording
+                figcaption
+                  ul.Nav
+                    li.Nav-item
+                      a.Link.Link--primary(href=deckLink) View slide deck
+                    if recordingLink
+                      li.Nav-item
+                        a.Link.Link--primary(href=recordingLink) View recording
         if ignore_auto_md
           != contents
         else

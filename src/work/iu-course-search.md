@@ -17,7 +17,9 @@ figure.Figure
     <iframe src="//player.vimeo.com/video/111944142?title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   figcaption.Figure-caption
     p.Figure-paragraph Demonstration of the proof of concept course search and bookmarking application.
-    p.Figure-meta
-      a.Button(href="https://vimeo.com/111944142") Watch demo video
-      a.Button(href="https://github.com/pxa/course-search") GitHub repository
+    ul.Nav
+      li.Nav-item
+        a.Link.Link--primary(href="https://vimeo.com/111944142") Watch demo video
+      li.Nav-item
+        a.Link.Link--primary(href="https://github.com/pxa/course-search") GitHub repository
 </jade>

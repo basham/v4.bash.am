@@ -19,7 +19,9 @@ figure.Figure
       src="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png")
   figcaption.Figure-caption
     p.Figure-paragraph The Design Guide features a responsive design and statically generated content, making it both accessible and performant.
-    p.Figure-meta
-      a.Button(href="http://ksux.github.io/ks-design-guide/") View the Design Guide
-      a.Button(href="https://github.com/ksux/ks-design-guide") GitHub repository
+    ul.Nav
+      li.Nav-item
+        a.Link.Link--primary(href="http://ksux.github.io/ks-design-guide/") View the Design Guide
+      li.Nav-item
+        a.Link.Link--primary(href="https://github.com/ksux/ks-design-guide") GitHub repository
 </jade>

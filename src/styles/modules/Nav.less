@@ -1,52 +1,12 @@
 .Nav {
-
-  &-list {
-    display: flex;
-    list-style-type: none;
-    margin: 0 0 0 -0.5em;
-    padding: 0.25em 0 0;
-
-    @media @xs {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -0.75em;
-      padding-top: 0;
-    }
-
-    @media @sm {
-      margin-right: -1em;
-    }
-  }
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   &-item {
-    margin: 0;
+    margin: 1em 2em 0 0;
     padding: 0;
-  }
-
-  &-link {
-    border-bottom: unit(3/16, em) solid transparent;
-    color: @color-Text;
-    display: block;
-    line-height: 1;
-    padding: 1em 0.5em unit(10/16, em);
-    text-decoration: none;
-
-    @media @xs {
-      padding: 1.5em 0.75em 1em;
-    }
-
-    @media @sm {
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-
-    &:focus,
-    &:hover {
-      color: @color-Link;
-    }
-
-    &--active {
-      border-color: @color-Link;
-    }
   }
 }

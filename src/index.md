@@ -18,9 +18,9 @@ hide_header: true
     | I&rsquo;m Chris, a craftsman of Web applications, equally skilled in both designing and developing user interfaces. I&nbsp;believe every word, byte, and pixel is an opportunity for a person to experience a #[a(class="Link", href="/articles/storytellers") new and better story], one #[a(class="Link", href="/articles/heartbeats") worth the heartbeats] it demands.
   - var links = 'Work,About,Articles,Talks,Contact'.split(',')
   nav
-    ul.Elsewhere
+    ul.Nav
       each value in links
-        li.Elsewhere-item
+        li.Nav-item
           - var href = '#' + value.toLowerCase()
           a.Link.Link--primary(href=href)= value
 </jade>
@@ -46,9 +46,9 @@ When not slicing fingers with sticky notes or [refactoring repositories]({{site.
 
 <jade>
 - var links = { 'Résumé': '/resume', 'Colophon': '/colophon' }
-ul.Elsewhere
+ul.Nav
   each value, key in links
-    li.Elsewhere-item
+    li.Nav-item
       a.Link.Link--primary(href=value)= key
 </jade>
 
@@ -88,8 +88,8 @@ p.Article-paragraph
 Reach me via email at [{{site.email}}](mailto:{{site.email}}) or find me elsewhere:
 
 <jade>
-ul.Elsewhere
+ul.Nav
   each value, key in site.elsewhere
-    li.Elsewhere-item
+    li.Nav-item
       a.Link(href=value)= key
 </jade>
