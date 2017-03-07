@@ -28,12 +28,18 @@ hide_header: true
 ## Work
 
 <jade>
-ol.ArticleList
+ol.WorkList
   each work in collections.work
-    li.ArticleList-item
-      a.Link(href="/#{work.path}")
-        cite.ArticleList-title= work.title
-      p.ArticleList-description= work.description
+    li.WorkList-item
+      a.WorkList-link(href="/#{work.path}")
+        if work.previewImage
+          figure.WorkList-figure
+            img.WorkList-image(src="#{work.previewImage}")
+        .WorkList-content
+          cite.Link.WorkList-title= work.title
+          p.WorkList-description= work.description
+          p.Article-paragraph
+            span.Link.Link--primary(href="/#{work.path}") Read case study
 </jade>
 
 ## About

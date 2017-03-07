@@ -1,0 +1,58 @@
+.WorkList {
+  list-style-type: none;
+  margin: 0;
+  max-width: @content-Width;
+  padding: 0;
+
+  &-item {
+    border-bottom: unit(3/16, rem) solid @color-Base;
+    padding-bottom: 1em;
+
+    & + & {
+      padding-top: 1em;
+    }
+  }
+
+  &-link {
+    display: block;
+    color: inherit;
+    padding: 1em 0;
+    text-decoration: none;
+
+    @media @sm {
+      display: flex;
+    }
+  }
+
+  &-figure {
+    margin: 0;
+
+    @media @sm {
+      flex-grow: 1;
+    }
+  }
+
+  &-image {
+    width: 100%;
+  }
+
+  &-figure + &-content {
+    padding: 1em 0 0;
+
+    @media @sm {
+      flex-basis: 16em;
+      flex-shrink: 0;
+      padding: 0 0 0 2em;
+    }
+  }
+
+  &-title {
+    font-size: @ratio-Scale--05;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  &-description {
+    margin: 0.25em 0 0;
+  }
+}
