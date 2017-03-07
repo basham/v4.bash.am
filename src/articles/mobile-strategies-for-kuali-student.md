@@ -6,7 +6,7 @@ description: Approaches for future friendly Web software
 
 <jade>
 footer.Article-notice
-  | This article is republished from the #[a.Link(href="https://wiki.kuali.org/pages/viewpage.action?title=Mobile+Strategies+for+KS&spaceKey=STUDENT") Kuali wiki].
+  | This document outlines various recommendations for improving #[a.Link(href="https://kuali.org/") Kuali] Student products. Supporting this strategy, leadership allocated six weeks to develop a #[a.Link(href="/work/ks-course-registration") proof of concept application] which guided future product development.
 </jade>
 
 ## Executive summary
