@@ -18,7 +18,7 @@ hide_header: true
     | I&rsquo;m Chris, a designer and front-end developer of Web applications for #[a(class="Link", href="https://uits.iu.edu/") Indiana University] in #[a(class="Link", href="http://en.wikipedia.org/wiki/Bloomington,_Indiana") Bloomington]. I work on a cross-functional Agile team, building enterprise software for students, advisors, and faculty. I experiment with new design and development techniques, and I train coworkers on best practices.
   p.Article-paragraph
     | Outside of work, I play #[a(class="Link", href="https://www.kickstarter.com/profile/basham") Kickstarter board games], listen to #[a(class="Link", href="https://www.audible.com/") audiobooks] and #[a(class="Link", href="https://99percentinvisible.org/") podcasts], and run trails in my #[a(class="Link", href="https://lunasandals.com/") sandals].
-  - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Contact': '#contact', 'Résumé': '/resume', 'Colophon': '/colophon' }
+  - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Colophon': '#colophon', 'Contact': '#contact', 'Résumé': '/resume' }
   nav
     ul.Nav
       each value, key in links
@@ -27,6 +27,10 @@ hide_header: true
 </jade>
 
 ## Work
+
+### Design Systems
+
+While working as 
 
 <jade>
 ol.WorkList
@@ -74,6 +78,14 @@ ol.ArticleList
 p.Article-paragraph
   a.Link.Link--primary(href="https://speakerdeck.com/basham") More slide decks
 </jade>
+
+## Colophon
+
+This site is [hosted on GitHub]({{site.repo}}) and uses [Merriweather](https://fonts.google.com/specimen/Merriweather) and [Inconsolata](https://fonts.google.com/specimen/Inconsolata) typefaces. Past versions of this site are archived for reasons of historical stewardship and general amusement:
+
+- [Version 3](http://v3.bash.am), 2010&ndash;2014
+- [Version 2](http://v2.bash.am), 2008&ndash;2009
+- [Version 1](http://v1.bash.am), 2007&ndash;2008
 
 ## Contact
 
