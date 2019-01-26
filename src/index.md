@@ -68,8 +68,11 @@ ol.ArticleList
         time.ArticleList-time(datetime=talk.date)= yearFormat(talk.date)
         |  &middot; 
         = talk.location
+</jade>
+
+<jade>
 p.Article-paragraph
-  a.Link.Link--primary(href="#{site.elsewhere['Speaker Deck']}") More slide decks
+  a.Link.Link--primary(href="https://speakerdeck.com/basham") More slide decks
 </jade>
 
 ## Contact
