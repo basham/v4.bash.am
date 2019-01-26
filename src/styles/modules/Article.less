@@ -108,8 +108,8 @@
   &-listItem {
     margin: 1em 0 0 1em;
 
-    @media @xs {
-      margin-left: 2em;
+    @media @sm {
+      margin-left: 0;
     }
   }
 
@@ -201,17 +201,20 @@
 
   &-hr {
     border: none;
-    margin: 0;
+    margin: 2em 0;
 
     &::before {
-      border-top: unit(3/16, rem) solid @color-Base;
+      border-top: (3rem/16) solid @color-Base;
       content: '';
       display: block;
-      margin: 10% 40%;
     }
   }
 
   &-signature {
     height: 3em;
+  }
+
+  abbr {
+    text-decoration: none;
   }
 }

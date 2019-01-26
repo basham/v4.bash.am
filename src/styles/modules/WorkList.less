@@ -5,13 +5,16 @@
   padding: 0;
 
   &-item {
-    border-bottom: (3rem/16) solid @color-Base;
     display: flex;
     flex-direction: column;
     padding: 1em 0;
 
     @media @xs {
       flex-direction: row;
+    }
+
+    & + & {
+      padding-top: 2rem;
     }
   }
 
@@ -27,12 +30,12 @@
   }
 
   &-content {
-    padding: 1em 0 0;
+    padding: 0 0 1em;
 
     @media @xs {
       flex-basis: 20em;
       flex-shrink: 0;
-      padding: 1em 0 1em 2em;
+      padding: 1em 2em 1em 0;
     }
   }
 

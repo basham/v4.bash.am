@@ -15,14 +15,15 @@ hide_header: true
         src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
         width="200")
   p.Article-paragraph
-    | I&rsquo;m Chris, a craftsman of Web applications, equally skilled in both designing and developing user interfaces. I&nbsp;believe every word, byte, and pixel is an opportunity for a person to experience a #[a(class="Link", href="/articles/storytellers") new and better story], one #[a(class="Link", href="/articles/heartbeats") worth the heartbeats] it demands.
-  - var links = 'Work,About,Articles,Talks,Contact'.split(',')
+    | I&rsquo;m Chris, a designer and front-end developer of Web applications for #[a(class="Link", href="https://uits.iu.edu/") Indiana University] in #[a(class="Link", href="http://en.wikipedia.org/wiki/Bloomington,_Indiana") Bloomington]. I work on a cross-functional Agile team, building enterprise software for students, advisors, and faculty. I experiment with new design and development techniques, and I train coworkers on best practices.
+  p.Article-paragraph
+    | Outside of work, I play #[a(class="Link", href="https://www.kickstarter.com/profile/basham") Kickstarter board games], listen to #[a(class="Link", href="https://www.audible.com/") audiobooks] and #[a(class="Link", href="https://99percentinvisible.org/") podcasts], and run trails in my #[a(class="Link", href="https://lunasandals.com/") sandals].
+  - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Contact': '#contact', 'Résumé': '/resume', 'Colophon': '/colophon' }
   nav
     ul.Nav
-      each value in links
+      each value, key in links
         li.Nav-item
-          - var href = '#' + value.toLowerCase()
-          a.Link.Link--primary(href=href)= value
+          a.Link.Link--primary(href=value)= key
 </jade>
 
 ## Work
@@ -31,29 +32,13 @@ hide_header: true
 ol.WorkList
   each work in collections.work
     li.WorkList-item
-      if work.previewImage
-        a.WorkList-preview.Link(href="/#{work.path}", aria-hidden="true", tabindex="-1")
-          img.WorkList-image(src="#{work.previewImage}")
       .WorkList-content
         a.Link(href="/#{work.path}")
           cite.WorkList-title= work.title
         p.WorkList-description= work.description
-</jade>
-
-## About
-
-Since 2012, I’ve worked for [Indiana University](http://www.iu.edu/) in the quaint town of [Bloomington](http://en.wikipedia.org/wiki/Bloomington,_Indiana), designing and developing student-related Web software. As the UX designer in a cross-functional Agile team, I train coworkers on design and development processes, and I coordinate best practices with sister teams.
-
-I also co-organize the [Bloomington chapter of IxDA]({{site.ixda_bloomington}}) in an effort to cultivate the local design community, encouraging student designers and local professionals to socialize and share expertise. Occasionally I [write](#articles) or [talk](#talks) about my [work](#work), design philosophy, practices, and strategy. [Email me](mailto:{{site.email}}) or [find me elsewhere](#contact) if you want to chat.
-
-When not slicing fingers with sticky notes or [refactoring repositories]({{site.elsewhere.GitHub}}), I'm desperately convincing others to play a backed [Kickstarter]({{site.elsewhere.Kickstarter}}) game, fervently listening to an [audiobook](http://www.audible.com) or [podcast](http://99percentinvisible.org/), or blissfully running trails in my [sandals](http://www.lunasandals.com/).
-
-<jade>
-- var links = { 'Résumé': '/resume', 'Colophon': '/colophon' }
-ul.Nav
-  each value, key in links
-    li.Nav-item
-      a.Link.Link--primary(href=value)= key
+      if work.previewImage
+        a.WorkList-preview.Link(href="/#{work.path}", aria-hidden="true", tabindex="-1")
+          img.WorkList-image(src="#{work.previewImage}")
 </jade>
 
 ## Articles
