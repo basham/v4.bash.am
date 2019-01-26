@@ -31,15 +31,13 @@ hide_header: true
 ol.WorkList
   each work in collections.work
     li.WorkList-item
-      a.WorkList-link(href="/#{work.path}")
-        if work.previewImage
-          figure.WorkList-figure
-            img.WorkList-image(src="#{work.previewImage}")
-        .WorkList-content
-          cite.Link.WorkList-title= work.title
-          p.WorkList-description= work.description
-          p.Article-paragraph
-            span.Link.Link--primary(href="/#{work.path}") Read case study
+      if work.previewImage
+        a.WorkList-preview.Link(href="/#{work.path}", aria-hidden="true", tabindex="-1")
+          img.WorkList-image(src="#{work.previewImage}")
+      .WorkList-content
+        a.Link(href="/#{work.path}")
+          cite.WorkList-title= work.title
+        p.WorkList-description= work.description
 </jade>
 
 ## About

@@ -5,27 +5,17 @@
   padding: 0;
 
   &-item {
-    border-bottom: unit(3/16, rem) solid @color-Base;
-    padding-bottom: 1em;
-
-    & + & {
-      padding-top: 1em;
-    }
-  }
-
-  &-link {
-    display: block;
-    color: inherit;
+    border-bottom: (3rem/16) solid @color-Base;
+    display: flex;
+    flex-direction: column;
     padding: 1em 0;
-    text-decoration: none;
 
     @media @xs {
-      display: flex;
+      flex-direction: row;
     }
   }
 
-  &-figure {
-    margin: 0;
+  &-preview {
 
     @media @xs {
       flex-grow: 1;
@@ -36,20 +26,19 @@
     width: 100%;
   }
 
-  &-figure + &-content {
+  &-content {
     padding: 1em 0 0;
 
     @media @xs {
-      flex-basis: 16em;
+      flex-basis: 20em;
       flex-shrink: 0;
-      padding: 0 0 0 2em;
+      padding: 1em 0 1em 2em;
     }
   }
 
   &-title {
     font-size: @ratio-Scale--05;
     font-style: normal;
-    font-weight: bold;
   }
 
   &-description {

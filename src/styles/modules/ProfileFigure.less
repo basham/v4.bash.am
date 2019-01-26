@@ -5,7 +5,8 @@
     max-width: 60em;
   }
 
-  &-img {
+  > a {
+    border-radius: 50%;
     float: right;
     height: 100px;
     margin: 1em 0 0 1em;
@@ -22,5 +23,16 @@
       margin-top: -3em;
       width: 200px;
     }
+
+    &:focus {
+      box-shadow: 0 0 0 (2rem/16) @color-Link;
+      outline: none;
+    }
+  }
+
+  &-img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
   }
 }
