@@ -15,9 +15,9 @@ hide_header: true
         src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
         width="200")
   p.Article-paragraph
-    | I&rsquo;m Chris, a designer and front-end developer of Web applications for #[a(class="Link", href="https://uits.iu.edu/") Indiana University] in #[a(class="Link", href="http://en.wikipedia.org/wiki/Bloomington,_Indiana") Bloomington]. I work on a cross-functional Agile team, building enterprise software for students, advisors, and faculty. I experiment with new design and development techniques, and I train coworkers on best practices.
+    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [application development](#application-development), [design systems](#design-systems), and team practices. I experiment with new design and development techniques, and I train coworkers on best practices.
   p.Article-paragraph
-    | Outside of work, I play #[a(class="Link", href="https://www.kickstarter.com/profile/basham") Kickstarter board games], listen to #[a(class="Link", href="https://www.audible.com/") audiobooks] and #[a(class="Link", href="https://99percentinvisible.org/") podcasts], and run trails in my #[a(class="Link", href="https://lunasandals.com/") sandals].
+    | Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
   - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Colophon': '#colophon', 'Contact': '#contact', 'Résumé': '/resume' }
   nav
     ul.Nav
@@ -26,11 +26,15 @@ hide_header: true
           a.Link.Link--primary(href=value)= key
 </jade>
 
-## Application Development
+## Application development
 
-AngularJS. Grunt. Gulp. REST. BEM. Typography. Icons. Responsive apps. Mobile strategies. React. RxJS. Conduit.
+AngularJS. Grunt. Gulp. REST. OnCheckIn. Firebase. BEM. Typography. Icons. Responsive apps. Mobile strategies. React. RxJS. Conduit.
 
-## Design Systems
+## Team practices
+
+Faciliation. Agile. Lean UX. User research. Accessibility. Roles. Training. Designer facilitates the design process, not owns it.
+
+## Design systems
 
 In mid-2013, as part of a partnership between the [Kuali Foundation](https://kuali.org/) and [Indiana University](https://www.iu.edu/), I started working on the Kuali Student project on the Core Design Team. In this role, I worked alongside the designers of several product teams, to encourage collaboration, alignment, and community. As such, I helped kickoff a UI pattern library called the [<mark>Kuali Student Design Guide</mark>](/work/ks-design-guide) to start establishing standards and best practices. While the project didn't have time to mature because of the dissolution of the Kuali Student teams, I learned about the complexities of such a system, such as maintenance, political buy-in, versioning, documentation, and governance.
 

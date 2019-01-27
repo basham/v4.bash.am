@@ -1,6 +1,6 @@
 ---
-title: Student Billing
-client: Indiana University (UITS)
+title: IU Student Billing
+client: Indiana University
 clientLink: https://uits.iu.edu/
 startDate: '2013-03-01'
 startDateLabel: March

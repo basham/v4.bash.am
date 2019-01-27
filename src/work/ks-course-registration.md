@@ -1,20 +1,18 @@
 ---
 title: Course Registration
-client: Kuali Student
-clientLink: http://www.kuali.org/ks
 startDate: '2013-12-01'
 startDateLabel: December 2013
 endDate: '2014-01-01'
 endDateLabel: January 2014
-description: Built a proof of concept, mobile-first app with AngularJS.
+description: Built a proof of concept, mobile-first app for Kuali Student.
 previewImage: https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png
 ---
 
-Using the recommendations as outlined in the [<cite>Mobile Strategies for Kuali Student</cite>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).
+Using the recommendations as outlined in the [<mark><cite>Mobile Strategies for Kuali Student</cite></mark>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).
 
 ## Backstory
 
-The [Kuali Student](http://www.kuali.org/ks) project is a [student information system](http://en.wikipedia.org/wiki/Student_information_system) [established by the Kuali Foundation in 2007](http://www.kuali.org/about/history). Over the initial years, the primary objective was to build the administrative foundation, which included [Curriculum Management](http://www.kuali.org/ks/functionality/cm) and [Course Offering](http://www.kuali.org/ks/functionality/enr). These applications defined essential relationships, such as:
+The Kuali Student project is a [student information system](http://en.wikipedia.org/wiki/Student_information_system) established by the [Kuali Foundation](https://kuali.org) in 2007. Over the initial years, the primary objective was to build the administrative foundation, which included Curriculum Management and Course Offering. These applications defined essential relationships, such as:
 
 * What is a course, and how is it offered for any given academic term?
 * How do the culmination of attended classes constitute an academic degree?
@@ -28,8 +26,6 @@ In understanding that there were numerous unknowns regarding the best approach f
 * ensuring the application is accessible according to [WAI-ARIA](http://en.wikipedia.org/wiki/WAI-ARIA) specifications;
 * serving data via [REST web services](http://en.wikipedia.org/wiki/Representational_state_transfer) in order to decouple user interfaces from back-end concerns;
 * and generally encouraging more freedom when choosing tools.
-
-<a class="Link Link--primary" href="/articles/mobile-strategies-for-kuali-student">Read <cite>Mobile Strategies for Kuali Student</cite></a>
 
 Backing these recommendations, leadership allocated six weeks to develop a proof of concept application that embodied these recommendations.
 

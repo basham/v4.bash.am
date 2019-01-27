@@ -1,6 +1,6 @@
 ---
-title: Color Palette
-client: Indiana University (UITS)
+title: IU Color Palette
+client: Indiana University
 clientLink: https://uits.iu.edu/
 startDate: '2014-12-01'
 startDateLabel: December 2014
