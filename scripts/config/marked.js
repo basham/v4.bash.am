@@ -122,7 +122,7 @@ renderer.tablecell = function(content, flags) {
 };
 
 module.exports = {
-  pedantic: true,
+  //pedantic: true,
   renderer: renderer,
   smartypants: true
 };
