@@ -24,11 +24,8 @@ html(lang="en")
       meta(
         name="date"
         content=pubdate)
-    - var titles = hide_title ? [] : [title];
-    if client
-      - titles.push(client);
-    - titles.push(site.author);
-    - var pageTitle = titles.join(' &middot; ');
+    - var titles = hide_title ? [site.author] : [title, site.author]
+    - var pageTitle = titles.join(' &middot; ')
     title !{pageTitle}
     link(
       rel="shortcut icon"
