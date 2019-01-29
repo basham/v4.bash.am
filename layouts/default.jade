@@ -24,7 +24,7 @@ html(lang="en")
       meta(
         name="date"
         content=pubdate)
-    - var titles = hide_title ? [site.author] : [title, site.author]
+    - var titles = title ? [title, site.author] : [site.author]
     - var pageTitle = titles.join(' &middot; ')
     title !{pageTitle}
     link(

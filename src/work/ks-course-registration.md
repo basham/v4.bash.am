@@ -5,7 +5,6 @@ startDateLabel: December 2013
 endDate: '2014-01-01'
 endDateLabel: January 2014
 description: Mobile-first prototype for Kuali Student.
-previewImage: https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png
 ---
 
 Using the recommendations as outlined in the [<mark><cite>Mobile Strategies for Kuali Student</cite></mark>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).

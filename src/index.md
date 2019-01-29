@@ -1,26 +1,24 @@
 ---
-title: Chris Basham
-hide_title: true
 hide_header: true
 ---
 
+# {{site.author}}
+
 <jade>
-.Article-header
-  h1.Article-h1= title
-  figure.ProfileFigure
-    a(href="https://cloud.githubusercontent.com/assets/347558/13899180/a64ead02-edbd-11e5-91a1-7eaa06e06f18.jpg")
-      img.ProfileFigure-img(
-        alt="headshot of Chris Basham",
-        height="200",
-        src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
-        width="200")
-  p.Article-paragraph
-    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
-  p.Article-paragraph
-    | For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
-  p.Article-paragraph
-    | Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
+figure.ProfileFigure
+  a(href="https://cloud.githubusercontent.com/assets/347558/13899180/a64ead02-edbd-11e5-91a1-7eaa06e06f18.jpg")
+    img.ProfileFigure-img(
+      alt="Headshot of Chris Basham",
+      height="200",
+      src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
+      width="200")
 </jade>
+
+I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
+
+For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
+
+Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
 
 ## Application development
 
