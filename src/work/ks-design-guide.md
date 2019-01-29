@@ -1,9 +1,10 @@
 ---
-title: Kuali Student Design Guide
+title: Design Guide
 startDate: '2014-03-01'
 startDateLabel: March
 endDate: '2014-08-01'
 endDateLabel: August 2014
+description: Responsive, statically generated pattern library for Kuali Student.
 previewImage: https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png
 hide: true
 ---

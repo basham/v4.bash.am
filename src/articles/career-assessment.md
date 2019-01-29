@@ -1,7 +1,7 @@
 ---
 title: Career Assessment
 date: '2015-04-20'
-description: Interests, values, strengths, weaknesses, and goals
+description: Interests, values, strengths, weaknesses, and goals.
 ---
 
 In order to understand where I professionally am and where I’m going, it’s important to be honest and introspective. In conducting such an exercise, I’m framing my career under a number of lenses, including interests, values, strengths, weaknesses, and goals. By publishing this assessment, I’m better motivated to regularly evaluate how I’ve progressed and make corrections as needed, so my career becomes as intentional as my design work.

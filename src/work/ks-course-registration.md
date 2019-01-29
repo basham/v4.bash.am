@@ -4,7 +4,7 @@ startDate: '2013-12-01'
 startDateLabel: December 2013
 endDate: '2014-01-01'
 endDateLabel: January 2014
-description: Built a proof of concept, mobile-first app for Kuali Student.
+description: Mobile-first prototype for Kuali Student.
 previewImage: https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png
 ---
 

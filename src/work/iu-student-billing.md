@@ -1,12 +1,10 @@
 ---
-title: IU Student Billing
-client: Indiana University
-clientLink: https://uits.iu.edu/
+title: Student Billing
 startDate: '2013-03-01'
 startDateLabel: March
 endDate: '2013-05-07'
 endDateLabel: May 2013
-description: Prototyped with AngularJS.
+description: Functional prototype for Indiana University.
 previewImage: https://cloud.githubusercontent.com/assets/347558/5120220/7a7922c4-704c-11e4-8c3e-09c165d31334.png
 ---
 

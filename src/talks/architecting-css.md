@@ -9,3 +9,5 @@ deckLink: https://speakerdeck.com/basham/architecting-css
 ---
 
 Learn CSS best practices and workflows, including how class naming conventions and rigorous file organization can help teams understand and be quickly familiar with unfamiliar styles. Discover how to integrate pre-processors into your build process to increase productivity and prepare styles for production.
+
+Learn more about [this topic on my GitHub Gist](https://gist.github.com/basham/877db54fffb08e47bd39).

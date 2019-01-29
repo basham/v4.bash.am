@@ -1,7 +1,7 @@
 ---
 title: Codifying Colors
 date: '2015-03-02'
-description: Generating color scales for design systems
+description: Generating color scales for design systems.
 ---
 
 With little effort, you can find abundant examples of how colors have been named. [HTML5 and CSS3 color specifications name 140 colors](http://www.w3schools.com/html/html_colornames.asp). [Crayola names 135 standard crayon colors](http://en.wikipedia.org/wiki/List_of_Crayola_crayon_colors). [Wikipedia lists hundreds of colors](http://en.wikipedia.org/wiki/List_of_colors:_A%E2%80%93F), with undeclared citations. [ColorHexa lists 746 color names](http://www.colorhexa.com/color-names). [Users have named close to 8 million colors on COLOURlovers](http://www.colourlovers.com/colors). There are even [research projects which attempt to resolve the inconsistencies among various color dictionaries](http://people.csail.mit.edu/jaffer/Color/Dictionaries.html).

@@ -1,12 +1,10 @@
 ---
-title: IU Color Palette
-client: Indiana University
-clientLink: https://uits.iu.edu/
+title: Color Palette
 startDate: '2014-12-01'
 startDateLabel: December 2014
 endDate: '2015-01-28'
 endDateLabel: January 2015
-description: Established new standards for color usage in enterprise applications.
+description: Color standards for Indiana University apps.
 previewImage: https://cloud.githubusercontent.com/assets/347558/23644154/c61d5116-02d3-11e7-89b6-a225874cace4.png
 hide: true
 ---

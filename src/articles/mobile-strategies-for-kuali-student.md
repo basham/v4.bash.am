@@ -1,7 +1,7 @@
 ---
 title: Mobile Strategies for Kuali Student
 date: '2013-12-16'
-description: Approaches for future friendly Web software
+description: Approaches for future friendly Web software.
 ---
 
 <footer class="Article-notice">

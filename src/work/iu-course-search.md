@@ -1,12 +1,10 @@
 ---
-title: IU Course Search
-client: Indiana University
-clientLink: https://uits.iu.edu/
+title: Course Search
 startDate: '2013-03-01'
 startDateLabel: March
 endDate: '2013-05-16'
 endDateLabel: May 2013
-description: Built a proof of concept app with AngularJS and REST services.
+description: Full-stack prototype for Indiana University.
 previewImage: https://cloud.githubusercontent.com/assets/347558/23643953/e172c51e-02d2-11e7-9755-756038e1f8a4.png
 ---
 

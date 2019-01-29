@@ -15,7 +15,7 @@ hide_header: true
         src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
         width="200")
   p.Article-paragraph
-    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [application development](#application-development), [design systems](#design-systems), and team practices. I experiment with new design and development techniques, and I train coworkers on best practices.
+    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [application development](#application-development), [design systems](#design-systems), and [team practices](#team-practices). I experiment with new design and development techniques, and I train coworkers on best practices.
   p.Article-paragraph
     | Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
   - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Colophon': '#colophon', 'Contact': '#contact', 'Résumé': '/resume' }
@@ -28,11 +28,13 @@ hide_header: true
 
 ## Application development
 
-AngularJS. Grunt. Gulp. REST. OnCheckIn. Firebase. BEM. Typography. Icons. Responsive apps. Mobile strategies. React. RxJS. Conduit.
+In 2013, I started experimenting with using the [AngularJS](https://angularjs.org/) framework for building functional prototypes, such as new interfaces for students [<mark>viewing their billing information</mark>](/work/iu-student-billing), [<mark>searching for courses</mark>](/work/iu-course-search), and [<mark>registering for classes</mark>](/work/ks-course-registration). Each proof-of-concept built on the next, teaching me about REST APIs, minification, version control ([git](https://git-scm.com/) and [GitHub](https://github.com/)), accessibility ([WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA)), build systems ([Grunt](https://gruntjs.com/) and [gulp.js](https://gulpjs.com/)), NoSQL databases ([Firebase](https://firebase.google.com/)), and mobile-first and responsive design.
 
-## Team practices
+From 2014 to 2016, I studied CSS, trying to determine best practices for [using CSS units](https://gist.github.com/basham/2175a16ab7c60ce8e001), [integrating media queries](https://gist.github.com/basham/3b24062dfaecaa712a68), [organizing project files](https://gist.github.com/basham/877db54fffb08e47bd39), and [<mark>setting style naming conventions</mark>](/talks/architecting-css).
 
-Faciliation. Agile. Lean UX. User research. Accessibility. Roles. Training. Designer facilitates the design process, not owns it.
+In 2015, I shifted to [React](https://reactjs.org/) as my rendering library choice.
+
+React. Reflux as simplier Flux. AdRx Quick Notes in 2015. SAS Student in 2015. Cycle.js. RxJS experiments in 2016. SER in 2017. Conduit in 2017.
 
 ## Design systems
 
@@ -42,20 +44,23 @@ In late 2014, I was assigned to one of several newly formed product teams under 
 
 In late 2016, the university established the [User Experience Office](https://ux.iu.edu/) to oversee design efforts across offices, departments, and schools. In collaboration with the university's design and development communities, they maintain the [Rivet Software Design System](https://rivet.iu.edu/), and it has experienced an exponential growth in adoption. I am a regular contributor to Rivet, sharing many lessons learned from my prior design system projects.
 
+## Team practices
+
+Faciliation. Agile. Lean UX. User research. Accessibility. Roles. Training. Designer facilitates the design process, not owns it.
+
 ## Work
 
 <jade>
-ol.WorkList
-  - var workList = collections.work.filter((i) => !i.hide)
-  each work in workList
-    li.WorkList-item
-      .WorkList-content
-        a.Link(href="/#{work.path}")
-          cite.WorkList-title= work.title
-        p.WorkList-description= work.description
-      if work.previewImage
-        a.WorkList-preview.Link(href="/#{work.path}", aria-hidden="true", tabindex="-1")
-          img.WorkList-image(src="#{work.previewImage}")
+ol.ArticleList
+  each item in collections.work
+    li.ArticleList-item
+      a.Link(href="/#{item.path}")
+        cite.ArticleList-title= item.title
+      p.ArticleList-description
+        time.ArticleList-time= yearFormat(item.date || item.endDate)
+        if item.description
+          |  &middot; 
+          = item.description
 </jade>
 
 ## Articles
