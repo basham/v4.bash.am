@@ -15,16 +15,11 @@ hide_header: true
         src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
         width="200")
   p.Article-paragraph
-    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [application development](#application-development), [design systems](#design-systems), and [team practices](#team-practices). I experiment with new design and development techniques, and I train coworkers on best practices.
+    | I&rsquo;m Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://en.wikipedia.org/wiki/Bloomington,_Indiana). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
+  p.Article-paragraph
+    | For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
   p.Article-paragraph
     | Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
-  - var links = { 'Work': '#work', 'Articles': '#articles', 'Talks': '#talks', 'Colophon': '#colophon', 'Contact': '#contact', 'Résumé': '/resume' }
-  nav
-    ul.Nav
-      each value, key in links
-        li.Nav-item
-          a.Link(href=value)
-            b= key
 </jade>
 
 ## Application development
@@ -36,6 +31,8 @@ From 2014 to 2016, I studied CSS, trying to determine best practices for [using 
 In 2015, I shifted to [React](https://reactjs.org/) as my rendering library choice.
 
 React. Reflux as simplier Flux. AdRx Quick Notes in 2015. SAS Student in 2015. Cycle.js. RxJS experiments in 2016. SER in 2017. Conduit in 2017.
+
+Review code samples on [GitHub]({{site.elsewhere.GitHub}}) or [CodePen]({{site.elsewhere.CodePen}}).
 
 ## Design systems
 
@@ -105,11 +102,6 @@ This site is [hosted on GitHub]({{site.repo}}) and uses [Merriweather](https://f
 
 ## Contact
 
-Reach me via email at [{{site.email}}](mailto:{{site.email}}) or find me elsewhere:
+Reach me at [<b>{{site.email}}</b>](mailto:{{site.email}}).
 
-<jade>
-ul.Nav
-  each value, key in site.elsewhere
-    li.Nav-item
-      a.Link(href=value)= key
-</jade>
+Follow me on [Twitter]({{site.elsewhere.Twitter}}), [GitHub]({{site.elsewhere.GitHub}}), and [CodePen]({{site.elsewhere.CodePen}}).
