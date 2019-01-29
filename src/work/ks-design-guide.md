@@ -14,7 +14,7 @@ figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png")
     img(
       alt="Screenshot of the mobile and widescreen view of the Pagination pattern."
-      src="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png")
+      src="https://cloud.githubusercontent.com/assets/347558/5119089/35e2c4e2-703a-11e4-8607-9679b3dc3fed.png" width="1541" height="1316")
   figcaption.Figure-caption
     p.Figure-paragraph The Design Guide features a responsive design and statically generated content, making it both accessible and performant.
     ul.Nav

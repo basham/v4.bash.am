@@ -37,11 +37,11 @@ figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/5240378/a5a834ee-78d0-11e4-82ad-346272517202.png")
     img(
       alt="Sketch of a list of selectable university terms."
-      src="https://cloud.githubusercontent.com/assets/347558/5240378/a5a834ee-78d0-11e4-82ad-346272517202.png")
+      src="https://cloud.githubusercontent.com/assets/347558/5240378/a5a834ee-78d0-11e4-82ad-346272517202.png" width="800" height="600")
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png")
     img(
       alt="Sketch of a list of selectable university terms."
-      src="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png")
+      src="https://cloud.githubusercontent.com/assets/347558/5240382/bea41b0c-78d0-11e4-9165-42618c3d2d5b.png" width="800" height="600")
   figcaption.Figure-caption.Figure-paragraph
     | A #[a(class="Link", href="https://www.dropbox.com/s/jmpv8o0fre3xuua/ks-cr-poc-2014-01-09-sketches.pdf?dl=0") series of sketches] explored how to navigate among academic terms.
 </jade>
@@ -51,7 +51,7 @@ figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png")
     img(
       alt="Wireframe of course search form for mobile."
-      src="https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png")
+      src="https://cloud.githubusercontent.com/assets/347558/5187445/392b4858-749b-11e4-9837-9995c39bb213.png" width="1200" height="588")
   figcaption.Figure-caption.Figure-paragraph
     | Wireframes helped to define relationships within the interface and explore rudimentary interactions.
 </jade>

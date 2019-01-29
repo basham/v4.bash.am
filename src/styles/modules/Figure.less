@@ -39,6 +39,7 @@
   }
 
   &-wrap {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
     margin: -0.5em 0;
@@ -58,6 +59,11 @@
   }
 
   &-imgLink {
+
+    &:focus {
+      outline: (2rem/16) solid @color-Link;
+      outline-offset: (1rem/16);
+    }
 
     &:hover {
       background-color: transparent;
@@ -82,6 +88,7 @@
   }
 
   img {
+    height: 100%;
     width: 100%;
   }
 }

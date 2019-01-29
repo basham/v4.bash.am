@@ -19,19 +19,19 @@ figure.Figure.Figure--grow
     a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455110/3285c556-1fd0-11e5-901a-26fb8f97c65c.png")
       img(
         alt="Screenshot of academic planner application"
-        src="https://cloud.githubusercontent.com/assets/347558/8455099/209cde6a-1fd0-11e5-915b-2f36f50614d9.jpg")
+        src="https://cloud.githubusercontent.com/assets/347558/8455099/209cde6a-1fd0-11e5-915b-2f36f50614d9.jpg" width="450" height="321")
     a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455089/07d03256-1fd0-11e5-8717-e879842d6993.png")
       img(
         alt="Screenshot of application login page"
-        src="https://cloud.githubusercontent.com/assets/347558/8455082/00201dbe-1fd0-11e5-858a-14d126a1c949.jpg")
+        src="https://cloud.githubusercontent.com/assets/347558/8455082/00201dbe-1fd0-11e5-858a-14d126a1c949.jpg" width="450" height="483")
     a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455138/67cbedc6-1fd0-11e5-851a-55332bd42c06.png")
       img(
         alt="Screenshot of online admissions application"
-        src="https://cloud.githubusercontent.com/assets/347558/8455072/ed340954-1fcf-11e5-9292-acbaf31bf0b3.png")
+        src="https://cloud.githubusercontent.com/assets/347558/8455072/ed340954-1fcf-11e5-9292-acbaf31bf0b3.png" width="1100" height="545")
     a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455143/77bcb8a0-1fd0-11e5-8e60-c07c41242164.png")
       img(
         alt="Screenshot of administrative interface"
-        src="https://cloud.githubusercontent.com/assets/347558/8455052/c38555ea-1fcf-11e5-8777-431c29301500.jpg")
+        src="https://cloud.githubusercontent.com/assets/347558/8455052/c38555ea-1fcf-11e5-8777-431c29301500.jpg" width="450" height="209")
 </jade>
 
 Given its diversity of both color and user interface components, the *Schedule Manager* application was chosen for further analysis and eventual experimentation with a new palette.
@@ -41,7 +41,7 @@ figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
     img(
       alt="Screenshot of Schedule Manager"
-      src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
+      src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png" width="1366" height="705")
 </jade>
 
 *Schedule Manager* is composed of 34 colors. Twelve colors are variations of black and white:
@@ -103,11 +103,11 @@ figure.Figure.Figure--grow
     a.work-Toggle-item.work-Toggle-item--showWhenSelected.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
       img(
         alt="Screenshot of Schedule Manager, with original coloration"
-        src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png")
+        src="https://cloud.githubusercontent.com/assets/347558/8400002/d4de6016-1de5-11e5-8d0a-cae54d929604.png" width="1366" height="705")
     a.work-Toggle-item.work-Toggle-item--hideWhenSelected.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png")
       img(
         alt="Screenshot of Schedule Manager colored with new palette"
-        src="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png")
+        src="https://cloud.githubusercontent.com/assets/347558/8446709/7bad363c-1f7c-11e5-879f-d4add34a5676.png" width="1366" height="705")
   figcaption.Figure-caption.Figure-paragraph
     | Particular color values were chosen through experimentation, testing the colors in numerous permutations for their aesthetic harmony. Code for the experiment is located on #[a(class="Link", href="https://github.com/iuux/ess-color") GitHub (#[code iuux/ess-color])].
 </jade>
@@ -220,7 +220,7 @@ figure.Figure
   a.Figure-imgLink(href="https://cloud.githubusercontent.com/assets/347558/8455455/c633a924-1fd2-11e5-99b6-fc2ab78d2e88.png")
     img(
       alt="Screenshot of AdRx Caseload, which uses the newest version of the color palette"
-      src="https://cloud.githubusercontent.com/assets/347558/8455455/c633a924-1fd2-11e5-99b6-fc2ab78d2e88.png")
+      src="https://cloud.githubusercontent.com/assets/347558/8455455/c633a924-1fd2-11e5-99b6-fc2ab78d2e88.png" width="830" height="908")
   figcaption.Figure-caption.Figure-paragraph
     | Implemented in spring 2015, the feature called #[em Caseload] contributed significantly to the refinements in version 2 of the color palette.
 </jade>
