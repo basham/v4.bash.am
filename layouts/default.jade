@@ -38,7 +38,8 @@ html(lang="en")
   body.Body#top
     if !isHome
       header.Body-part.Body-part--constrain.Header(role="banner")
-        a.Header-name.Link.Link--primary.Link--back(href="/")= site.author
+        a.Header-name.Link.Link--back(href="/")
+          b= site.author
     main.Article(role="main")
       .Article-section
         if !hide_header
@@ -71,10 +72,12 @@ html(lang="en")
                 figcaption
                   ul.Nav
                     li.Nav-item
-                      a.Link.Link--primary(href=deckLink) View slide deck
+                      a.Link(href=deckLink)
+                        b View slide deck
                     if recordingLink
                       li.Nav-item
-                        a.Link.Link--primary(href=recordingLink) View recording
+                        a.Link(href=recordingLink)
+                          b View recording
         if ignore_auto_md
           != contents
         else
@@ -84,13 +87,17 @@ html(lang="en")
       footer.Body-part.Body-part--constrain.Body-part--divider
         ul.Nav
           li.Nav-item
-            a.Link.Link--primary(href="/") Home
+            a.Link(href="/")
+              b Home
           li.Nav-item
             if(isWork)
-              a.Link.Link--primary(href="/#work") More Work
+              a.Link(href="/#work")
+                b More Work
             if(isArticle)
-              a.Link.Link--primary(href="/#articles") More Articles
+              a.Link(href="/#articles")
+                b More Articles
             if(isTalk)
-              a.Link.Link--primary(href="/#talks") More Talks
+              a.Link(href="/#talks")
+                b More Talks
     script
       include:js default.body.js

@@ -21,7 +21,9 @@ figure.Figure
     p.Figure-paragraph The Design Guide features a responsive design and statically generated content, making it both accessible and performant.
     ul.Nav
       li.Nav-item
-        a.Link.Link--primary(href="http://ksux.github.io/ks-design-guide/") View the Design Guide
+        a.Link(href="http://ksux.github.io/ks-design-guide/")
+          b View the Design Guide
       li.Nav-item
-        a.Link.Link--primary(href="https://github.com/ksux/ks-design-guide") GitHub repository
+        a.Link(href="https://github.com/ksux/ks-design-guide")
+          b GitHub repository
 </jade>

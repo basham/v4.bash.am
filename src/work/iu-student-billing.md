@@ -20,7 +20,9 @@ figure.Figure
     p.Figure-paragraph The prototype features two primary views. Current Status provides an easy means for students to understand recent billing activity and pay the account balance, while History provides an archive of all past account activity.
     ul.Nav
       li.Nav-item
-        a.Link.Link--primary(href="http://pxa.github.io/billing") View prototype
+        a.Link(href="http://pxa.github.io/billing")
+          b View prototype
       li.Nav-item
-        a.Link.Link--primary(href="https://github.com/pxa/billing") GitHub repository
+        a.Link(href="https://github.com/pxa/billing")
+          b GitHub repository
 </jade>

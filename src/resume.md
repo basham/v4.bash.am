@@ -136,12 +136,9 @@ Indianapolis, Indiana
 
 ***
 
-</md>
+[<b>Download Résumé (PDF)</b>](/basham-resume.pdf)
 
-<jade>
-p.Article-paragraph
-  a.Link.Link--primary(href="/basham-resume.pdf") Download Résumé (PDF)
-</jade>
+</md>
 
 </div>
 

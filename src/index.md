@@ -23,7 +23,8 @@ hide_header: true
     ul.Nav
       each value, key in links
         li.Nav-item
-          a.Link.Link--primary(href=value)= key
+          a.Link(href=value)
+            b= key
 </jade>
 
 ## Application development
@@ -92,10 +93,7 @@ ol.ArticleList
         = talk.location
 </jade>
 
-<jade>
-p.Article-paragraph
-  a.Link.Link--primary(href="https://speakerdeck.com/basham") More slide decks
-</jade>
+[<b>More slide decks</b>](https://speakerdeck.com/basham)
 
 ## Colophon
 

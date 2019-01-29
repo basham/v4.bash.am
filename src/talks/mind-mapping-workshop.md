@@ -77,7 +77,4 @@ One participant shared her enthusiasm for learning the technique:
 
 More resources, exemplars, and photos of the event can be viewed on Google Drive:
 
-<jade>
-p.Article-paragraph
-  a.Link.Link--primary(href="https://drive.google.com/folderview?id=0B0SrbFZ-iXKzbFBVaFN2VDRWZlU&usp=sharing") Mind Mapping Workshop resources
-</jade>
+[<b>Mind Mapping Workshop resources</b>](ttps://drive.google.com/folderview?id=0B0SrbFZ-iXKzbFBVaFN2VDRWZlU&usp=sharing)
