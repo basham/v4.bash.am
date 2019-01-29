@@ -4,7 +4,7 @@
 figure.ProfileFigure
   a(href="https://cloud.githubusercontent.com/assets/347558/13899180/a64ead02-edbd-11e5-91a1-7eaa06e06f18.jpg")
     img.ProfileFigure-img(
-      alt="Headshot of Chris Basham",
+      alt="Headshot of {{site.author}}",
       height="200",
       src="https://cloud.githubusercontent.com/assets/347558/13899452/e7535698-edc4-11e5-89ab-0187467ce700.jpg",
       width="200")
