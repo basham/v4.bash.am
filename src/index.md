@@ -1,7 +1,3 @@
----
-hide_header: true
----
-
 # {{site.author}}
 
 <jade>
