@@ -10,14 +10,14 @@
   var fontB = new w.FontFaceObserver('Inconsolata', {
     weight: 700
   });
-  var fontC = new w.FontFaceObserver('Merriweather', {
+  var fontC = new w.FontFaceObserver('Noto Sans', {
     weight: 400
   });
-  var fontD = new w.FontFaceObserver('Merriweather', {
+  var fontD = new w.FontFaceObserver('Noto Sans', {
     weight: 400,
     style: 'italic'
   });
-  var fontE = new w.FontFaceObserver('Merriweather', {
+  var fontE = new w.FontFaceObserver('Noto Sans', {
     weight: 700
   });
   w.Promise
