@@ -6,7 +6,7 @@ description: Approaches for future friendly Web software.
 
 <footer class="Article-notice">
 
-This document outlines various recommendations for improving [Kuali](https://kuali.org/) Student products. Supporting this strategy, leadership allocated six weeks to develop a [<mark>proof of concept application</mark>](/work/ks-course-registration) which guided future product development.
+This document outlines various recommendations for improving [Kuali](https://kuali.org/) Student products. Supporting this strategy, leadership allocated six weeks to develop a [<b>proof of concept application</b>](/work/ks-course-registration) which guided future product development.
 
 </footer>
 

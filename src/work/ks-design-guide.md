@@ -22,6 +22,5 @@ figure.Figure
         a.Link(href="http://ksux.github.io/ks-design-guide/")
           b View the Design Guide
       li.Nav-item
-        a.Link(href="https://github.com/ksux/ks-design-guide")
-          b GitHub repository
+        a.Link(href="https://github.com/ksux/ks-design-guide") GitHub repository
 </jade>

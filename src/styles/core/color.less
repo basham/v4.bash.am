@@ -2,11 +2,6 @@
 @color-Blue: #0074d9;
 @color-Yellow: #ffdc00;
 
-// Active background colors.
-@color-Active: lighten(@color-Blue, 50%);
-@color-Active--dark: darken(@color-Active, 25%);
-
-// Neutral shade colors.
 @color-Base: #ddd;
 @color-Base--dark: darken(@color-Base, 30%);
 @color-Base--light: lighten(@color-Base, 10%);
@@ -14,12 +9,7 @@
 @color-Link: @color-Blue;
 @color-Link--visited: darken(@color-Link, 15%);
 @color-Link--bg: tint(@color-Link, 90%);
+@color-Link--highlight: lighten(@color-Yellow, 40%);
 
 @color-Text: lighten(#000, 20%);
 @color-Text--light: lighten(#000, 40%);
-
-// Colors used for showcasing code.
-@color-Code: #f8f8ff;
-
-@color-Highlight: lighten(@color-Yellow, 30%);
-@color-Highlight--dark: darken(@color-Highlight, 60%);

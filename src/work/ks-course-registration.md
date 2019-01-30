@@ -7,7 +7,7 @@ endDateLabel: January 2014
 description: Mobile-first prototype for Kuali Student.
 ---
 
-Using the recommendations as outlined in the [<mark><cite>Mobile Strategies for Kuali Student</cite></mark>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).
+Using the recommendations as outlined in the [<b><cite>Mobile Strategies for Kuali Student</cite></b>](/articles/mobile-strategies-for-kuali-student) document, a proof of concept for a university course registration application was developed over a period of six weeks as part of an initiation phase for the student enrollment product. The application features a responsive, mobile-first interface, developed in [AngularJS](https://angularjs.org/).
 
 ## Backstory
 

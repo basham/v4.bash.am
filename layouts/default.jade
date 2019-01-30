@@ -38,8 +38,7 @@ html(lang="en")
   body.Body#top
     if !isHome
       header.Body-part.Body-part--constrain.Header(role="banner")
-        a.Header-name.Link.Link--back(href="/")
-          b= site.author
+        a.Header-name.Link.Link--back(href="/")= site.author
     main.Article(role="main")
       .Article-section
         if title
@@ -87,17 +86,13 @@ html(lang="en")
       footer.Body-part.Body-part--constrain.Body-part--divider
         ul.Nav
           li.Nav-item
-            a.Link(href="/")
-              b Home
+            a.Link(href="/") Home
           li.Nav-item
             if(isWork)
-              a.Link(href="/#work")
-                b More Work
+              a.Link(href="/#work") More Work
             if(isArticle)
-              a.Link(href="/#articles")
-                b More Articles
+              a.Link(href="/#articles") More Articles
             if(isTalk)
-              a.Link(href="/#talks")
-                b More Talks
+              a.Link(href="/#talks") More Talks
     script
       include:js default.body.js

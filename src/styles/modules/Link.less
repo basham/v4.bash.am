@@ -2,13 +2,8 @@
   color: inherit;
   text-decoration-color: @color-Link;
 
-  &:hover,
-  & > b {
+  &:hover {
     color: @color-Link;
-  }
-
-  & > b {
-    font-weight: inherit;
   }
 
   &:focus {
@@ -27,14 +22,8 @@
     }
   }
 
-  &--top {
-    position: relative;
-    margin-right: 1em;
-
-    &::after {
-      content: '\2191';
-      position: absolute;
-      right: -1em;
-    }
+  & > b {
+    background-color: @color-Link--highlight;
+    font-weight: inherit;
   }
 }
