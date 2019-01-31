@@ -1,22 +1,19 @@
 .ArticleList {
   list-style-type: none;
-  margin: 1em 0 0;
+  margin: 0;
   max-width: @content-Width;
   padding: 0;
 
   &-item {
-
-    & + & {
-      padding-top: 1.5em;
-    }
+    margin: 0 0 1rem;
   }
 
   &-title {
-    font-size: @ratio-Scale--05;
+    font-size: (18rem/16);
     font-style: normal;
   }
 
   &-description {
-    margin: 0.25em 0 0;
+    margin: 0;
   }
 }

@@ -1,17 +1,7 @@
 .Article {
 
-  &-block {
-
-    &--notice {
-      background-color: @color-Base--light;
-      border-color: @color-Base;
-      border-style: solid;
-      border-width: unit(1/16, em) 0;
-    }
-  }
-
   &-section {
-    margin: 5vmin 5%;
+    margin: 3rem 5%;
 
     > :last-child {
       border-bottom: none;
@@ -20,22 +10,28 @@
     }
   }
 
-  &-header + &-paragraph {
-    margin-top: 3rem;
+  &-header {
+    margin-bottom: 3rem;
   }
 
   &-row {
     margin: 0 -2.5%;
-    margin: 0 -2.5vw;
 
     @media @md {
       display: flex;
+      margin-bottom: -1rem;
+      margin-top: -3rem;
     }
   }
 
   &-column {
     margin: 0 2.5%;
-    margin: 0 2.5vw;
+
+    > :last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
 
     @media @md {
 
@@ -54,59 +50,46 @@
   }
 
   &-h1 {
-    font-size: @ratio-Scale--20;
-    line-height: @ratio-Scale--10;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0.5em;
+    font-size: (28rem/16);
+    line-height: (32rem/16);
+    margin: 0 0 1rem;
   }
 
   &-h2 {
-    font-size: @ratio-Scale--10;
-    line-height: @ratio-Scale--10;
+    font-size: (21rem/16);
+    line-height: (24rem/16);
+    margin: 3rem 0 1rem;
   }
 
-  &-h2,
   &-h3 {
-    margin-bottom: 0;
-    margin-top: 1em;
-    padding-top: 1vh;
+    font-size: (18rem/16);
+    line-height: (24rem/16);
+    margin: 2rem 0 1rem;
   }
 
-  &-h3,
-  &-list,
-  &-paragraph {
-    font-size: 1em;
-  }
-
-  &-list,
-  &-paragraph {
-    margin: 1em 0 0 0;
-  }
-
-  &-h3 + &-list,
-  &-h3 + &-paragraph {
-    margin-top: 0;
+  &-h4 {
+    font-size: 1rem;
+    line-height: (24rem/16);
+    margin: 1rem 0 0;
   }
 
   &-paragraph {
-
-    &--center {
-      text-align: center;
-    }
+    margin: 0 0 1rem;
   }
 
   &-description {
-    font-size: @ratio-Scale--10;
-    margin-top: 0.5em;
+    font-size: (21rem/16);
+    line-height: (24rem/16);
+    margin-top: -0.5rem;
   }
 
   &-list {
+    margin: 0;
     padding: 0;
   }
 
   &-listItem {
-    margin: 1em 0 0 1em;
+    margin: 0 0 1rem 1rem;
 
     @media @sm {
       margin-left: 0;
@@ -125,7 +108,7 @@
 
       @media @xs {
         content: '\00b7';
-        margin: 0 0.5em;
+        margin: 0 0.5rem;
       }
     }
   }
@@ -137,11 +120,11 @@
 
   &-notice {
     background-color: @color-Base--light;
-    margin: 3em 0;
-    padding: 1em;
+    margin: 3rem 0;
+    padding: 1rem;
 
     @media @sm {
-      padding: 2em;
+      padding: 2rem;
     }
 
     :first-child {
@@ -151,12 +134,12 @@
 
   &-blockquote {
     color: @color-Text--light;
-    font-size: @ratio-Scale--05i;
-    margin: 3em 0;
-    padding: 0 0 0 1em;
+    font-size: (14rem/16);
+    margin: 3rem 0;
+    padding: 0 0 0 1rem;
 
     @media @xs {
-      padding: 0 0 0 2em;
+      padding: 0 0 0 2rem;
     }
   }
 
@@ -174,7 +157,7 @@
 
   &-cite {
     display: block;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 
     &::before {
       content: '—';
@@ -182,12 +165,12 @@
   }
 
   &-table {
-    border-spacing: 0.5em;
+    border-spacing: 0.5rem;
     margin: 0 auto;
   }
 
   &-tableCell {
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
     text-align: left;
 
     &--center {
@@ -201,7 +184,7 @@
 
   &-hr {
     border: none;
-    margin: 2em 0;
+    margin: 3rem 0;
 
     &::before {
       border-top: (3rem/16) solid @color-Base;
@@ -211,7 +194,7 @@
   }
 
   &-signature {
-    height: 3em;
+    height: 3rem;
   }
 
   abbr {

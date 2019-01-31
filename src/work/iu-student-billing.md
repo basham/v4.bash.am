@@ -22,6 +22,5 @@ figure.Figure
         a.Link(href="http://pxa.github.io/billing")
           b View prototype
       li.Nav-item
-        a.Link(href="https://github.com/pxa/billing")
-          b GitHub repository
+        a.Link(href="https://github.com/pxa/billing") GitHub repository
 </jade>

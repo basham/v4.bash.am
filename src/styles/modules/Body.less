@@ -2,14 +2,10 @@
   color: @color-Text;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
-  line-height: @ratio-Scale--15;
+  line-height: (24rem/16);
   margin: 0;
   padding: 0;
   text-size-adjust: 100%;
-
-  @media @md and @sm-height {
-    font-size: @ratio-Scale--05;
-  }
 
   &--fontsLoaded {
     font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, sans-serif;
@@ -20,8 +16,7 @@
   }
 
   &-part {
-    padding: 5%;
-    padding: 5vmin 5%;
+    margin: 3rem 5%;
 
     &--constrain {
       box-sizing: content-box;
@@ -29,7 +24,8 @@
     }
 
     &--divider {
-      border-top: unit(3/16, rem) solid @color-Base;
+      border-top: (3rem/16) solid @color-Base;
+      padding-top: 3rem;
     }
   }
 }

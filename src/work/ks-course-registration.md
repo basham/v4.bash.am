@@ -119,11 +119,9 @@ figure.Figure
     p.Figure-paragraph The proof of concept was demonstrated to Kuali Student development teams at the end of the allotted six weeks.
     ul.Nav
       li.Nav-item
-        a.Link(href="https://vimeo.com/112133422")
-          b Watch demo video
+        a.Link(href="https://vimeo.com/112133422") Watch demo video
       li.Nav-item
-        a.Link(href="https://github.com/ksux/kscr-poc")
-          b GitHub repository
+        a.Link(href="https://github.com/ksux/kscr-poc") GitHub repository
 </jade>
 
 ## Reflection

@@ -11,7 +11,7 @@ ignore_auto_md: true
 
 ## Experience
 
-### UX Designer at [Indiana University](https://uits.iu.edu/)
+#### UX Designer at [Indiana University](https://uits.iu.edu/)
 
 <time datetime="2012-07">July 2012</time> &ndash; Present
 &middot;
@@ -26,7 +26,7 @@ Trained coworkers regarding design and front-end development practices.
 Experimented with technologies and techniques via proof-of-concepts.
 Facilitated design community meetings.
 
-### Co-organizer of [IxDA Bloomington](https://www.facebook.com/ixdabloomington)
+#### Co-organizer of [IxDA Bloomington](https://www.facebook.com/ixdabloomington)
 
 <time datetime="2013-05">May 2013</time> &ndash; <time datetime="2016-10">October 2016</time>
 &middot;
@@ -35,7 +35,7 @@ Bloomington, Indiana
 Organized twice-monthly topical and networking events for the local chapter of
 [IxDA](https://ixda.org 'Interaction Design Association').
 
-### Co-founder of BitHouse Design
+#### Co-founder of BitHouse Design
 
 <time datetime="2011-09">September 2011</time> &ndash; <time datetime="2012-09">September 2012</time>
 &middot;
@@ -44,7 +44,7 @@ Bloomington, Indiana
 Produced a Web and mobile service (Rundwn) for providing coordinators,
 runners, and spectators of long-distance races with real-time event results.
 
-### UX Design Intern at [LexisNexis](https://www.lexisnexis.com)
+#### UX Design Intern at [LexisNexis](https://www.lexisnexis.com)
 
 <time datetime="2010-05">May</time> &ndash; <time datetime="2010-08">August 2010</time>
 &middot;
@@ -53,7 +53,7 @@ Dayton, Ohio
 Designed interactive visualization prototypes
 for search products. [Co-invented a patent](https://www.google.com/patents/US8874569) for visualizing the presence of search terms across a set of documents.
 
-### Multimedia Developer Intern at [IUPUI Pervasive Technology Labs](https://pti.iu.edu/)
+#### Multimedia Developer Intern at [IUPUI Pervasive Technology Labs](https://pti.iu.edu/)
 
 <time datetime="2008-09">September 2008</time> &ndash; <time datetime="2009-05">May 2009</time>
 &middot;
@@ -62,7 +62,7 @@ Indianapolis, Indiana
 Researched and developed motion, color, and symbol tracking algorithms to explore
 the limits of video processing and analysis in ActionScript 3.
 
-### Web Developer Volunteer at [Lakeview Church](http://www.lakeviewchurch.org)
+#### Web Developer Volunteer at [Lakeview Church](http://www.lakeviewchurch.org)
 
 <time datetime="2007-01">January 2007</time> &ndash; <time datetime="2009-05">May 2009</time>
 &middot;
@@ -72,7 +72,7 @@ Converted content management system to WordPress.
 Developed WordPress themes and Flash podcast player.
 Assisted with various network administration activities.
 
-### Web Developer Intern at A Beautiful Question
+#### Web Developer Intern at A Beautiful Question
 
 <time datetime="2008-01">January</time> &ndash; <time datetime="2008-05">May 2008</time>
 &middot;
@@ -83,14 +83,14 @@ applications.
 
 ## Education
 
-### M.S. [Human-Computer Interaction Design](https://www.sice.indiana.edu/graduate/degrees/informatics/hcid/)
+#### M.S. [Human-Computer Interaction Design](https://www.sice.indiana.edu/graduate/degrees/informatics/hcid/)
 
 <time datetime="2011-06">June 2011</time>
 &middot;
 [Indiana University](https://iu.edu),
 Bloomington, Indiana
 
-### B.S. [Media Arts & Sciences](https://soic.iupui.edu/undergraduate/degrees/media-arts/)
+#### B.S. [Media Arts & Sciences](https://soic.iupui.edu/undergraduate/degrees/media-arts/)
 
 <time datetime="2009-05">May 2009</time>
 &middot;
@@ -100,7 +100,7 @@ Indianapolis, Indiana
 <abbr title="With Highest Honors">Summa Cum Laude</abbr>,
 General Honors
 
-### Minor [Computer & Information Science](https://cs.iupui.edu)
+#### Minor [Computer & Information Science](https://cs.iupui.edu)
 
 <time datetime="2009-05">May 2009</time>
 &middot;

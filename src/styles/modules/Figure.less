@@ -1,5 +1,5 @@
 .Figure {
-  margin: 3em 0;
+  margin: 3rem 0;
   max-width: @content-Width;
   padding: 0;
 
@@ -9,16 +9,16 @@
   }
 
   &--grow {
-    max-width: 75em;
+    max-width: 75rem;
   }
 
   &--code {
     max-width: none;
     overflow: scroll;
-    padding: 0 1em;
+    padding: 0 1rem;
 
     @media @xs {
-      padding: 0 2em;
+      padding: 0 2rem;
     }
   }
 
@@ -26,7 +26,7 @@
     // Fixes an odd spacing quirk with SpeakerDeck,
     // in which the embed somehow adds spacing after the deck.
     > div {
-      margin-bottom: -0.5em;
+      margin-bottom: -0.5rem;
     }
   }
 
@@ -42,19 +42,19 @@
     align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
-    margin: -0.5em 0;
+    margin: -0.5rem 0;
 
     @media @xs {
-      margin: -0.5em;
+      margin: -0.5rem;
     }
   }
 
   &-wrap--2 &-imgLink {
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
 
     @media @xs {
       width: 50%;
-      padding: 0.5em;
+      padding: 0.5rem;
     }
   }
 
@@ -71,19 +71,19 @@
   }
 
   &-caption {
-    margin-top: 1em;
+    margin-top: 1rem;
     max-width: @content-Width;
   }
 
   &-paragraph {
     color: @color-Text--light;
-    font-size: @ratio-Scale--05i;
+    font-size: (14rem/16);
     margin: 1rem 0 0;
     padding: 0;
   }
 
   &-meta {
-    margin: 1em 0 0;
+    margin: 1rem 0 0;
     padding: 0;
   }
 

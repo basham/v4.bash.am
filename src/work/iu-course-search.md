@@ -17,9 +17,7 @@ figure.Figure
     p.Figure-paragraph Demonstration of the proof of concept course search and bookmarking application.
     ul.Nav
       li.Nav-item
-        a.Link(href="https://vimeo.com/111944142")
-          b Watch demo video
+        a.Link(href="https://vimeo.com/111944142") Watch demo video
       li.Nav-item
-        a.Link(href="https://github.com/pxa/course-search")
-          b GitHub repository
+        a.Link(href="https://github.com/pxa/course-search") GitHub repository
 </jade>

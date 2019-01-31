@@ -162,8 +162,10 @@ Variants to these primary colors were generated according to techniques describe
                   if item.name
                     em= item.name
                   if !item.hideValue
-                    div= value
-                  div= item.hex
+                    div
+                      code= value
+                  div
+                    code= item.hex
 </jade>
 
 An ancillary benefit of codifying colors is their ability to approximate text contrast ratios. As long as the background and foreground colors are at least a code value of `450` different, then most likely acceptable [AA text contrast (`4.5:1`)](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) is achieved. However, these approximations should always be confirmed.
@@ -209,8 +211,10 @@ figure.Figure
                   if item.name
                     em= item.name
                   if !item.hideValue
-                    div= value
-                  div= item.hex
+                    div
+                      code= value
+                  div
+                    code= item.hex
   figcaption.Figure-caption.Figure-paragraph
     | Colors added in the second version of the palette are outlined in black.
 </jade>

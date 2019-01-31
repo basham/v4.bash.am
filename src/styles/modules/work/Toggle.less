@@ -5,25 +5,28 @@
   }
 
   &-control {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     text-align: right;
   }
 
   &-label {
-    color: @color-Link;
+    align-items: center;
+    display: inline-flex;
+    font-weight: bold;
 
     &::before {
+      align-items: center;
       background-color: #fff;
-      border: unit(2/16, em) solid @color-Link;
-      border-radius: 0.25em;
-      color: transparent;
+      border: (2rem/16) solid @color-Text;
+      border-radius: 0.25rem;
+      color: #fff;
       content: '\2713';
-      display: inline-block;
-      height: 1em;
-      line-height: (20/16);
-      margin-right: 0.5em;
-      text-align: center;
-      width: 1em;
+      display: inline-flex;
+      font-weight: normal;
+      height: 1rem;
+      justify-content: center;
+      margin-right: 0.5rem;
+      width: 1rem;
     }
   }
 
@@ -39,11 +42,12 @@
   }
 
   &-checkbox:focus ~ &-control > &-label::before {
-    box-shadow: 0 0 0 unit(1/16, em) #fff, 0 0 0 unit(2/16, em) @color-Link;
+    box-shadow: 0 0 0 (2rem/16) #fff, 0 0 0 (4rem/16) @color-Link;
   }
 
   &-checkbox:checked ~ &-control > &-label::before {
-    color: @color-Link;
+    background-color: @color-Link;
+    border-color: @color-Link;
   }
 
   &-checkbox:checked ~ &-item--showWhenSelected {
