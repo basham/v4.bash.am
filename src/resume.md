@@ -41,7 +41,7 @@ Organized twice-monthly topical and networking events for the local chapter of
 &middot;
 Bloomington, Indiana
 
-Produced a Web and mobile service (Rundwn) for providing coordinators,
+Produced a web and mobile service (Rundwn) for providing coordinators,
 runners, and spectators of long-distance races with real-time event results.
 
 #### UX Design Intern at [LexisNexis](https://www.lexisnexis.com)

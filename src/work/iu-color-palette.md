@@ -7,7 +7,7 @@ endDateLabel: January 2015
 description: Color standards for Indiana University apps.
 ---
 
-Before 2015, there were rarely any designers permanently staffed on development teams at Indiana University, so teams managed design issues, such as color, as best as possible. Without cross-team collaboration or governing design standards, the use and choice of colors diversified for every new system over the last 20 years. A new color palette would be determined to start aligning the aesthetic experience across these vast applications. It would be the initial project for the first style guide targeting Indiana University’s student-oriented Web applications.
+Before 2015, there were rarely any designers permanently staffed on development teams at Indiana University, so teams managed design issues, such as color, as best as possible. Without cross-team collaboration or governing design standards, the use and choice of colors diversified for every new system over the last 20 years. A new color palette would be determined to start aligning the aesthetic experience across these vast applications. It would be the initial project for the first style guide targeting Indiana University’s student-oriented web applications.
 
 ## Audit
 

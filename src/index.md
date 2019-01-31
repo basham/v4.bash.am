@@ -10,7 +10,7 @@ figure.ProfileFigure
       width="200")
 </jade>
 
-I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise Web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
+I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
 
 For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
 

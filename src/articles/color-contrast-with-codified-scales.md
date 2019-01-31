@@ -15,7 +15,7 @@ AAA|`7:1`|`4.5:1`
 
 ## Luminance verses lightness
 
-[Relative luminance](http://www.w3.org/TR/WCAG/#relativeluminancedef) is defined as "the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white." The addition of *relative* to this terminology essentially clarifies that "Web content does not emit light itself" unlike other things with inherit luminance properties. It is calculated from the [sRGB colorspace](http://en.wikipedia.org/wiki/SRGB) (the assumed colorspace for the Web) via the following algorithm:
+[Relative luminance](http://www.w3.org/TR/WCAG/#relativeluminancedef) is defined as "the relative brightness of any point in a colorspace, normalized to 0 for darkest black and 1 for lightest white." The addition of *relative* to this terminology essentially clarifies that "Web content does not emit light itself" unlike other things with inherit luminance properties. It is calculated from the [sRGB colorspace](http://en.wikipedia.org/wiki/SRGB) (the assumed colorspace for the web) via the following algorithm:
 
 ```
 L = 0.2126 * R + 0.7152 * G + 0.0722 * B

@@ -8,4 +8,4 @@ deckRatio: 1.25030525030525
 deckLink: https://speakerdeck.com/basham/ixda-typography
 ---
 
-We discuss how to choose a typeface and how typography is transforming the Web through iconography and font services.
+We discuss how to choose a typeface and how typography is transforming the web through iconography and font services.
