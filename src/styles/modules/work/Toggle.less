@@ -17,7 +17,7 @@
     &::before {
       align-items: center;
       background-color: #fff;
-      border: (2rem/16) solid @color-Text;
+      border: (2rem/16) solid @color-Black;
       border-radius: 0.25rem;
       color: #fff;
       content: '\2713';
@@ -42,12 +42,12 @@
   }
 
   &-checkbox:focus ~ &-control > &-label::before {
-    box-shadow: 0 0 0 (2rem/16) #fff, 0 0 0 (4rem/16) @color-Link;
+    box-shadow: 0 0 0 (2rem/16) #fff, 0 0 0 (4rem/16) @color-Blue;
   }
 
   &-checkbox:checked ~ &-control > &-label::before {
-    background-color: @color-Link;
-    border-color: @color-Link;
+    background-color: @color-Blue;
+    border-color: @color-Blue;
   }
 
   &-checkbox:checked ~ &-item--showWhenSelected {

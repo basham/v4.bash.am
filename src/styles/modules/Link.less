@@ -1,18 +1,19 @@
 .Link {
+  .underline(2, @color-Blue--light);
   color: inherit;
-  text-decoration-color: @color-Link;
+  text-decoration: none;
 
   &:hover {
-    color: @color-Link;
+    background-color: @color-Blue--light;
   }
 
   &:focus {
-    outline: (2rem/16) solid @color-Link;
+    outline: (2rem/16) solid @color-Blue;
     outline-offset: (1rem/16);
   }
 
   &--back {
-    margin-left: 1em;
+    margin-left: 1rem;
     position: relative;
 
     &::before {
@@ -23,7 +24,16 @@
   }
 
   & > b {
-    background-color: @color-Link--highlight;
+    .underline(4, @color-Yellow--light);
     font-weight: inherit;
   }
+
+  &:hover > b {
+    background-color: @color-Yellow--light;
+  }
+}
+
+.underline(@size, @color, @line-height: 24) {
+  @size-perc: percentage((@line-height - @size) / @line-height);
+  background: linear-gradient(to bottom, transparent 0%, transparent @size-perc, @color @size-perc, @color 100%);
 }
