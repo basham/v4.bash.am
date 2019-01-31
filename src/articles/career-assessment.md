@@ -8,7 +8,7 @@ In order to understand where I professionally am and where I’m going, it’s i
 
 ## Interests
 
-I'm interested in building Web software that is adaptable, robust, and reliable.
+I'm interested in building web software that is adaptable, robust, and reliable.
 
 - *Progressive enhancement:* Design user experiences which enhance based on context of use, minimally including user, device, and browser capabilities.
 - *Future friendly software:* Develop software which can thrive despite ownership changes, disruptive technologies, heterogeneous ecosystems, and unpredictable circumstances.
