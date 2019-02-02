@@ -31,10 +31,10 @@ html(lang="en")
       rel="shortcut icon"
       href="/favicon.ico"
       sizes="16x16 32x32")
+    include default.fonts.html
     script
-      include:js ../node_modules/fontfaceobserver/fontfaceobserver.js
-      include:js ../node_modules/fg-loadcss/loadCSS.js
-      include:js default.head.js
+      include:js ../node_modules/fontfaceobserver/fontfaceobserver.standalone.js
+      include:js ../node_modules/fg-loadcss/dist/cssrelpreload.min.js
   body.Body#top
     if !isHome
       header.Body-part.Body-part--constrain.Header(role="banner")
@@ -93,4 +93,5 @@ html(lang="en")
             if(isTalk)
               a.Link(href="/#talks") More Talks
     script
-      include:js default.body.js
+      include:js default.fonts-loaded.js
+      include:js default.analytics.js
