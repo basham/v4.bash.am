@@ -33,7 +33,7 @@ function plugin(opts) {
           $(this).replaceWith(html);
         });
         // Save updated HTML.
-        data.contents = new Buffer($.html(), 'utf8');
+        data.contents = Buffer.from($.html(), 'utf8');
       });
 
     done();

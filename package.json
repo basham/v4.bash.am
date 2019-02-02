@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/basham/v4.bash.am",
   "devDependencies": {
-    "autoprefixer": "6.3.1",
+    "autoprefixer": "9.4.7",
     "browser-sync": "2.26.3",
     "cheerio": "0.22.0",
     "classnames": "2.2.6",
@@ -48,7 +48,7 @@
     "metalsmith-watch": "1.0.3",
     "minimatch": "3.0.4",
     "moment": "2.24.0",
-    "postcss": "5.0.14",
+    "postcss": "7.0.14",
     "uglify-js": "3.4.9"
   }
 }
