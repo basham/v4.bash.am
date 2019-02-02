@@ -19,6 +19,7 @@ var watch = require('metalsmith-watch')
 var inlineStyles = require('./plugins/inline-styles');
 var jadeMarkup = require('./plugins/jade-markup');
 var markdownMarkup = require('./plugins/markdown-markup');
+var renameExt = require('./plugins/rename-ext');
 
 // Configs
 require('./config/jade');
@@ -77,29 +78,18 @@ Metalsmith('./')
       reverse: true
     }
   }))
-  // Rename `*.md` files to `*.html`.
-  .use(function(files, ms, done) {
-    Object.keys(files).forEach(function(file) {
-      var fileName = file.replace(/(.md)$/, '.html');
-      if(fileName !== file) {
-        files[fileName] = files[file];
-        delete files[file];
-      }
-    });
-    done();
-  })
+  .use(renameExt({ from: 'md', to: 'html' }))
   .use(permalinks({
     relative: false
   }))
   .use(layouts({
     default: 'default.jade',
     directory: 'layouts',
-    engine: 'jade',
     pattern: '**/*.html'
   }))
+  .use(renameExt({ from: 'html', to: 'hbs' }))
   .use(inplace({
-    engine: 'handlebars',
-    pattern: '**/*.html'
+    pattern: '**/*.hbs'
   }))
   .use(jadeMarkup())
   .use(markdownMarkup())
