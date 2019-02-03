@@ -10,21 +10,21 @@ figure.ProfileFigure
       width="200")
 </jade>
 
-I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development) and [<b>design systems</b>](#design-systems).
+I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise web software for students, advisors, and faculty. I'm interested in [<b>reactive programming</b>](#reactive-programming) and [<b>design systems</b>](#design-systems).
 
 For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
 
 Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in my [sandals](https://lunasandals.com/).
 
-## Application development
+## Reactive programming
 
 In 2013, I started experimenting with the [AngularJS](https://angularjs.org/) framework for building functional prototypes, such as new interfaces for students [<b>viewing their billing information</b>](/work/iu-student-billing), [<b>searching for courses</b>](/work/iu-course-search), and [<b>registering for classes</b>](/work/ks-course-registration). Each proof-of-concept built on the last, teaching me about REST APIs, minification, version control ([git](https://git-scm.com/) and [GitHub](https://github.com/)), accessibility ([WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA)), build systems ([Grunt](https://gruntjs.com/), [gulp.js](https://gulpjs.com/), and [webpack](https://webpack.js.org/)), NoSQL databases ([Firebase](https://firebase.google.com/)), and responsive design.
 
 From 2014 to 2016, I studied CSS, trying to determine best practices for [using CSS units](https://gist.github.com/basham/2175a16ab7c60ce8e001), [integrating media queries](https://gist.github.com/basham/3b24062dfaecaa712a68), [organizing project files](https://gist.github.com/basham/877db54fffb08e47bd39), and [<b>setting style naming conventions</b>](/talks/architecting-css).
 
-In 2015, I shifted away from the AngularJS framework, so I could experiment with different combinations of rendering libraries and data flow architectures. The teams I worked with at Indiana University quickly adopted the [React](https://reactjs.org/) rendering library, given the straightforward API and growing community adoption. For a couple products, we paired React with a simplified implementation of the [Flux data flow pattern](https://facebook.github.io/flux/), called [Reflux](https://github.com/reflux/refluxjs). However, in practice, Reflux failed to scale well with complex applications.
+With experience in all these front-end fundamentals, I shifted away from the AngularJS framework, so I could experiment with different combinations of rendering libraries and data flow architectures. The teams I worked with at Indiana University quickly adopted the [React](https://reactjs.org/) rendering library, given the straightforward API and growing community adoption. For a couple products developed in 2015, we paired React with a simplified implementation of the [Flux data flow pattern](https://facebook.github.io/flux/), called [Reflux](https://github.com/reflux/refluxjs). In practice, Reflux failed to scale well with complex applications, and I continued my exploration.
 
-Inspired by the [Cycle.js](https://cycle.js.org/) framework, I started learning the [RxJS](https://github.com/ReactiveX/rxjs) reactive library in 2016. After integrating it into a number of experiments and products, I was convinced this tool was flexible and low-level enough to power any data flow architecture, without going stale.
+Inspired by the [Cycle.js](https://cycle.js.org/) framework, I started learning the [RxJS](https://github.com/ReactiveX/rxjs) reactive library. After integrating it into a number of experiments and products in 2016, I was convinced this tool was flexible and low-level enough to power any data flow architecture, without going stale.
 
 In 2017, I abstracted what I learned into a library called [<b>Conduit</b>](https://github.com/indiana-university/conduit). It is primarily a set of patterns to help develop reactive, functional user interfaces. It is also a set of utilities to simplify things a front-end developer may do with RxJS ([`conduit-rxjs`](https://github.com/indiana-university/conduit/tree/master/packages/conduit-rxjs)), including how to connect RxJS streams to rendering libraries ([`conduit-rxjs-react`](https://github.com/indiana-university/conduit/tree/master/packages/conduit-rxjs-react)). Indiana University has used Conduit in a number of products, and as of 2019, it is now publically released.
 
