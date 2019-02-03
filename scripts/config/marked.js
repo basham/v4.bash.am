@@ -43,7 +43,7 @@ renderer.code = function(code, lang, escaped) {
   return `<figure class="Figure Figure--code">
     <pre class="Figure-content">
       <code class="${cn}">
-        ${escaped ? code : escape(code, true)}
+${escaped ? code : escape(code, true)}
       </code>
     </pre>
   </figure>`;
