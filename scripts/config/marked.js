@@ -87,7 +87,15 @@ renderer.listitem = function(text) {
 };
 
 renderer.paragraph = function(text) {
-  return `<p class="Article-paragraph">${text}</p>`;
+  // Replace the last space outside of a tag with a non-breaking space.
+  var re = /\s(?![^<>]*>)/g
+  var count = text.match(re).length
+  var i = 0;
+  var t = text.replace(re, function (match) {
+    i++;
+    return i === count ? '&nbsp;' : match
+  })
+  return `<p class="Article-paragraph">${t}</p>`;
 };
 
 renderer.table = function(header, body) {
