@@ -72,7 +72,6 @@ figure.Figure
 One participant shared her enthusiasm for learning the technique:
 
 > Mind maps were what my life was missing. For lists, for articulation, for reflecting. Ohhh maaaa gawd
-
 > = Amoli Mehta &middot; [@Amoli on February 22, 2016](https://twitter.com/Amoli/status/701949945511866368)
 
 More resources, exemplars, and photos of the event can be viewed on Google Drive:
