@@ -1,14 +1,14 @@
 .Link {
-  .underline(2, @color-Blue--light);
+  .underline(2, @color-Blue--100);
   color: inherit;
   text-decoration: none;
 
   &:hover {
-    background-color: @color-Blue--light;
+    background-color: @color-Blue--100;
   }
 
   &:focus {
-    outline: (2rem/16) solid @color-Blue;
+    outline: (2rem/16) solid @color-Blue--500;
     outline-offset: (1rem/16);
   }
 
@@ -24,12 +24,12 @@
   }
 
   & > b {
-    .underline(4, @color-Yellow--light);
+    .underline(4, @color-Yellow--100);
     font-weight: inherit;
   }
 
   &:hover > b {
-    background-color: @color-Yellow--light;
+    background-color: @color-Yellow--100;
   }
 }
 
