@@ -24,7 +24,7 @@ From 2014 to 2016, I studied CSS, trying to determine best practices for [using 
 
 In 2015, I shifted to [React](https://reactjs.org/) as my rendering library choice.
 
-React. Reflux as simplier Flux. AdRx Quick Notes in 2015. SAS Student in 2015. Cycle.js. RxJS experiments in 2016. SER in 2017. Conduit in 2017.
+React. Reflux as simplier Flux. AdRx Quick Notes in 2015. SAS Student in 2015. Cycle.js. RxJS experiments in 2016. SER in 2017. [Conduit](https://github.com/indiana-university/conduit) in 2017.
 
 Review code samples on [GitHub]({{site.elsewhere.GitHub}}) or [CodePen]({{site.elsewhere.CodePen}}).
 
