@@ -34,37 +34,35 @@ renderer.code = function(code, lang, escaped) {
   };
 
   if(!!lang) {
-    var name = 'Code--' + escape(lang, true);
+    var name = `Code--${escape(lang, true)}`;
     cn[name] = true;
   }
 
   var cn = classNames(cn);
 
-  return '<figure class="Figure Figure--code">'
-    + '<pre class="Figure-content">'
-    + '<code class="' + cn + '">'
-    + (escaped ? code : escape(code, true))
-    + '</code>'
-    + '</pre>'
-    + '</figure>';
+  return `<figure class="Figure Figure--code">
+    <pre class="Figure-content">
+      <code class="${cn}">
+        ${escaped ? code : escape(code, true)}
+      </code>
+    </pre>
+  </figure>`;
 };
 
 renderer.codespan = function(text) {
-  return '<code class="Code Code--inline">' + text + '</code>';
+  return `<code class="Code Code--inline">${text}</code>`;
 };
 
 renderer.heading = function(text, level, raw) {
-  var type = 'h' + level;
+  var type = `h${level}`;
   var id = this.options.headerPrefix + raw.toLowerCase().replace(/[^\w]+/g, '-');
-  var idAttr = level === 2 ? ' id="' + id + '"' : '';
-  var cn = 'Article-' + type;
-  return '<' + type + ' class="' + cn + '"' + idAttr + '>'
-    + text
-    + '</' + type + '>';
+  var idAttr = level === 2 ? ` id="${id}"` : '';
+  var cn = `Article-${type}`;
+  return `<${type} class="${cn}"${idAttr}>${text}</${type}>`;
 };
 
 renderer.hr = function() {
-  return '<hr class="Article-hr"/>\n';
+  return '<hr class="Article-hr"/>';
 };
 
 renderer.link = function(href, title, text) {
@@ -80,40 +78,35 @@ renderer.link = function(href, title, text) {
       return '';
     }
   }
-  var out = '<a class="Link" href="' + href + '"';
-  if(title) {
-    out += ' title="' + title + '"';
-  }
-  out += '>' + text + '</a>';
-  return out;
+  return `<a class="Link" href="${href}"${title ? ` title="${title}"` : ''}>${text}</a>`;
 };
 
 renderer.list = function(body, ordered) {
   var type = ordered ? 'ol' : 'ul';
-  return '<' + type + ' class="Article-list">' + body + '</' + type + '>';
+  return `<${type} class="Article-list">${body}</${type}>`;
 };
 
 renderer.listitem = function(text) {
-  return '<li class="Article-listItem">' + text + '</li>';
+  return `<li class="Article-listItem">${text}</li>`;
 };
 
 renderer.paragraph = function(text) {
-  return '<p class="Article-paragraph">' + text + '</p>';
+  return `<p class="Article-paragraph">${text}</p>`;
 };
 
 renderer.table = function(header, body) {
-  return '<figure class="Figure">'
-  + '<div class="Figure-content Figure-content--scroll">'
-  + '<table class="Article-table">'
-  + '<thead>'
-  + header
-  + '</thead>'
-  + '<tbody>'
-  + body
-  + '</tbody>'
-  + '</table>'
-  + '</div>'
-  + '</figure>';
+  return `<figure class="Figure">
+    <div class="Figure-content Figure-content--scroll">
+      <table class="Article-table">
+        <thead>
+          ${header}
+        </thead>
+        <tbody>
+          ${body}
+        </tbody>
+      </table>
+    </div>
+  </figure>`;
 };
 
 renderer.tablecell = function(content, flags) {
@@ -124,11 +117,10 @@ renderer.tablecell = function(content, flags) {
     'Article-tableCell--center': flags.align === 'center',
     'Article-tableCell--right': flags.align === 'right'
   });
-  return '<' + type + ' class="' + cn + '">' + content + '</' + type + '>';
+  return `<${type} class="${cn}">${content}</${type}>`;
 };
 
 module.exports = {
-  //pedantic: true,
   renderer: renderer,
   smartypants: true
 };
