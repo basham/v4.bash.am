@@ -6,7 +6,7 @@
     "browser-sync": "browser-sync start --files 'build/**/*' --server 'build' --no-notify --reload-debounce 100",
     "build": "node scripts/build",
     "deploy": "gh-pages -d build",
-    "dev": "npm run build & npm run browser-sync"
+    "start": "npm run build & npm run browser-sync"
   },
   "repository": {
     "type": "git",

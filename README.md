@@ -15,7 +15,7 @@ npm install
 Run a local development server and watch for changes.
 
 ```
-npm run dev
+npm run start
 ```
 
 ## Deployment
