@@ -10,7 +10,7 @@ figure.ProfileFigure
       width="200")
 </jade>
 
-I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development), [<b>design systems</b>](#design-systems), and [<b>team practices</b>](#team-practices).
+I'm Chris, a designer and front-end developer for [Indiana University](https://uits.iu.edu/) in [Bloomington](https://www.visitbloomington.com/). I work on a cross-functional Agile team, building enterprise web software for students, advisors, and faculty. I'm interested in [<b>application development</b>](#application-development) and [<b>design systems</b>](#design-systems).
 
 For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
 
@@ -18,15 +18,17 @@ Outside of work, I play [Kickstarter board games](https://www.kickstarter.com/pr
 
 ## Application development
 
-In 2013, I started experimenting with using the [AngularJS](https://angularjs.org/) framework for building functional prototypes, such as new interfaces for students [<b>viewing their billing information</b>](/work/iu-student-billing), [<b>searching for courses</b>](/work/iu-course-search), and [<b>registering for classes</b>](/work/ks-course-registration). Each proof-of-concept built on the next, teaching me about REST APIs, minification, version control ([git](https://git-scm.com/) and [GitHub](https://github.com/)), accessibility ([WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA)), build systems ([Grunt](https://gruntjs.com/) and [gulp.js](https://gulpjs.com/)), NoSQL databases ([Firebase](https://firebase.google.com/)), and mobile-first and responsive design.
+In 2013, I started experimenting with the [AngularJS](https://angularjs.org/) framework for building functional prototypes, such as new interfaces for students [<b>viewing their billing information</b>](/work/iu-student-billing), [<b>searching for courses</b>](/work/iu-course-search), and [<b>registering for classes</b>](/work/ks-course-registration). Each proof-of-concept built on the last, teaching me about REST APIs, minification, version control ([git](https://git-scm.com/) and [GitHub](https://github.com/)), accessibility ([WAI-ARIA](https://en.wikipedia.org/wiki/WAI-ARIA)), build systems ([Grunt](https://gruntjs.com/), [gulp.js](https://gulpjs.com/), and [webpack](https://webpack.js.org/)), NoSQL databases ([Firebase](https://firebase.google.com/)), and responsive design.
 
 From 2014 to 2016, I studied CSS, trying to determine best practices for [using CSS units](https://gist.github.com/basham/2175a16ab7c60ce8e001), [integrating media queries](https://gist.github.com/basham/3b24062dfaecaa712a68), [organizing project files](https://gist.github.com/basham/877db54fffb08e47bd39), and [<b>setting style naming conventions</b>](/talks/architecting-css).
 
-In 2015, I shifted to [React](https://reactjs.org/) as my rendering library choice.
+In 2015, I shifted away from the AngularJS framework, so I could experiment with different combinations of rendering libraries and data flow architectures. The teams I worked with at Indiana University quickly adopted the [React](https://reactjs.org/) rendering library, given the straightforward API and growing community adoption. For a couple products, we paired React with a simplified implementation of the [Flux data flow pattern](https://facebook.github.io/flux/), called [Reflux](https://github.com/reflux/refluxjs). However, in practice, Reflux failed to scale well with complex applications.
 
-React. Reflux as simplier Flux. AdRx Quick Notes in 2015. SAS Student in 2015. Cycle.js. RxJS experiments in 2016. SER in 2017. [Conduit](https://github.com/indiana-university/conduit) in 2017.
+Inspired by the [Cycle.js](https://cycle.js.org/) framework, I started learning the [RxJS](https://github.com/ReactiveX/rxjs) reactive library in 2016. After integrating it into a number of experiments and products, I was convinced this tool was flexible and low-level enough to power any data flow architecture, without going stale.
 
-Review code samples on [GitHub]({{site.elsewhere.GitHub}}) or [CodePen]({{site.elsewhere.CodePen}}).
+In 2017, I abstracted what I learned into a library called [<b>Conduit</b>](https://github.com/indiana-university/conduit). It is primarily a set of patterns to help develop reactive, functional user interfaces. It is also a set of utilities to simplify things a front-end developer may do with RxJS ([`conduit-rxjs`](https://github.com/indiana-university/conduit/tree/master/packages/conduit-rxjs)), including how to connect RxJS streams to rendering libraries ([`conduit-rxjs-react`](https://github.com/indiana-university/conduit/tree/master/packages/conduit-rxjs-react)). Indiana University has used Conduit in a number of products, and as of 2019, it is now publically released.
+
+For more, follow me on [GitHub]({{site.elsewhere.GitHub}}) and review code samples on [CodePen]({{site.elsewhere.CodePen}}).
 
 ## Design systems
 
@@ -35,10 +37,6 @@ In mid-2013, as part of a partnership between the [Kuali Foundation](https://kua
 In late 2014, I was assigned to one of several newly formed product teams under the university's Enterprise Student Systems (ESS) division. After a year of understanding the technical directions of the products and the needs of the teams, I started development of the ESS Component Library, as a way to establish a common set of UI components, icons, and colors. The components were built using [React](https://reactjs.org/), vetted by the university's [accessibility experts](https://atac.iu.edu/), and published to the university's enterprise [npm registry](https://www.npmjs.com/). Icons used a mix of custom icons and the [Iconic set](https://useiconic.com/). A [<b>new color palette</b>](/work/iu-color-palette) was adapted from the university's brand colors, and [<b>color variations were systematically generated and codified</b>](/articles/codifying-colors/). Over the course of two years, we published dozens of components and icons, while integrating them into about a half-dozen new products. 
 
 In late 2016, the university established the [User Experience Office](https://ux.iu.edu/) to oversee design efforts across offices, departments, and schools. In collaboration with the university's design and development communities, they maintain the [Rivet Software Design System](https://rivet.iu.edu/), and it has experienced an exponential growth in adoption. I am a regular contributor to Rivet, sharing many lessons learned from my prior design system projects.
-
-## Team practices
-
-Faciliation. Agile. Lean UX. User research. Accessibility. Roles. Training. Designer facilitates the design process, not owns it.
 
 ## Work
 
