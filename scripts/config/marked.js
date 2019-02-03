@@ -41,11 +41,7 @@ renderer.code = function(code, lang, escaped) {
   var cn = classNames(cn);
 
   return `<figure class="Figure Figure--code">
-    <pre class="Figure-content">
-      <code class="${cn}">
-${escaped ? code : escape(code, true)}
-      </code>
-    </pre>
+    <pre class="Figure-content"><code class="${cn}">${escaped ? code : escape(code, true)}</code></pre>
   </figure>`;
 };
 
