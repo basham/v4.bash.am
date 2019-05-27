@@ -24,8 +24,6 @@
     "cheerio": "0.22.0",
     "classnames": "2.2.6",
     "extend": "3.0.2",
-    "fg-loadcss": "2.1.0",
-    "fontfaceobserver": "2.1.0",
     "gh-pages": "2.0.1",
     "handlebars": "4.1.2",
     "highlight.js": "9.15.6",
