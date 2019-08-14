@@ -54,6 +54,8 @@
   }
 
   &-imgLink {
+    display: block;
+    line-height: 0;
 
     &:focus {
       outline: (2rem/16) solid @color-Blue;
@@ -66,15 +68,19 @@
   }
 
   &-caption {
-    margin: 1rem 0 2rem;
     max-width: @content-Width;
   }
 
   &-paragraph {
     font-size: (14rem/16);
+    line-height: (20rem/16);
     margin: 0 0 1rem;
     max-width: (26ch * 2.5);
     padding: 0;
+  }
+
+  &-caption {
+    margin: 1rem 0 2rem;
   }
 
   &-meta {
