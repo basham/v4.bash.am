@@ -1,10 +1,9 @@
 .Link {
-  .underline(2, @color-Blue--100);
   color: inherit;
-  text-decoration: none;
+  text-decoration-color: @color-Blue--500;
 
   &:hover {
-    background-color: @color-Blue--100;
+    color: @color-Blue--500;
   }
 
   &:focus {
@@ -26,10 +25,6 @@
   & > b {
     .underline(4, @color-Yellow--100);
     font-weight: inherit;
-  }
-
-  &:hover > b {
-    background-color: @color-Yellow--100;
   }
 }
 
