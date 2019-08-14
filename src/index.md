@@ -14,7 +14,7 @@ I'm Chris, a designer and front-end developer for [Indiana University](https://u
 
 For more details, explore my [<b>work</b>](#work), [<b>articles</b>](#articles), [<b>talks</b>](#talks), and [<b>résumé</b>](/resume)&thinsp;&mdash;&thinsp;or [<b>contact me</b>](#contact).
 
-Outside of work, I play [board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in [sandals](https://lunasandals.com/).
+Outside of work, I play [board games](https://www.kickstarter.com/profile/basham), listen to [audiobooks](https://www.audible.com/) and [podcasts](https://99percentinvisible.org/), and run trails in [sandals](https://twitter.com/chrisbasham/status/303623854297841664).
 
 ## Reactive programming
 
