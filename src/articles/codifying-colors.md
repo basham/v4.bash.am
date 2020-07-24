@@ -152,14 +152,14 @@ var useBezierInterpolation = true;
 var useLightnessCorrection = true;
 // Prepare color scale.
 var colors = ['#fff', scaleSourceHex, '#000'];
-if(useBezierInterpolation) {
+if (useBezierInterpolation) {
   colors = chroma.interpolate.bezier(colors);
 }
 var scale = chroma.scale(colors).mode('lab').correctLightness(useLightnessCorrection);
 // Output source color.
 console.log(scaleVarName + ': ' + scaleSourceHex + ';');
 // Interpolate colors, skipping the generation of white and black.
-for(var i = 1, steps = 10; i < steps; i++) {
+for (var i = 1, steps = 10; i < steps; i++) {
   var point = i / steps;
   // Convert point to numbering system value.
   var name = Math.round(point * 1000);
