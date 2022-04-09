@@ -47,7 +47,7 @@
     "metalsmith-publish": "0.1.5",
     "metalsmith-watch": "1.0.3",
     "minimatch": "3.0.4",
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "postcss": "7.0.16",
     "uglify-js": "3.5.15"
   }
